@@ -31,6 +31,7 @@ source(here::here("maintained", "figure_2_all_endorsements.R"))
 source(here::here("maintained", "figure_3_cdc_mask_guidance.R"))
 source(here::here("maintained", "figure_4_mandate_vignettes.R"))
 source(here::here("maintained", "figure_5_adult_booster.R"))
+source(here::here("maintained", "figure_a1_a22_experiment_panels.R"))
 
 # In-text quantities ----
 source(here::here("maintained", "text_endorsement_claims.R"))

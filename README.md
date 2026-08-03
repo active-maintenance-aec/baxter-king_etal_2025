@@ -129,10 +129,10 @@ intentions by 8.3 points, again without partisan heterogeneity.
 
 ## Summary
 
-The ground truth carries 484 rows. Where the deposited code produces a
-number the article prints, it reproduces it: 429 such comparisons agree
+The ground truth carries 506 rows. Where the deposited code produces a
+number the article prints, it reproduces it: 451 such comparisons agree
 at the precision the page prints and 1 do not. The maintained rewrite
-agrees with the article on 464 values and disagrees on 14, and 6 rows
+agrees with the article on 486 values and disagrees on 14, and 6 rows
 are unverifiable because the article states no number.
 
 ### Does the deposited archive run?
@@ -149,7 +149,8 @@ could know without measuring it.
 Yes, with one class of exception. Every coefficient, standard error,
 sample size and R-squared in Tables 2 and 3 and in appendix Tables S1 to
 S4 reproduces, as does every estimate and standard error printed on
-Figures 1, 3 and 5 and every number the article states in prose or in a
+Figures 1, 3 and 5, every one of the 704 printed on the section C
+appendix figures, and every number the article states in prose or in a
 footnote. The 14 disagreements are the sample sizes of Table 1, which
 count respondents enrolled in each experiment while the deposited
 analysis files hold fewer rows, and one appendix claim that turns on a
@@ -293,7 +294,29 @@ gives the same digits.
 | Figure 2                  |    2 |              0 |              0 |               0 |
 | Footnote c                |    2 |              0 |              2 |               0 |
 | Abstract and Introduction |    1 |              0 |              0 |               1 |
+| Appendix Figure S1        |    1 |              1 |              1 |               0 |
+| Appendix Figure S10       |    1 |              1 |              1 |               0 |
+| Appendix Figure S11       |    1 |              1 |              1 |               0 |
+| Appendix Figure S12       |    1 |              1 |              1 |               0 |
+| Appendix Figure S13       |    1 |              1 |              1 |               0 |
+| Appendix Figure S14       |    1 |              1 |              1 |               0 |
+| Appendix Figure S15       |    1 |              1 |              1 |               0 |
+| Appendix Figure S16       |    1 |              1 |              1 |               0 |
+| Appendix Figure S17       |    1 |              1 |              1 |               0 |
+| Appendix Figure S18       |    1 |              1 |              1 |               0 |
+| Appendix Figure S19       |    1 |              1 |              1 |               0 |
+| Appendix Figure S2        |    1 |              1 |              1 |               0 |
+| Appendix Figure S20       |    1 |              1 |              1 |               0 |
+| Appendix Figure S21       |    1 |              1 |              1 |               0 |
+| Appendix Figure S22       |    1 |              1 |              1 |               0 |
+| Appendix Figure S3        |    1 |              1 |              1 |               0 |
+| Appendix Figure S4        |    1 |              1 |              1 |               0 |
 | Appendix Figure S47       |    1 |              0 |              1 |               0 |
+| Appendix Figure S5        |    1 |              1 |              1 |               0 |
+| Appendix Figure S6        |    1 |              1 |              1 |               0 |
+| Appendix Figure S7        |    1 |              1 |              1 |               0 |
+| Appendix Figure S8        |    1 |              1 |              1 |               0 |
+| Appendix Figure S9        |    1 |              1 |              1 |               0 |
 | Figure 4                  |    1 |              0 |              0 |               0 |
 | Footnote f                |    1 |              0 |              1 |               0 |
 | Footnote g                |    1 |              0 |              1 |               0 |
@@ -337,32 +360,51 @@ conditional average treatment effects agree.
 ### Coverage of the published floats
 
 The float list is taken from the article and its appendix rather than
-from what the pipeline happens to produce: 74 floats in all, of which 13
+from what the pipeline happens to produce: 74 floats in all, of which 35
 carry at least one ground-truth row.
 
 | Float group                                | Floats |
 |:-------------------------------------------|-------:|
-| Appendix section C, per-contrast panels    |     22 |
-| Appendix section D, predicted unvaccinated |     23 |
+| Appendix section D, predicted unvaccinated |     22 |
+| Appendix section D, variable importance    |      1 |
 | Appendix section E, vignette CATEs         |     14 |
 | Meta-analysis of all studies               |      1 |
-| Verified cell by cell                      |     13 |
+| Verified cell by cell                      |     35 |
 | Weighted against unweighted                |      1 |
 
 Published floats, by whether the ground truth reaches them
 
-The 61 uncovered floats are appendix figures. None prints a number: they
-are two-panel plots of group means and average causal effects, in the
-same form as Figures 1, 3 and 5, and the coefficients behind them are
-the ones appendix Tables S1 to S4 print, which the ground truth verifies
-cell by cell. Each uncovered float carries its reason in
+Section C of the appendix is the largest block of published numbers in
+the paper and the easiest to overlook. It draws one two-panel figure per
+experimental contrast, 22 of them, in the same form as Figures 1, 3 and
+5, and each panel prints its estimates and standard errors on the face
+of the plot. Those 704 numbers are in no table: the appendix regression
+tables carry one treatment by party interaction per contrast, not eight
+conditional estimates.
+`ground_truth/extract_published_appendix_values.R` parses them out of
+the published PDF by position rather than by reading order, and the
+parse is checked against Figures 1, 3 and 5, whose values were
+transcribed independently from rendered pages. All 704 of them
+reproduce.
+
+The 39 uncovered floats are appendix figures, and the largest group is
+section D, which repeats the section C panels among respondents a
+machine-learning model predicts will remain unvaccinated. Those panels
+do print numbers, and nothing here reproduces them: the rewrite does not
+refit the prediction model that defines the subgroup, and the deposited
+script that draws them fails. Each uncovered float carries its reason in
 `ground_truth/float_coverage.csv`, and the build stops if any float has
 neither a row nor a reason.
 
 ### Every number in the article, extracted
 
-`ground_truth/published_claims.csv` is the exhaustive extraction: every
-numeric token in the article and its appendix, classified by hand.
+`ground_truth/published_claims.csv` is the extraction of the article’s
+prose, its main-text floats and its appendix tables: every numeric token
+in them, classified by hand. The 704 numbers printed on the faces of the
+section C appendix figures are extracted separately and in bulk, into
+`ground_truth/published_appendix_values.csv`, because listing them one
+by one here would swamp the file without telling a reader anything the
+per-figure rows above do not.
 
 | Claim type   | Claims |
 |:-------------|-------:|
@@ -391,7 +433,7 @@ that disagree have found something.
 
 ## Maintained Rewrite
 
-The rewrite replaces 63 deposited scripts with 20 files. The deposit
+The rewrite replaces 63 deposited scripts with 21 files. The deposit
 fits each model in its own script and repeats the same forty-line block
 for every endorser; the rewrite fits all of them by mapping one function
 over a named list of arms, so a change to the specification happens in
@@ -422,14 +464,27 @@ The rewrite also adds four table scripts the deposit lacks or leaves
 incomplete: appendix Tables S1 to S4, one script each, each writing its
 cells unrounded to a CSV alongside the formatted LaTeX. Nothing
 downstream has to read a value back out of a formatted table and round
-it twice.
+it twice. It adds one more script for the section C appendix figures,
+which write their estimates to a CSV rather than being redrawn.
+
+One substitution in the rewrite is worth stating because it is invisible
+in the deposit’s own output. `data_w5_endorse.rds` stores its treatment
+variable as a factor whose first level is Obama rather than Control, so
+any contrast taken from that file with the factor as shipped is
+estimated the other way round: every estimate comes back with the sign
+reversed while its standard error looks entirely normal. The rewrite
+sets the control group as the reference before estimating anything,
+which is a no-op in the other nine analysis files and is what makes the
+E-2 appendix panels come out with the signs the article prints.
 
 ------------------------------------------------------------------------
 
 ## Figure Verification
 
 Figures 1, 3 and 5 print every estimate and standard error on the panel,
-in percentage points. All 96 of those numbers reproduce.
+in percentage points. All 96 of those numbers reproduce, as do all 704
+printed on the 22 appendix figures that draw the same panels for the
+other contrasts.
 
 <img src="maintained/output/figure_1_trump_endorsement.png"
 style="width:100.0%" />

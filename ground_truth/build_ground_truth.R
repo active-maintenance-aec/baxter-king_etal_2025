@@ -137,16 +137,26 @@ table_1_rows <-
     notes = "The deposit contains no script that assembles Table 1, and its analysis file for this experiment holds fewer rows than the published enrollment count."
   )
 
-headline_n_row <- tibble(
-  table_figure = "Abstract and Introduction",
-  claim = "Survey respondents across the ten experiments",
-  value_script = NA_real_,
-  value_paper = "85,191",
-  value_rewrite = table_1_rewrite$n_deposited[table_1_rewrite$experiment == "Any of the ten experiments"],
-  expect_rewrite = TRUE,
-  defect_locus = "archive",
-  notes = "No deposited script computes the headline count. Taking the union of the respondent identifiers in the ten deposited analysis files gives a different number, so the deposit does not contain the file from which 85,191 was counted."
-)
+headline_n_row <-
+  tibble(
+    table_figure = "Abstract and Introduction",
+    claim = "Survey respondents across the ten experiments",
+    value_script = NA_real_,
+    value_paper = "85,191",
+    value_rewrite = table_1_rewrite$n_deposited[table_1_rewrite$experiment == "Any of the ten experiments"],
+    expect_rewrite = TRUE,
+    defect_locus = "archive"
+  ) |>
+  mutate(
+    # The direction is computed rather than typed, because it is the substantive
+    # point and it runs opposite to every other sample-size row in this table:
+    # the deposit holds more respondents than the headline count, not fewer.
+    notes = paste0(
+      "No deposited script computes the headline count. The union of the respondent identifiers in the ten deposited analysis files is ",
+      if_else(value_rewrite > paper_numeric(value_paper), "larger", "smaller"),
+      " than the published figure, so the deposit does not contain the file from which it was counted."
+    )
+  )
 
 # Regression tables ----
 # Tables 2, 3, S1, S2, S3 and S4 all have the same shape: a coefficient and a
@@ -638,6 +648,90 @@ figure_1_rows <- figure_rows(figure_1_paper, figure_1_rewrite, "figure_1_aces", 
 figure_3_rows <- figure_rows(figure_3_paper, figure_3_rewrite, "figure_3_aces", "Figure 3")
 figure_5_rows <- figure_rows(figure_5_paper, figure_5_rewrite, "figure_5_aces", "Figure 5")
 
+# Appendix Figures S1 to S22: every number the section C panels print ----
+# Section C draws one two-panel figure per experimental contrast, in the same
+# form as Figures 1, 3 and 5, and each prints eight subgroups by two estimators
+# by an estimate and a standard error. Those 704 numbers are in no table: the
+# appendix regression tables carry one treatment by party interaction per
+# contrast, not eight conditional estimates. They are parsed once by
+# ground_truth/extract_published_appendix_values.R and summarised here, one row
+# per figure reading cells reproduced of cells printed.
+published_appendix <- read_csv(here::here("ground_truth", "published_appendix_values.csv"),
+                               col_types = cols(.default = "c"))
+
+section_c_rewrite <- out("figure_a1_a22_experiment_panels.csv")
+
+# The parse is checked against three independent transcriptions before it is
+# used. Appendix Figures S1, S16 and S20 are the same panels as main-text
+# Figures 1, 3 and 5, whose values were read off rendered pages by hand above,
+# so all 96 of those cells must agree digit for digit or the parse is wrong.
+parse_check <-
+  bind_rows(
+    figure_1_paper |> mutate(float = "Appendix Figure S1"),
+    figure_3_paper |> mutate(float = "Appendix Figure S16"),
+    figure_5_paper |> mutate(float = "Appendix Figure S20")
+  ) |>
+  pivot_longer(-c(subgroup, float), names_to = c("estimator", "quantity"),
+               names_sep = "_", values_to = "transcribed") |>
+  mutate(estimator = str_to_upper(estimator)) |>
+  join_checked(
+    published_appendix |>
+      pivot_longer(c(value_estimate, value_std.error),
+                   names_to = "quantity", values_to = "parsed") |>
+      mutate(quantity = str_remove(quantity, "^value_")) |>
+      select(float, subgroup, estimator, quantity, parsed),
+    by = c("float", "subgroup", "estimator", "quantity")
+  )
+
+stopifnot(nrow(parse_check) == 3 * 8 * 2 * 2, parse_check$parsed == parse_check$transcribed)
+
+section_c_cells <-
+  published_appendix |>
+  pivot_longer(c(value_estimate, value_std.error),
+               names_to = "quantity", values_to = "value_paper") |>
+  mutate(quantity = str_remove(quantity, "^value_")) |>
+  join_checked(
+    section_c_rewrite |>
+      pivot_longer(c(estimate, std.error), names_to = "quantity", values_to = "value_rewrite") |>
+      select(float, subgroup, estimator, quantity, value_rewrite),
+    by = c("float", "subgroup", "estimator", "quantity")
+  ) |>
+  mutate(
+    value_script = pmap_dbl(list(float, subgroup, estimator, quantity),
+                            function(f, s, e, q) {
+      archive_value(paste0("figure_", str_to_lower(str_remove(f, "Appendix Figure ")), "_aces"),
+                    paste(s, e), if_else(q == "estimate", "estimate", "std.error"))
+    }),
+    cell_agrees = agrees(value_rewrite, value_paper),
+    cell_agrees_script = agrees(value_script, value_paper)
+  )
+
+write_csv(section_c_cells |> select(float, contrast, subgroup, estimator, quantity,
+                                    value_paper, value_rewrite, cell_agrees),
+          here::here("ground_truth", "section_c_cells.csv"))
+
+section_c_rows <-
+  section_c_cells |>
+  group_by(float, contrast) |>
+  summarize(
+    cells = n(),
+    cells_rewrite = sum(cell_agrees, na.rm = TRUE),
+    cells_script = sum(cell_agrees_script, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(float_number = as.integer(str_extract(float, "\\d+"))) |>
+  arrange(float_number) |>
+  transmute(
+    table_figure = float,
+    claim = paste0(contrast, ", printed estimates and standard errors reproduced"),
+    value_script = cells_script,
+    value_paper = as.character(cells),
+    value_rewrite = cells_rewrite,
+    expect_rewrite = TRUE,
+    defect_locus = NA_character_,
+    notes = "The panel prints eight subgroups by two estimators, each as an estimate and a standard error in percentage points, and those numbers appear in no table. Cells are compared one by one in section_c_cells.csv."
+  )
+
 # Figures with no printed numbers ----
 # Both panels are coefficient plots without labels, so there is no published
 # number to compare against. The rewrite writes every plotted estimate to a CSV,
@@ -806,6 +900,7 @@ gt <- bind_rows(
   figure_1_rows,
   figure_3_rows,
   figure_5_rows,
+  section_c_rows,
   unlabelled_figures,
   text_rows,
   equivalence_rows
@@ -865,10 +960,10 @@ floats <- bind_rows(
 )
 
 uncovered_reasons <- bind_rows(
-  tibble(float = paste0("Appendix Figure S", 1:22),
-         reason = "Section C of the appendix plots group means and average causal effects for one experimental contrast per figure, in the same two-panel form as Figures 1, 3 and 5. The panels print no numbers and the coefficients behind them are those of appendix Tables S1 to S4, which the rows above verify cell by cell. The rewrite does not redraw them."),
-  tibble(float = paste0("Appendix Figure S", 23:45),
-         reason = "Section D of the appendix repeats the same panels among respondents a machine-learning model predicts will remain unvaccinated. The rewrite does not refit that prediction model, and the deposited script that draws these figures fails."),
+  tibble(float = "Appendix Figure S23",
+         reason = "A variable importance plot from the random forest that predicts vaccination status at the final wave. The rewrite does not refit that model."),
+  tibble(float = paste0("Appendix Figure S", 24:45),
+         reason = "Section D of the appendix repeats the section C panels among respondents a machine-learning model predicts will remain unvaccinated. Those panels print estimates and standard errors of their own, which nothing here reproduces: the rewrite does not refit the prediction model that defines the subgroup, and the deposited script that draws these figures fails. This is the largest uncovered group in the paper."),
   tibble(float = "Appendix Figure S46",
          reason = "A comparison of weighted with unweighted estimates. The rewrite fits the weighted models the main text reports and does not refit every model unweighted."),
   tibble(float = paste0("Appendix Figure S", 48:61),

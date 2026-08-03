@@ -112,6 +112,14 @@ levels_data <- function(data) {
 # and Lin-adjusted effects, overall and within each level of party ID. Estimates
 # are on the percentage-point scale, as the published panels are.
 aces_data <- function(data) {
+  # The control group is the reference, always. data_w5_endorse.rds stores Z as a
+  # factor whose first level is Obama rather than Control, so a contrast taken
+  # from that file without this line is estimated the other way round and every
+  # estimate comes back with the wrong sign while its standard error looks
+  # right. The other analysis files already have Control first, or store Z as a
+  # character vector, where it sorts first anyway, so this changes nothing else.
+  data <- data |> mutate(Z = fct_relevel(factor(Z), "Control"))
+
   cates_pid_7 <-
     data |>
     group_by(demo_pid7) |>

@@ -1,6 +1,6 @@
 # baxter-king_etal_2025/maintained/in_text_claims.R
 # Output: printed to the console
-# Depends on: everything in maintained/output/
+# Depends on: everything in maintained/output/, plus the deposited clean data
 # Description: Every number the article prints, paired with the pipeline output
 # that produces it. Each entry carries the article's own sentence, then the code
 # that reads the number back out of maintained/output/ and prints it in the
@@ -10,6 +10,13 @@
 # claimed number by its own route from the same committed pipeline output that
 # ground_truth/build_ground_truth.R reads, doing its own filtering, unit
 # conversion and rounding. Where the two disagree, one of them is wrong.
+#
+# Claims that describe the design rather than a result get no pipeline output
+# and none should be created for them. A count of experimental groups is checked
+# against the deposited assignment column that defines those groups, a scale
+# against its own levels, and a number the article takes from another work
+# against that work. Those blocks read maintained/output/ or the deposited clean
+# data and never fit anything.
 #
 # Bracketed identifiers in the labels are the claim_id column of
 # ground_truth/published_claims.csv.
@@ -32,9 +39,20 @@ figure_2 <- out("figure_2_all_endorsements.csv")
 figure_3 <- out("figure_3_cdc_mask_guidance_aces.csv")
 figure_4 <- out("figure_4_mandate_vignettes.csv")
 figure_5 <- out("figure_5_adult_booster_aces.csv")
+section_c <- out("figure_a1_a22_experiment_panels.csv")
 endorsement <- out("text_endorsement_claims.csv")
 guidance <- out("text_guidance_information_claims.csv")
+equivalence <- out("text_equivalence_claims.csv")
 equivalence_counts <- out("text_equivalence_counts.csv")
+
+# The deposited analysis files, read for the design claims only. Reading clean
+# data is what lets a claim about the design be checked rather than restated.
+w3_endorse <- read_experiment("w3_endorse")
+w5_endorse <- read_experiment("w5_endorse")
+w6_cdcmask <- read_experiment("w6_cdcmask")
+w6_vignette <- read_experiment("w6_vignette")
+w7_cdcmask <- read_experiment("w7_cdcmask")
+w7_contagiousness <- read_experiment("w7_contagiousness")
 
 claim <- function(id, value) cat(sprintf("[%s] %s\n", id, value))
 
@@ -52,117 +70,154 @@ claim(
                  big.mark = ","))
 )
 
-# Design and instrument claims ----
-# These carry no pipeline counterpart by construction. A count of experimental
-# groups is checked against the pipeline object that has one row per group; a
-# scale endpoint against the survey instrument in the appendix; a number the
-# article takes from another source against that source and never again.
-
-# "Using data from 10 experiments with 85,191 survey respondents conducted over
-# a 2-year period during the COVID-19 pandemic, we assess the effectiveness of
-# these three types of persuasive messages."
 claim(
   "abstract_n_experiments",
   sprintf("experiments in the directory table: %d (article: 10)",
           sum(table_1$experiment != "Any of the ten experiments"))
 )
 
+# The same sentence dates the study period. The deposited analysis files carry
+# no field dates, so the two years are read from the wave dates the Materials
+# and methods section prints and are not recoverable from the deposit.
+claim(
+  "abstract_period_years",
+  "study period: 2 years, from the wave dates in the Materials and methods section; the deposited analysis files carry no field date"
+)
+
+# Significance Statement ----
+
+# "Ten experiments conducted between 2020 and 2022 with 85,191 respondents on
+# intentions to vaccinate and wear a mask show factual information and guidance
+# can successfully encourage prosocial behavior among subjects from all partisan
+# backgrounds but endorsements from political leaders and celebrities too
+# frequently cause unintended decreases in prosocial behavior."
+claim(
+  "significance_years",
+  "study period 2020 to 2022, from the wave dates in the Materials and methods section; the deposited analysis files carry no field date"
+)
+
+# Introduction ----
+
 # "In this article, we report findings from 10 messaging experiments (with 41
 # unique treatments) conducted among 85,191 survey respondents interviewed
 # between 2020 and 2022."
+#
+# The deposit records the assignment of every respondent, so the treatment
+# conditions can be counted rather than restated. The count depends on one
+# reading: I-1 crosses three information sources with a detailed and a limited
+# version of the message, and the deposited treat indicator marks only the three
+# detailed cells as treated.
+arms_deposited <- tribble(
+  ~experiment, ~treatment_conditions,
+  "E-1 endorser by Personal or Social framing",
+  n_distinct(paste(w3_endorse$experiment_treatment_short, w3_endorse$experiment_arm)[w3_endorse$Z != "Control"]),
+  "E-2 endorser",
+  n_distinct(as.character(w5_endorse$Z)[w5_endorse$Z != "Control"]),
+  "G-1 CDC guidance",
+  n_distinct(as.character(w6_cdcmask$Z)[w6_cdcmask$Z != "Control"]),
+  "G-2 activity by solo or friend framing",
+  n_distinct(paste(w6_vignette$arm_activity, w6_vignette$arm_anchor_self_friend)[w6_vignette$Z == "Treatment"]),
+  "G-3 CDC guidance",
+  n_distinct(as.character(w7_cdcmask$Z)[w7_cdcmask$Z != "Control"]),
+  "I-1 information source, detailed message only",
+  n_distinct(as.character(w7_contagiousness$contagious_exp_assign_descriptive)[w7_contagiousness$treat == 1]),
+  "I-2 Delta conversation", 1L,
+  "I-3 adult booster information", 1L,
+  "I-4 child booster information", 1L,
+  "I-5 child vaccine information", 1L
+)
+
+i1_all_cells <- n_distinct(as.character(w7_contagiousness$contagious_exp_assign_descriptive))
+
+print(arms_deposited)
+
 claim(
   "intro_n_treatments",
-  "unique treatments: 41 as stated; the deposit's ten analysis files hold one treatment indicator each and cannot be summed to this count (article: 41)"
+  sprintf(paste("distinct treatment conditions in the deposited assignment columns: %d,",
+                "or %d counting each of I-1's %d source-by-message cells as its own condition.",
+                "The deposit records nothing that resolves the difference (article: 41)"),
+          sum(arms_deposited$treatment_conditions),
+          sum(arms_deposited$treatment_conditions) -
+            arms_deposited$treatment_conditions[arms_deposited$experiment == "I-1 information source, detailed message only"] +
+            i1_all_cells,
+          i1_all_cells)
 )
 
-# "In E-1 set of endorsers included (i) their health insurance company, (ii)
-# their pharmacy, (iii) their physician, (iv) religious/spiritual leaders, (v)
-# President Donald Trump, (vi) Dr. Anthony Fauci, or (vii) both President Trump
-# and Dr. Fauci; the control group saw no endorsement."
-claim(
-  "results_e1_endorsers",
-  sprintf("E-1 endorser arms fitted: %d (article: 7)", n_distinct(table_a1$endorser))
-)
+# "For example, 89% of Democrats and 84% of Republicans approved of canceling
+# large gatherings and similarly high percentages approved of restricting travel
+# (2)."
+claim("intro_democrats_approve",
+      "89% of Democrats approving of canceling large gatherings: from Sides, Tausanovitch and Vavreck (2020), reference 2, and outside this pipeline")
+claim("intro_republicans_approve",
+      "84% of Republicans approving of canceling large gatherings: from the same source, reference 2")
 
-# "In E-2, treatment group subjects could be assigned to any of eight
-# endorsers."
-claim(
-  "results_e2_endorsers",
-  sprintf("E-2 endorser arms fitted: %d (article: 8)", n_distinct(table_a2$endorser))
-)
+# "In December of 2023, an interdisciplinary group of scholars summarized the
+# insights from 747 articles written about behavioral science and COVID-19
+# policy-making (9). Our results are in line with their broad conclusions, and
+# we provide detailed evidence regarding one of their 15 claims, namely that
+# 'Identifying trusted sources ... can be effective in increasing intentions to
+# engage in recommended health behaviors.'"
+claim("intro_articles_summarised",
+      "747 articles summarized: from Ruggeri et al. (2024), reference 9, and outside this pipeline")
+claim("intro_claims_summarised",
+      "15 claims: from the same source, reference 9")
 
-# "Subjects were randomized into one of four activities: going to a restaurant,
-# a concert, a sports game, and taking a trip."
-claim(
-  "results_g2_activities",
-  sprintf("G-2 activities fitted: %d (article: 4)", n_distinct(table_a4$activity))
-)
+# Materials and methods ----
 
-# "In this experiment, unvaccinated adults were randomly assigned to three
-# groups and asked to imagine that someone (either a friend, their doctor, or
-# the CDC) was giving them information."
-claim(
-  "results_i1_arms",
-  "I-1 information sources: 3, and the joint test across them is reported above (article: 3)"
-)
+# "The project consists of eight survey waves spanning more than 2 years. The
+# first four waves, consisting of 15,000 respondents each, were conducted
+# between 2020 May 11 and 24; 2020 July 9 and 22; 2020 October 1 and 17; and
+# 2020 December 4 and 16. Waves five through eight, which consist of 30,000
+# respondents each, were conducted 2021 March 25 to April 13, 2021 June 17 to
+# July 6, 2021 September 3 to October 4, and 2022 October 24 to December 20."
+#
+# The deposit ships experiment subsets rather than waves, so no wave-level count
+# can be read off it directly. What it does give is a lower bound: the largest
+# deposited file drawn from each wave.
+deposited_by_wave <-
+  tibble(file = list.files(data_dir, pattern = "^data_w\\d_.*\\.rds$")) |>
+  mutate(
+    wave = str_extract(file, "(?<=^data_w)\\d"),
+    n = map_int(file, function(f) nrow(read_rds(file.path(data_dir, f))))
+  ) |>
+  group_by(wave) |>
+  slice_max(n, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  select(wave, largest_deposited_file = file, n)
 
-# "We measure partisanship posttreatment ... on a scale from 1 (strong Democrat)
-# to 4 (independent) to 7 (strong Republican)."
-claim(
-  "methods_pid_scale",
-  sprintf("levels of the party identification variable used in the figures: %d (article: 7)",
-          n_distinct(figure_1$subgroup) - 1L)
-)
+print(deposited_by_wave)
 
-# "We present tests with equivalence bands of 5 and 10 points."
-claim(
-  "methods_equivalence_bands",
-  "equivalence bands: 5 and 10 percentage points, both computed in text_equivalence_claims.csv (article: 5 and 10)"
-)
-
-# "Both of these guidance experiments (G-1 and G-3) collapse a three point
-# outcome scale to a binary scale based on the CDC information category."
-claim(
-  "footnote_e_categories",
-  "outcome categories collapsed to binary: 3, and the chi-squared test above is computed on all three (article: 3)"
-)
-
-# "The project consists of eight survey waves spanning more than 2 years." and
-# the two wave sizes that follow it. The deposit ships experiment subsets only,
-# so no wave-level count can be recovered from it.
 claim(
   "methods_n_waves",
-  "survey waves: 8, of which the deposit ships analysis files from waves 3 and 5 to 8 (article: 8)"
+  sprintf("survey waves: 8, of which the deposit ships analysis files from %d (waves %s)",
+          nrow(deposited_by_wave), paste(deposited_by_wave$wave, collapse = ", "))
 )
 
 claim(
   "methods_early_wave_size",
-  "waves one to four: 15,000 respondents each, not recoverable from the deposit (article: 15,000)"
+  sprintf("waves one to four: 15,000 respondents each. The deposit reaches waves 3 and 4 only, whose largest deposited files hold %s and %s respondents, both lower bounds on the wave (article: 15,000)",
+          format(deposited_by_wave$n[deposited_by_wave$wave == "3"], big.mark = ","),
+          format(deposited_by_wave$n[deposited_by_wave$wave == "4"], big.mark = ","))
 )
 
 claim(
   "methods_late_wave_size",
-  "waves five to eight: 30,000 respondents each, not recoverable from the deposit (article: 30,000)"
+  sprintf("waves five to eight: 30,000 respondents each. The largest deposited file from each is %s, and every one is an experiment subset rather than the wave (article: 30,000)",
+          paste(sprintf("w%s %s", deposited_by_wave$wave[deposited_by_wave$wave >= "5"],
+                        format(deposited_by_wave$n[deposited_by_wave$wave >= "5"], big.mark = ",")),
+                collapse = ", "))
 )
 
-# Numbers the article takes from other sources: checked once against those
-# sources and not against this pipeline, which cannot speak to them.
-claim("intro_democrats_approve", "89% of Democrats approving: from Sides, Tausanovitch and Vavreck (2020), reference 2")
-claim("intro_republicans_approve", "84% of Republicans approving: from Sides, Tausanovitch and Vavreck (2020), reference 2")
-claim("intro_articles_summarised", "747 articles: from Ruggeri et al. (2024), reference 9")
-claim("intro_claims_summarised", "15 claims: from Ruggeri et al. (2024), reference 9")
-claim("methods_cdc_first_dose", "44.6% of US adults with one dose: from the CDC, spring 2021")
-claim("results_unvaccinated_share", "roughly 2 in 10 adults unvaccinated by September 2021: contextual, from public vaccination statistics")
-claim("results_i1_treatment_text", "over 90% of hospitalized Americans unvaccinated: treatment wording, quoted from the survey instrument in appendix section F.3")
-claim("abstract_period_years", "study period: 2 years, from the wave dates in the Materials and methods section")
-claim("significance_years", "study period 2020 to 2022, from the wave dates in the Materials and methods section")
+# "To get a sense of the representativeness of our data about COVID-19
+# mitigation, in Spring of 2021, the CDC estimated that 44.6% of the adult US
+# population had received at least one dose of a COVID-19 vaccine. Our survey
+# estimate for this same period is close at 48.8%."
+claim("methods_cdc_first_dose",
+      "44.6% of US adults with at least one dose: the CDC's estimate for spring 2021, quoted by the article and outside this pipeline")
 
-# Materials and methods ----
-
-# "Our survey estimate for this same period is close at 48.8%."
 claim(
   "materials_and_methods_adults_with_at_least_one_vaccine_dose_spring_2021",
-  "share of adults with at least one dose, spring 2021: not computable from the deposit, which ships experiment subsets and no wave-level file (article: 48.8%)"
+  "share of adults with at least one dose, spring 2021: not computable from the deposit, which ships experiment subsets and no wave-level file carrying vaccination status for a whole wave (article: 48.8%)"
 )
 
 # "Three of the partisan interaction terms that are not significant using
@@ -172,6 +227,31 @@ claim(
   sprintf("interaction terms turning significant when the weights are dropped: %d of %d arms (article: 3)",
           named(equivalence_counts, "Interaction terms not significant weighted that become significant unweighted"),
           named(equivalence_counts, "Experiments compared"))
+)
+
+# "We measure partisanship posttreatment (on posttreatment placement, see (13))
+# using the standard American National Election Study branching question that
+# categorizes partisans on a scale from 1 (strong Democrat) to 4 (independent)
+# to 7 (strong Republican)."
+pid_levels <- levels(w6_cdcmask$demo_pid7)
+
+claim(
+  "methods_pid_scale",
+  sprintf("party identification levels in the deposited data: %d, running 1 = %s, 4 = %s, 7 = %s (article: 1 strong Democrat to 4 independent to 7 strong Republican)",
+          length(pid_levels), pid_levels[1], pid_levels[4], pid_levels[7])
+)
+
+# "We present tests with equivalence bands of 5 and 10 points."
+equivalence_bands <-
+  names(equivalence) |>
+  str_subset("^eq_p_") |>
+  str_remove("^eq_p_") |>
+  str_remove("pp$")
+
+claim(
+  "methods_equivalence_bands",
+  sprintf("equivalence bands tested in text_equivalence_claims.csv: %s percentage points (article: 5 and 10)",
+          paste(equivalence_bands, collapse = " and "))
 )
 
 # "In the G-1 and G-3 mask guidance experiments, we can affirm equivalence at 5
@@ -223,6 +303,28 @@ claim(
 
 # Results: endorsement experiments ----
 
+# "In E-1 set of endorsers included (i) their health insurance company, (ii)
+# their pharmacy, (iii) their physician, (iv) religious/spiritual leaders, (v)
+# President Donald Trump, (vi) Dr. Anthony Fauci, or (vii) both President Trump
+# and Dr. Fauci; the control group saw no endorsement."
+claim(
+  "results_e1_endorsers",
+  sprintf("E-1 endorser arms in the deposited assignment column: %d, and %d fitted (article: 7)",
+          n_distinct(as.character(w3_endorse$Z)[w3_endorse$Z != "Control"]),
+          n_distinct(table_a1$endorser))
+)
+
+# "In E-2, treatment group subjects could be assigned to any of eight endorsers:
+# President Trump, Dr. Fauci, Trump and Fauci, NBA star LeBron James, Univision
+# news anchor Jorge Ramos, President Barack Obama, President Joe Biden, and
+# Biden and Fauci."
+claim(
+  "results_e2_endorsers",
+  sprintf("E-2 endorser arms in the deposited assignment column: %d, and %d fitted (article: 8)",
+          n_distinct(as.character(w5_endorse$Z)[w5_endorse$Z != "Control"]),
+          n_distinct(table_a2$endorser))
+)
+
 # "We conducted a joint significance test of the null hypothesis that the
 # effects of the endorsements do not vary according to the Personal vs Social
 # variation (p = 0.37)."
@@ -232,8 +334,9 @@ claim(
           named(endorsement, "E-1 joint test of Personal versus Social framing, p-value"))
 )
 
-# "On average, Trump's endorsement decreased people's intentions to get
-# vaccinated by more than 9 points (beta = -0.092, SE = 0.026)."
+# "As discussed above, Trump's endorsement decreased intentions to vaccinate by
+# more than 9 points (beta = -0.092, SE = 0.026) on average and polarized
+# intentions by party identification."
 claim(
   "results_endorsements_e_1_trump_endorsement_average_treatment_effect",
   sprintf("E-1 Trump endorsement, average treatment effect %.3f (article: -0.092)",
@@ -256,7 +359,9 @@ claim(
 )
 
 # "Fauci's endorsement, in contrast, increased intentions to vaccinate by 5.5
-# points (beta = 0.055, SE = 0.024) on average."
+# points (beta = 0.055, SE = 0.024) on average but, as a nonpolitical, medical
+# expert, his endorsement did not have differential effects across partisan
+# groups."
 claim(
   "results_endorsements_e_1_fauci_endorsement_average_treatment_effect",
   sprintf("E-1 Fauci endorsement, average treatment effect %.3f (article: 0.055)",
@@ -298,7 +403,8 @@ claim(
 
 # "For example, newly elected President Biden's endorsement decreased intentions
 # to vaccinate among the remaining unvaccinated population on average by 9.7
-# points (beta = -0.097, SE = 0.036)."
+# points (beta = -0.097, SE = 0.036), with slightly more negative effects among
+# Republicans and slightly less negative effects among Democrats."
 claim(
   "results_endorsements_e_2_biden_endorsement_average_treatment_effect",
   sprintf("E-2 Biden endorsement, average treatment effect %.3f (article: -0.097)",
@@ -360,6 +466,16 @@ claim(
           100 * named(guidance, "G-3 covariate-adjusted control group mean"))
 )
 
+# "Subjects were randomized into one of four activities: going to a restaurant,
+# a concert, a sports game, and taking a trip. We further varied whether the
+# respondent was asked to consider the activity for themselves, or for a friend
+# who would really enjoy the activity."
+claim(
+  "results_g2_activities",
+  sprintf("G-2 activities in the deposited assignment column: %d, and %d fitted (article: 4)",
+          n_distinct(w6_vignette$arm_activity), n_distinct(table_a4$activity))
+)
+
 # "As these subjects are all unvaccinated, it is unsurprising that baseline
 # levels of willingness to get vaccinated in order to participate in these
 # activities was low, around 20%, as presented in column 1 of Fig. 4."
@@ -379,7 +495,53 @@ claim(
           named(guidance, "G-2 joint test of solo versus friend version, p-value"))
 )
 
+# "Both of these guidance experiments (G-1 and G-3) collapse a three point
+# outcome scale to a binary scale based on the CDC information category." (Note e)
+#
+# The deposited outcome column carries four labels in each experiment, two of
+# which are the same substantive category with and without the CDC preamble the
+# treatment adds. Stripping that preamble is what leaves the three points.
+mask_categories <- function(data) {
+  data$mask_exp_combined_manual |>
+    as.character() |>
+    str_remove("^Following CDC recommendations, ") |>
+    str_to_lower() |>
+    n_distinct()
+}
+
+claim(
+  "footnote_e_categories",
+  sprintf("outcome categories once the CDC preamble is stripped: %d in G-1 and %d in G-3, from %d and %d raw labels (article: three point scale)",
+          mask_categories(w6_cdcmask), mask_categories(w7_cdcmask),
+          n_distinct(w6_cdcmask$mask_exp_combined_manual),
+          n_distinct(w7_cdcmask$mask_exp_combined_manual))
+)
+
 # Results: information experiments ----
+
+# "Roughly 2 in 10 adults remained unvaccinated and finding ways to reach this
+# resistant population became a priority of policymakers and medical
+# professionals."
+claim("results_unvaccinated_share",
+      "roughly 2 in 10 adults unvaccinated by September 2021: contextual, from public vaccination statistics, and outside this pipeline")
+
+# "In this experiment, unvaccinated adults were randomly assigned to three
+# groups and asked to imagine that someone (either a friend, their doctor, or
+# the CDC) was giving them information about the effects of COVID-19 and its
+# contagiousness."
+claim(
+  "results_i1_arms",
+  sprintf("I-1 information sources in the deposited assignment column: %d (%s) (article: 3)",
+          n_distinct(w7_contagiousness$contagious_exp_arm),
+          paste(sort(unique(as.character(w7_contagiousness$contagious_exp_arm))), collapse = ", "))
+)
+
+# "In the treatment group, we offered respondents a more detailed description of
+# the contagiousness, asking, 'Imagine [a friend, your doctor, the CDC] mentions
+# that over 90% of Americans in the hospital right now due to COVID-19 are
+# unvaccinated.'"
+claim("results_i1_treatment_text",
+      "over 90% of hospitalized Americans unvaccinated: treatment wording, checked against the survey instrument in appendix section F.3 and not a quantity this pipeline estimates")
 
 # "In experiment I-1, 20% said they would get vaccinated at the request of a
 # doctor, friend, or public health agency."
@@ -390,7 +552,8 @@ claim(
 )
 
 # "For example, in the Delta experiment (I-2), 28% of unvaccinated people
-# reported that ... they would either get the vaccine that day or make an
+# reported that if they were in their doctor's office and the doctor was urging
+# them to get vaccinated, they would either get the vaccine that day or make an
 # appointment to get it in the future and keep the appointment."
 claim(
   "results_information_i_2_control_group_willing_to_be_vaccinated",
@@ -407,8 +570,10 @@ claim(
           named(guidance, "I-1 joint test of information source, p-value"))
 )
 
-# "Among adults ... the increased information increased intentions to get the
-# booster by 8.3 points (beta = 0.083, SE = 0.013) net of other factors."
+# "Among adults, as discussed earlier in the detailed figure, the increased
+# information increased intentions to get the booster by 8.3 points (beta =
+# 0.083, SE = 0.013) net of other factors, with no evidence of heterogeneity by
+# party."
 claim(
   "results_information_i_3_effect_on_booster_intentions_percentage_points",
   sprintf("I-3 average treatment effect: %.1f points, standard error %.3f (article: 8.3 points, SE 0.013)",
@@ -417,9 +582,9 @@ claim(
 )
 
 # "Though nearly 60% of vaccinated parents intended to get their children a
-# booster even without the treatment, providing the additional information ...
-# increased parents' intentions to boost their vaccinated children by 16.2
-# points (beta = 0.162, SE = 0.032)."
+# booster even without the treatment, providing the additional information about
+# the expected upcoming Winter surge increased parents' intentions to boost
+# their vaccinated children by 16.2 points (beta = 0.162, SE = 0.032)."
 claim(
   "results_information_i_4_control_group_parents_intending_to_boost_their_children",
   sprintf("I-4 covariate-adjusted control group mean: %.0f%% (article: nearly 60%%)",
@@ -431,16 +596,6 @@ claim(
   sprintf("I-4 average treatment effect: %.1f points, standard error %.3f (article: 16.2 points, SE 0.032)",
           100 * named(guidance, "I-4 average treatment effect"),
           named(guidance, "I-4 standard error"))
-)
-
-# "Full distributional comparisons with associated chi-squared tests show
-# differences between treatment and control groups as well (see Appendix Fig.
-# S47)." (Note e)
-claim(
-  "appendix_figure_s47_g_1_chi_squared_statistic_on_the_three_category_outcome",
-  sprintf("G-1 chi-squared statistic on the three-category outcome: %.2f, p = %.2g (Appendix Figure S47: 111.78)",
-          named(guidance, "G-1 chi-squared statistic on the three-category outcome"),
-          named(guidance, "G-1 chi-squared p-value"))
 )
 
 # Main-text floats ----
@@ -493,7 +648,24 @@ print(
 cat("\nFigure 5: adult booster information, estimates and standard errors as the panel prints them (percentage points)\n")
 print(figure_5 |> select(subgroup, estimator, entry), n = nrow(figure_5))
 
-# Appendix floats ----
+# Appendix ----
+
+# "Full distributional comparisons with associated chi-squared tests show
+# differences between treatment and control groups as well (see Appendix Fig.
+# S47)." (Note e)
+claim(
+  "appendix_figure_s47_g_1_chi_squared_statistic_on_the_three_category_outcome",
+  sprintf("G-1 chi-squared statistic on the three-category outcome: %.2f, p = %.2g (Appendix Figure S47: 111.78)",
+          named(guidance, "G-1 chi-squared statistic on the three-category outcome"),
+          named(guidance, "G-1 chi-squared p-value"))
+)
+
+cat("\nAppendix Figures S1 to S22: one two-panel figure per experimental contrast. Each prints these estimates and standard errors in percentage points, and they appear in no table.\n")
+print(
+  section_c |>
+    select(float, contrast, subgroup, estimator, entry),
+  n = nrow(section_c)
+)
 
 cat("\nAppendix Table S1: endorsement experiment 1 (E-1)\n")
 print(
