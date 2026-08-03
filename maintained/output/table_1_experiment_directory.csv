@@ -1,0 +1,12 @@
+experiment,date_fielded,sample_definition,dataset,n_deposited,n_distinct_respondents
+E-1: Vaccine endorsement 1,10/2020,All respondents,w3_endorse,14906,14906
+E-2: Vaccine endorsement 2,04/2021,Unvaccinated,w5_endorse,7197,7197
+G-1: CDC mask guidance 1,06/2021,All respondents,w6_cdcmask,30751,30751
+G-2: Vaccine mandate vignettes,06/2021,Unvaccinated,w6_vignette,10275,10275
+G-3: CDC mask guidance 2,09/2021,All respondents,w7_cdcmask,32943,32943
+I-1: Contagiousness conversation,09/2021,Unvaccinated,w7_contagiousness,8661,8661
+I-2: Delta variant conversation,09/2021,Unvaccinated,w7_doctordelta,8692,8692
+I-3: Bivalent booster information,10/2022,Unboosted,w8_adult_booster,10677,10677
+I-4: Bivalent booster information (children),10/2022,Children unboosted,w8_child_booster,1626,1626
+I-5: Holiday surge information (children),10/2022,Children unvaccinated,w8_child_vaccine,1711,1711
+Any of the ten experiments,,,,96567,96567

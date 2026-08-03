@@ -1,0 +1,29 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Mandate experiment (G-2), friend and solo versions pooled},
+note{}={* p \num{< 0.05}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{10}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{13}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Concert & Restaurant & Team & Trip \\
+(Intercept) & 0.188* & 0.154* & 0.179* & 0.228* \\
+& (0.015) & (0.015) & (0.015) & (0.018) \\
+Treatment & 0.001 & 0.060* & 0.054* & 0.072* \\
+& (0.021) & (0.022) & (0.022) & (0.025) \\
+Party ID (7-Point) & -0.053* & -0.033* & -0.032* & -0.027* \\
+& (0.010) & (0.010) & (0.008) & (0.011) \\
+Treatment x Party ID & 0.013 & 0.006 & -0.033* & -0.008 \\
+& (0.012) & (0.014) & (0.012) & (0.015) \\
+Num.Obs. & 2553 & 2684 & 2458 & 2580 \\
+R2 & 0.215 & 0.153 & 0.174 & 0.129 \\
+Covariates & Yes & Yes & Yes & Yes \\
+\end{talltblr}
+\end{table}

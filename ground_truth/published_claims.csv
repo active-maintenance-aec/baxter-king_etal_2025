@@ -1,0 +1,506 @@
+claim_id,location,claim_type,value_paper
+table_1_e_1_vaccine_endorsement_1_n,Table 1,pipeline,"14,946"
+table_1_e_2_vaccine_endorsement_2_n,Table 1,pipeline,"7,249"
+table_1_g_1_cdc_mask_guidance_1_n,Table 1,pipeline,"30,857"
+table_1_g_2_vaccine_mandate_vignettes_n,Table 1,pipeline,"10,298"
+table_1_g_3_cdc_mask_guidance_2_n,Table 1,pipeline,"33,088"
+table_1_i_1_contagiousness_conversation_n,Table 1,pipeline,"8,710"
+table_1_i_2_delta_variant_conversation_n,Table 1,pipeline,"8,710"
+table_1_i_3_bivalent_booster_information_n,Table 1,pipeline,"10,700"
+table_1_i_4_bivalent_booster_information_children_n,Table 1,pipeline,"1,628"
+table_1_i_5_holiday_surge_information_children_n,Table 1,pipeline,"1,715"
+abstract_and_introduction_survey_respondents_across_the_ten_experiments,Abstract,pipeline,"85,191"
+table_2_g_1_intercept_estimate,Table 2,pipeline,0.237
+table_2_g_1_intercept_standard_error,Table 2,pipeline,0.005
+table_2_g_1_treatment_estimate,Table 2,pipeline,0.060
+table_2_g_1_treatment_standard_error,Table 2,pipeline,0.007
+table_2_g_1_party_id_7_point_estimate,Table 2,pipeline,0.003
+table_2_g_1_party_id_7_point_standard_error,Table 2,pipeline,0.002
+table_2_g_1_treatment_x_party_id_estimate,Table 2,pipeline,-0.001
+table_2_g_1_treatment_x_party_id_standard_error,Table 2,pipeline,0.003
+table_2_g_3_intercept_estimate,Table 2,pipeline,0.680
+table_2_g_3_intercept_standard_error,Table 2,pipeline,0.005
+table_2_g_3_treatment_estimate,Table 2,pipeline,0.015
+table_2_g_3_treatment_standard_error,Table 2,pipeline,0.007
+table_2_g_3_party_id_7_point_estimate,Table 2,pipeline,-0.053
+table_2_g_3_party_id_7_point_standard_error,Table 2,pipeline,0.002
+table_2_g_3_treatment_x_party_id_estimate,Table 2,pipeline,0.000
+table_2_g_3_treatment_x_party_id_standard_error,Table 2,pipeline,0.003
+table_2_g_1_num_obs,Table 2,pipeline,"30,751"
+table_2_g_1_r2,Table 2,pipeline,0.073
+table_2_g_3_num_obs,Table 2,pipeline,"32,933"
+table_2_g_3_r2,Table 2,pipeline,0.153
+table_3_i_1_intercept_estimate,Table 3,pipeline,0.197
+table_3_i_1_intercept_standard_error,Table 3,pipeline,0.009
+table_3_i_1_treatment_estimate,Table 3,pipeline,-0.010
+table_3_i_1_treatment_standard_error,Table 3,pipeline,0.013
+table_3_i_1_party_id_7_point_estimate,Table 3,pipeline,-0.032
+table_3_i_1_party_id_7_point_standard_error,Table 3,pipeline,0.006
+table_3_i_1_treatment_x_party_id_estimate,Table 3,pipeline,0.008
+table_3_i_1_treatment_x_party_id_standard_error,Table 3,pipeline,0.008
+table_3_i_2_intercept_estimate,Table 3,pipeline,0.277
+table_3_i_2_intercept_standard_error,Table 3,pipeline,0.010
+table_3_i_2_treatment_estimate,Table 3,pipeline,0.016
+table_3_i_2_treatment_standard_error,Table 3,pipeline,0.014
+table_3_i_2_party_id_7_point_estimate,Table 3,pipeline,-0.045
+table_3_i_2_party_id_7_point_standard_error,Table 3,pipeline,0.006
+table_3_i_2_treatment_x_party_id_estimate,Table 3,pipeline,0.009
+table_3_i_2_treatment_x_party_id_standard_error,Table 3,pipeline,0.009
+table_3_i_3_intercept_estimate,Table 3,pipeline,0.556
+table_3_i_3_intercept_standard_error,Table 3,pipeline,0.010
+table_3_i_3_treatment_estimate,Table 3,pipeline,0.083
+table_3_i_3_treatment_standard_error,Table 3,pipeline,0.013
+table_3_i_3_party_id_7_point_estimate,Table 3,pipeline,-0.061
+table_3_i_3_party_id_7_point_standard_error,Table 3,pipeline,0.005
+table_3_i_3_treatment_x_party_id_estimate,Table 3,pipeline,0.000
+table_3_i_3_treatment_x_party_id_standard_error,Table 3,pipeline,0.006
+table_3_i_4_intercept_estimate,Table 3,pipeline,0.598
+table_3_i_4_intercept_standard_error,Table 3,pipeline,0.024
+table_3_i_4_treatment_estimate,Table 3,pipeline,0.162
+table_3_i_4_treatment_standard_error,Table 3,pipeline,0.032
+table_3_i_4_party_id_7_point_estimate,Table 3,pipeline,-0.058
+table_3_i_4_party_id_7_point_standard_error,Table 3,pipeline,0.013
+table_3_i_4_treatment_x_party_id_estimate,Table 3,pipeline,0.019
+table_3_i_4_treatment_x_party_id_standard_error,Table 3,pipeline,0.017
+table_3_i_5_intercept_estimate,Table 3,pipeline,0.391
+table_3_i_5_intercept_standard_error,Table 3,pipeline,0.024
+table_3_i_5_treatment_estimate,Table 3,pipeline,0.057
+table_3_i_5_treatment_standard_error,Table 3,pipeline,0.034
+table_3_i_5_party_id_7_point_estimate,Table 3,pipeline,-0.056
+table_3_i_5_party_id_7_point_standard_error,Table 3,pipeline,0.011
+table_3_i_5_treatment_x_party_id_estimate,Table 3,pipeline,-0.001
+table_3_i_5_treatment_x_party_id_standard_error,Table 3,pipeline,0.017
+table_3_i_1_num_obs,Table 3,pipeline,"8,659"
+table_3_i_1_r2,Table 3,pipeline,0.165
+table_3_i_2_num_obs,Table 3,pipeline,"8,690"
+table_3_i_2_r2,Table 3,pipeline,0.207
+table_3_i_3_num_obs,Table 3,pipeline,"10,677"
+table_3_i_3_r2,Table 3,pipeline,0.197
+table_3_i_4_num_obs,Table 3,pipeline,"1,626"
+table_3_i_4_r2,Table 3,pipeline,0.198
+table_3_i_5_num_obs,Table 3,pipeline,"1,711"
+table_3_i_5_r2,Table 3,pipeline,0.146
+appendix_table_s1_trump_intercept_estimate,Appendix Table S1,pipeline,0.653
+appendix_table_s1_trump_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_trump_treatment_estimate,Appendix Table S1,pipeline,-0.092
+appendix_table_s1_trump_treatment_standard_error,Appendix Table S1,pipeline,0.026
+appendix_table_s1_trump_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_trump_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_trump_treatment_x_party_id_estimate,Appendix Table S1,pipeline,0.069
+appendix_table_s1_trump_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.011
+appendix_table_s1_fauci_intercept_estimate,Appendix Table S1,pipeline,0.650
+appendix_table_s1_fauci_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_fauci_treatment_estimate,Appendix Table S1,pipeline,0.055
+appendix_table_s1_fauci_treatment_standard_error,Appendix Table S1,pipeline,0.024
+appendix_table_s1_fauci_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_fauci_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_fauci_treatment_x_party_id_estimate,Appendix Table S1,pipeline,-0.013
+appendix_table_s1_fauci_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.011
+appendix_table_s1_trump_and_fauci_intercept_estimate,Appendix Table S1,pipeline,0.652
+appendix_table_s1_trump_and_fauci_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_trump_and_fauci_treatment_estimate,Appendix Table S1,pipeline,-0.035
+appendix_table_s1_trump_and_fauci_treatment_standard_error,Appendix Table S1,pipeline,0.025
+appendix_table_s1_trump_and_fauci_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_trump_and_fauci_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_trump_and_fauci_treatment_x_party_id_estimate,Appendix Table S1,pipeline,0.022
+appendix_table_s1_trump_and_fauci_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.012
+appendix_table_s1_spiritual_leader_intercept_estimate,Appendix Table S1,pipeline,0.652
+appendix_table_s1_spiritual_leader_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_spiritual_leader_treatment_estimate,Appendix Table S1,pipeline,-0.047
+appendix_table_s1_spiritual_leader_treatment_standard_error,Appendix Table S1,pipeline,0.025
+appendix_table_s1_spiritual_leader_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_spiritual_leader_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_spiritual_leader_treatment_x_party_id_estimate,Appendix Table S1,pipeline,0.022
+appendix_table_s1_spiritual_leader_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.011
+appendix_table_s1_health_insurance_intercept_estimate,Appendix Table S1,pipeline,0.650
+appendix_table_s1_health_insurance_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_health_insurance_treatment_estimate,Appendix Table S1,pipeline,0.033
+appendix_table_s1_health_insurance_treatment_standard_error,Appendix Table S1,pipeline,0.025
+appendix_table_s1_health_insurance_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_health_insurance_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_health_insurance_treatment_x_party_id_estimate,Appendix Table S1,pipeline,0.008
+appendix_table_s1_health_insurance_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.011
+appendix_table_s1_pharmacy_intercept_estimate,Appendix Table S1,pipeline,0.645
+appendix_table_s1_pharmacy_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_pharmacy_treatment_estimate,Appendix Table S1,pipeline,0.039
+appendix_table_s1_pharmacy_treatment_standard_error,Appendix Table S1,pipeline,0.025
+appendix_table_s1_pharmacy_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_pharmacy_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_pharmacy_treatment_x_party_id_estimate,Appendix Table S1,pipeline,-0.006
+appendix_table_s1_pharmacy_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.011
+appendix_table_s1_personal_physician_intercept_estimate,Appendix Table S1,pipeline,0.649
+appendix_table_s1_personal_physician_intercept_standard_error,Appendix Table S1,pipeline,0.018
+appendix_table_s1_personal_physician_treatment_estimate,Appendix Table S1,pipeline,0.024
+appendix_table_s1_personal_physician_treatment_standard_error,Appendix Table S1,pipeline,0.025
+appendix_table_s1_personal_physician_party_id_7_point_estimate,Appendix Table S1,pipeline,-0.008
+appendix_table_s1_personal_physician_party_id_7_point_standard_error,Appendix Table S1,pipeline,0.008
+appendix_table_s1_personal_physician_treatment_x_party_id_estimate,Appendix Table S1,pipeline,0.003
+appendix_table_s1_personal_physician_treatment_x_party_id_standard_error,Appendix Table S1,pipeline,0.011
+appendix_table_s1_trump_num_obs,Appendix Table S1,pipeline,3680
+appendix_table_s1_trump_r2,Appendix Table S1,pipeline,0.179
+appendix_table_s1_fauci_num_obs,Appendix Table S1,pipeline,3665
+appendix_table_s1_fauci_r2,Appendix Table S1,pipeline,0.202
+appendix_table_s1_trump_and_fauci_num_obs,Appendix Table S1,pipeline,3725
+appendix_table_s1_trump_and_fauci_r2,Appendix Table S1,pipeline,0.176
+appendix_table_s1_spiritual_leader_num_obs,Appendix Table S1,pipeline,3678
+appendix_table_s1_spiritual_leader_r2,Appendix Table S1,pipeline,0.166
+appendix_table_s1_health_insurance_num_obs,Appendix Table S1,pipeline,3733
+appendix_table_s1_health_insurance_r2,Appendix Table S1,pipeline,0.170
+appendix_table_s1_pharmacy_num_obs,Appendix Table S1,pipeline,3735
+appendix_table_s1_pharmacy_r2,Appendix Table S1,pipeline,0.170
+appendix_table_s1_personal_physician_num_obs,Appendix Table S1,pipeline,3766
+appendix_table_s1_personal_physician_r2,Appendix Table S1,pipeline,0.163
+appendix_table_s2_trump_intercept_estimate,Appendix Table S2,pipeline,0.636
+appendix_table_s2_trump_intercept_standard_error,Appendix Table S2,pipeline,0.025
+appendix_table_s2_trump_treatment_estimate,Appendix Table S2,pipeline,-0.047
+appendix_table_s2_trump_treatment_standard_error,Appendix Table S2,pipeline,0.036
+appendix_table_s2_trump_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_trump_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_trump_treatment_x_party_id_estimate,Appendix Table S2,pipeline,0.033
+appendix_table_s2_trump_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.018
+appendix_table_s2_fauci_intercept_estimate,Appendix Table S2,pipeline,0.629
+appendix_table_s2_fauci_intercept_standard_error,Appendix Table S2,pipeline,0.026
+appendix_table_s2_fauci_treatment_estimate,Appendix Table S2,pipeline,-0.032
+appendix_table_s2_fauci_treatment_standard_error,Appendix Table S2,pipeline,0.035
+appendix_table_s2_fauci_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_fauci_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_fauci_treatment_x_party_id_estimate,Appendix Table S2,pipeline,0.014
+appendix_table_s2_fauci_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.018
+appendix_table_s2_trump_and_fauci_intercept_estimate,Appendix Table S2,pipeline,0.640
+appendix_table_s2_trump_and_fauci_intercept_standard_error,Appendix Table S2,pipeline,0.025
+appendix_table_s2_trump_and_fauci_treatment_estimate,Appendix Table S2,pipeline,-0.064
+appendix_table_s2_trump_and_fauci_treatment_standard_error,Appendix Table S2,pipeline,0.036
+appendix_table_s2_trump_and_fauci_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_trump_and_fauci_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_trump_and_fauci_treatment_x_party_id_estimate,Appendix Table S2,pipeline,0.001
+appendix_table_s2_trump_and_fauci_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.017
+appendix_table_s2_obama_intercept_estimate,Appendix Table S2,pipeline,0.627
+appendix_table_s2_obama_intercept_standard_error,Appendix Table S2,pipeline,0.026
+appendix_table_s2_obama_treatment_estimate,Appendix Table S2,pipeline,-0.109
+appendix_table_s2_obama_treatment_standard_error,Appendix Table S2,pipeline,0.035
+appendix_table_s2_obama_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_obama_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_obama_treatment_x_party_id_estimate,Appendix Table S2,pipeline,0.001
+appendix_table_s2_obama_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.017
+appendix_table_s2_biden_intercept_estimate,Appendix Table S2,pipeline,0.630
+appendix_table_s2_biden_intercept_standard_error,Appendix Table S2,pipeline,0.026
+appendix_table_s2_biden_treatment_estimate,Appendix Table S2,pipeline,-0.097
+appendix_table_s2_biden_treatment_standard_error,Appendix Table S2,pipeline,0.036
+appendix_table_s2_biden_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_biden_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_biden_treatment_x_party_id_estimate,Appendix Table S2,pipeline,-0.019
+appendix_table_s2_biden_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.018
+appendix_table_s2_biden_and_fauci_intercept_estimate,Appendix Table S2,pipeline,0.624
+appendix_table_s2_biden_and_fauci_intercept_standard_error,Appendix Table S2,pipeline,0.026
+appendix_table_s2_biden_and_fauci_treatment_estimate,Appendix Table S2,pipeline,-0.056
+appendix_table_s2_biden_and_fauci_treatment_standard_error,Appendix Table S2,pipeline,0.036
+appendix_table_s2_biden_and_fauci_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_biden_and_fauci_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_biden_and_fauci_treatment_x_party_id_estimate,Appendix Table S2,pipeline,-0.006
+appendix_table_s2_biden_and_fauci_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.018
+appendix_table_s2_jorge_ramos_intercept_estimate,Appendix Table S2,pipeline,0.633
+appendix_table_s2_jorge_ramos_intercept_standard_error,Appendix Table S2,pipeline,0.025
+appendix_table_s2_jorge_ramos_treatment_estimate,Appendix Table S2,pipeline,-0.055
+appendix_table_s2_jorge_ramos_treatment_standard_error,Appendix Table S2,pipeline,0.036
+appendix_table_s2_jorge_ramos_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_jorge_ramos_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_jorge_ramos_treatment_x_party_id_estimate,Appendix Table S2,pipeline,-0.012
+appendix_table_s2_jorge_ramos_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.018
+appendix_table_s2_lebron_james_intercept_estimate,Appendix Table S2,pipeline,0.623
+appendix_table_s2_lebron_james_intercept_standard_error,Appendix Table S2,pipeline,0.026
+appendix_table_s2_lebron_james_treatment_estimate,Appendix Table S2,pipeline,-0.030
+appendix_table_s2_lebron_james_treatment_standard_error,Appendix Table S2,pipeline,0.035
+appendix_table_s2_lebron_james_party_id_7_point_estimate,Appendix Table S2,pipeline,-0.061
+appendix_table_s2_lebron_james_party_id_7_point_standard_error,Appendix Table S2,pipeline,0.012
+appendix_table_s2_lebron_james_treatment_x_party_id_estimate,Appendix Table S2,pipeline,0.006
+appendix_table_s2_lebron_james_treatment_x_party_id_standard_error,Appendix Table S2,pipeline,0.017
+appendix_table_s2_trump_num_obs,Appendix Table S2,pipeline,1604
+appendix_table_s2_trump_r2,Appendix Table S2,pipeline,0.165
+appendix_table_s2_fauci_num_obs,Appendix Table S2,pipeline,1596
+appendix_table_s2_fauci_r2,Appendix Table S2,pipeline,0.230
+appendix_table_s2_trump_and_fauci_num_obs,Appendix Table S2,pipeline,1543
+appendix_table_s2_trump_and_fauci_r2,Appendix Table S2,pipeline,0.228
+appendix_table_s2_obama_num_obs,Appendix Table S2,pipeline,1613
+appendix_table_s2_obama_r2,Appendix Table S2,pipeline,0.244
+appendix_table_s2_biden_num_obs,Appendix Table S2,pipeline,1563
+appendix_table_s2_biden_r2,Appendix Table S2,pipeline,0.233
+appendix_table_s2_biden_and_fauci_num_obs,Appendix Table S2,pipeline,1567
+appendix_table_s2_biden_and_fauci_r2,Appendix Table S2,pipeline,0.229
+appendix_table_s2_jorge_ramos_num_obs,Appendix Table S2,pipeline,1586
+appendix_table_s2_jorge_ramos_r2,Appendix Table S2,pipeline,0.263
+appendix_table_s2_lebron_james_num_obs,Appendix Table S2,pipeline,1634
+appendix_table_s2_lebron_james_r2,Appendix Table S2,pipeline,0.243
+appendix_table_s3_concert_f_intercept_estimate,Appendix Table S3,pipeline,0.204
+appendix_table_s3_concert_f_intercept_standard_error,Appendix Table S3,pipeline,0.023
+appendix_table_s3_concert_f_treatment_estimate,Appendix Table S3,pipeline,0.006
+appendix_table_s3_concert_f_treatment_standard_error,Appendix Table S3,pipeline,0.030
+appendix_table_s3_concert_f_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.052
+appendix_table_s3_concert_f_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.015
+appendix_table_s3_concert_f_treatment_x_party_id_estimate,Appendix Table S3,pipeline,0.008
+appendix_table_s3_concert_f_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.019
+appendix_table_s3_restaurant_f_intercept_estimate,Appendix Table S3,pipeline,0.165
+appendix_table_s3_restaurant_f_intercept_standard_error,Appendix Table S3,pipeline,0.022
+appendix_table_s3_restaurant_f_treatment_estimate,Appendix Table S3,pipeline,0.056
+appendix_table_s3_restaurant_f_treatment_standard_error,Appendix Table S3,pipeline,0.032
+appendix_table_s3_restaurant_f_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.020
+appendix_table_s3_restaurant_f_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.013
+appendix_table_s3_restaurant_f_treatment_x_party_id_estimate,Appendix Table S3,pipeline,-0.022
+appendix_table_s3_restaurant_f_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.019
+appendix_table_s3_team_f_intercept_estimate,Appendix Table S3,pipeline,0.201
+appendix_table_s3_team_f_intercept_standard_error,Appendix Table S3,pipeline,0.022
+appendix_table_s3_team_f_treatment_estimate,Appendix Table S3,pipeline,0.059
+appendix_table_s3_team_f_treatment_standard_error,Appendix Table S3,pipeline,0.032
+appendix_table_s3_team_f_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.036
+appendix_table_s3_team_f_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.011
+appendix_table_s3_team_f_treatment_x_party_id_estimate,Appendix Table S3,pipeline,-0.042
+appendix_table_s3_team_f_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.017
+appendix_table_s3_trip_f_intercept_estimate,Appendix Table S3,pipeline,0.238
+appendix_table_s3_trip_f_intercept_standard_error,Appendix Table S3,pipeline,0.026
+appendix_table_s3_trip_f_treatment_estimate,Appendix Table S3,pipeline,0.074
+appendix_table_s3_trip_f_treatment_standard_error,Appendix Table S3,pipeline,0.036
+appendix_table_s3_trip_f_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.018
+appendix_table_s3_trip_f_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.015
+appendix_table_s3_trip_f_treatment_x_party_id_estimate,Appendix Table S3,pipeline,-0.007
+appendix_table_s3_trip_f_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.021
+appendix_table_s3_concert_s_intercept_estimate,Appendix Table S3,pipeline,0.172
+appendix_table_s3_concert_s_intercept_standard_error,Appendix Table S3,pipeline,0.020
+appendix_table_s3_concert_s_treatment_estimate,Appendix Table S3,pipeline,-0.007
+appendix_table_s3_concert_s_treatment_standard_error,Appendix Table S3,pipeline,0.027
+appendix_table_s3_concert_s_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.052
+appendix_table_s3_concert_s_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.012
+appendix_table_s3_concert_s_treatment_x_party_id_estimate,Appendix Table S3,pipeline,0.014
+appendix_table_s3_concert_s_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.015
+appendix_table_s3_restaurant_s_intercept_estimate,Appendix Table S3,pipeline,0.142
+appendix_table_s3_restaurant_s_intercept_standard_error,Appendix Table S3,pipeline,0.019
+appendix_table_s3_restaurant_s_treatment_estimate,Appendix Table S3,pipeline,0.071
+appendix_table_s3_restaurant_s_treatment_standard_error,Appendix Table S3,pipeline,0.030
+appendix_table_s3_restaurant_s_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.046
+appendix_table_s3_restaurant_s_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.013
+appendix_table_s3_restaurant_s_treatment_x_party_id_estimate,Appendix Table S3,pipeline,0.039
+appendix_table_s3_restaurant_s_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.019
+appendix_table_s3_team_s_intercept_estimate,Appendix Table S3,pipeline,0.160
+appendix_table_s3_team_s_intercept_standard_error,Appendix Table S3,pipeline,0.018
+appendix_table_s3_team_s_treatment_estimate,Appendix Table S3,pipeline,0.040
+appendix_table_s3_team_s_treatment_standard_error,Appendix Table S3,pipeline,0.027
+appendix_table_s3_team_s_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.038
+appendix_table_s3_team_s_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.010
+appendix_table_s3_team_s_treatment_x_party_id_estimate,Appendix Table S3,pipeline,-0.008
+appendix_table_s3_team_s_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.016
+appendix_table_s3_trip_s_intercept_estimate,Appendix Table S3,pipeline,0.221
+appendix_table_s3_trip_s_intercept_standard_error,Appendix Table S3,pipeline,0.023
+appendix_table_s3_trip_s_treatment_estimate,Appendix Table S3,pipeline,0.058
+appendix_table_s3_trip_s_treatment_standard_error,Appendix Table S3,pipeline,0.034
+appendix_table_s3_trip_s_party_id_7_point_estimate,Appendix Table S3,pipeline,-0.035
+appendix_table_s3_trip_s_party_id_7_point_standard_error,Appendix Table S3,pipeline,0.013
+appendix_table_s3_trip_s_treatment_x_party_id_estimate,Appendix Table S3,pipeline,-0.010
+appendix_table_s3_trip_s_treatment_x_party_id_standard_error,Appendix Table S3,pipeline,0.020
+appendix_table_s3_concert_f_num_obs,Appendix Table S3,pipeline,1270
+appendix_table_s3_concert_f_r2,Appendix Table S3,pipeline,0.244
+appendix_table_s3_restaurant_f_num_obs,Appendix Table S3,pipeline,1322
+appendix_table_s3_restaurant_f_r2,Appendix Table S3,pipeline,0.173
+appendix_table_s3_team_f_num_obs,Appendix Table S3,pipeline,1234
+appendix_table_s3_team_f_r2,Appendix Table S3,pipeline,0.199
+appendix_table_s3_trip_f_num_obs,Appendix Table S3,pipeline,1316
+appendix_table_s3_trip_f_r2,Appendix Table S3,pipeline,0.172
+appendix_table_s3_concert_s_num_obs,Appendix Table S3,pipeline,1283
+appendix_table_s3_concert_s_r2,Appendix Table S3,pipeline,0.229
+appendix_table_s3_restaurant_s_num_obs,Appendix Table S3,pipeline,1362
+appendix_table_s3_restaurant_s_r2,Appendix Table S3,pipeline,0.194
+appendix_table_s3_team_s_num_obs,Appendix Table S3,pipeline,1224
+appendix_table_s3_team_s_r2,Appendix Table S3,pipeline,0.213
+appendix_table_s3_trip_s_num_obs,Appendix Table S3,pipeline,1264
+appendix_table_s3_trip_s_r2,Appendix Table S3,pipeline,0.151
+appendix_table_s4_concert_intercept_estimate,Appendix Table S4,pipeline,0.188
+appendix_table_s4_concert_intercept_standard_error,Appendix Table S4,pipeline,0.015
+appendix_table_s4_concert_treatment_estimate,Appendix Table S4,pipeline,0.001
+appendix_table_s4_concert_treatment_standard_error,Appendix Table S4,pipeline,0.021
+appendix_table_s4_concert_party_id_7_point_estimate,Appendix Table S4,pipeline,-0.053
+appendix_table_s4_concert_party_id_7_point_standard_error,Appendix Table S4,pipeline,0.010
+appendix_table_s4_concert_treatment_x_party_id_estimate,Appendix Table S4,pipeline,0.013
+appendix_table_s4_concert_treatment_x_party_id_standard_error,Appendix Table S4,pipeline,0.012
+appendix_table_s4_restaurant_intercept_estimate,Appendix Table S4,pipeline,0.154
+appendix_table_s4_restaurant_intercept_standard_error,Appendix Table S4,pipeline,0.015
+appendix_table_s4_restaurant_treatment_estimate,Appendix Table S4,pipeline,0.060
+appendix_table_s4_restaurant_treatment_standard_error,Appendix Table S4,pipeline,0.022
+appendix_table_s4_restaurant_party_id_7_point_estimate,Appendix Table S4,pipeline,-0.033
+appendix_table_s4_restaurant_party_id_7_point_standard_error,Appendix Table S4,pipeline,0.010
+appendix_table_s4_restaurant_treatment_x_party_id_estimate,Appendix Table S4,pipeline,0.006
+appendix_table_s4_restaurant_treatment_x_party_id_standard_error,Appendix Table S4,pipeline,0.014
+appendix_table_s4_team_intercept_estimate,Appendix Table S4,pipeline,0.179
+appendix_table_s4_team_intercept_standard_error,Appendix Table S4,pipeline,0.015
+appendix_table_s4_team_treatment_estimate,Appendix Table S4,pipeline,0.054
+appendix_table_s4_team_treatment_standard_error,Appendix Table S4,pipeline,0.022
+appendix_table_s4_team_party_id_7_point_estimate,Appendix Table S4,pipeline,-0.032
+appendix_table_s4_team_party_id_7_point_standard_error,Appendix Table S4,pipeline,0.008
+appendix_table_s4_team_treatment_x_party_id_estimate,Appendix Table S4,pipeline,-0.033
+appendix_table_s4_team_treatment_x_party_id_standard_error,Appendix Table S4,pipeline,0.012
+appendix_table_s4_trip_intercept_estimate,Appendix Table S4,pipeline,0.228
+appendix_table_s4_trip_intercept_standard_error,Appendix Table S4,pipeline,0.018
+appendix_table_s4_trip_treatment_estimate,Appendix Table S4,pipeline,0.072
+appendix_table_s4_trip_treatment_standard_error,Appendix Table S4,pipeline,0.025
+appendix_table_s4_trip_party_id_7_point_estimate,Appendix Table S4,pipeline,-0.027
+appendix_table_s4_trip_party_id_7_point_standard_error,Appendix Table S4,pipeline,0.011
+appendix_table_s4_trip_treatment_x_party_id_estimate,Appendix Table S4,pipeline,-0.008
+appendix_table_s4_trip_treatment_x_party_id_standard_error,Appendix Table S4,pipeline,0.015
+appendix_table_s4_concert_num_obs,Appendix Table S4,pipeline,2553
+appendix_table_s4_concert_r2,Appendix Table S4,pipeline,0.215
+appendix_table_s4_restaurant_num_obs,Appendix Table S4,pipeline,2684
+appendix_table_s4_restaurant_r2,Appendix Table S4,pipeline,0.153
+appendix_table_s4_team_num_obs,Appendix Table S4,pipeline,2458
+appendix_table_s4_team_r2,Appendix Table S4,pipeline,0.174
+appendix_table_s4_trip_num_obs,Appendix Table S4,pipeline,2580
+appendix_table_s4_trip_r2,Appendix Table S4,pipeline,0.129
+figure_1_full_sample_dim_estimate_pp,Figure 1,pipeline,-9.5
+figure_1_full_sample_dim_standard_error_pp,Figure 1,pipeline,2.8
+figure_1_full_sample_ols_estimate_pp,Figure 1,pipeline,-9.2
+figure_1_full_sample_ols_standard_error_pp,Figure 1,pipeline,2.6
+figure_1_strong_republican_dim_estimate_pp,Figure 1,pipeline,16.2
+figure_1_strong_republican_dim_standard_error_pp,Figure 1,pipeline,5.3
+figure_1_strong_republican_ols_estimate_pp,Figure 1,pipeline,14.7
+figure_1_strong_republican_ols_standard_error_pp,Figure 1,pipeline,4.4
+figure_1_weak_republican_dim_estimate_pp,Figure 1,pipeline,3.0
+figure_1_weak_republican_dim_standard_error_pp,Figure 1,pipeline,7.7
+figure_1_weak_republican_ols_estimate_pp,Figure 1,pipeline,5.8
+figure_1_weak_republican_ols_standard_error_pp,Figure 1,pipeline,6.3
+figure_1_lean_republican_dim_estimate_pp,Figure 1,pipeline,1.4
+figure_1_lean_republican_dim_standard_error_pp,Figure 1,pipeline,11.2
+figure_1_lean_republican_ols_estimate_pp,Figure 1,pipeline,-10.6
+figure_1_lean_republican_ols_standard_error_pp,Figure 1,pipeline,10.1
+figure_1_independent_dim_estimate_pp,Figure 1,pipeline,-5.2
+figure_1_independent_dim_standard_error_pp,Figure 1,pipeline,7.2
+figure_1_independent_ols_estimate_pp,Figure 1,pipeline,-1.3
+figure_1_independent_ols_standard_error_pp,Figure 1,pipeline,6.1
+figure_1_lean_democrat_dim_estimate_pp,Figure 1,pipeline,-19.6
+figure_1_lean_democrat_dim_standard_error_pp,Figure 1,pipeline,9.1
+figure_1_lean_democrat_ols_estimate_pp,Figure 1,pipeline,-18.5
+figure_1_lean_democrat_ols_standard_error_pp,Figure 1,pipeline,7.4
+figure_1_weak_democrat_dim_estimate_pp,Figure 1,pipeline,-31.5
+figure_1_weak_democrat_dim_standard_error_pp,Figure 1,pipeline,8.0
+figure_1_weak_democrat_ols_estimate_pp,Figure 1,pipeline,-34.0
+figure_1_weak_democrat_ols_standard_error_pp,Figure 1,pipeline,6.6
+figure_1_strong_democrat_dim_estimate_pp,Figure 1,pipeline,-29.4
+figure_1_strong_democrat_dim_standard_error_pp,Figure 1,pipeline,5.6
+figure_1_strong_democrat_ols_estimate_pp,Figure 1,pipeline,-27.2
+figure_1_strong_democrat_ols_standard_error_pp,Figure 1,pipeline,5.0
+figure_3_full_sample_dim_estimate_pp,Figure 3,pipeline,6.0
+figure_3_full_sample_dim_standard_error_pp,Figure 3,pipeline,0.7
+figure_3_full_sample_ols_estimate_pp,Figure 3,pipeline,6.0
+figure_3_full_sample_ols_standard_error_pp,Figure 3,pipeline,0.7
+figure_3_strong_republican_dim_estimate_pp,Figure 3,pipeline,4.6
+figure_3_strong_republican_dim_standard_error_pp,Figure 3,pipeline,1.7
+figure_3_strong_republican_ols_estimate_pp,Figure 3,pipeline,4.9
+figure_3_strong_republican_ols_standard_error_pp,Figure 3,pipeline,1.6
+figure_3_weak_republican_dim_estimate_pp,Figure 3,pipeline,4.5
+figure_3_weak_republican_dim_standard_error_pp,Figure 3,pipeline,2.3
+figure_3_weak_republican_ols_estimate_pp,Figure 3,pipeline,5.2
+figure_3_weak_republican_ols_standard_error_pp,Figure 3,pipeline,2.2
+figure_3_lean_republican_dim_estimate_pp,Figure 3,pipeline,12.4
+figure_3_lean_republican_dim_standard_error_pp,Figure 3,pipeline,2.7
+figure_3_lean_republican_ols_estimate_pp,Figure 3,pipeline,11.5
+figure_3_lean_republican_ols_standard_error_pp,Figure 3,pipeline,2.6
+figure_3_independent_dim_estimate_pp,Figure 3,pipeline,6.6
+figure_3_independent_dim_standard_error_pp,Figure 3,pipeline,1.7
+figure_3_independent_ols_estimate_pp,Figure 3,pipeline,6.6
+figure_3_independent_ols_standard_error_pp,Figure 3,pipeline,1.7
+figure_3_lean_democrat_dim_estimate_pp,Figure 3,pipeline,9.4
+figure_3_lean_democrat_dim_standard_error_pp,Figure 3,pipeline,2.7
+figure_3_lean_democrat_ols_estimate_pp,Figure 3,pipeline,8.8
+figure_3_lean_democrat_ols_standard_error_pp,Figure 3,pipeline,2.7
+figure_3_weak_democrat_dim_estimate_pp,Figure 3,pipeline,2.9
+figure_3_weak_democrat_dim_standard_error_pp,Figure 3,pipeline,2.2
+figure_3_weak_democrat_ols_estimate_pp,Figure 3,pipeline,3.6
+figure_3_weak_democrat_ols_standard_error_pp,Figure 3,pipeline,2.1
+figure_3_strong_democrat_dim_estimate_pp,Figure 3,pipeline,5.2
+figure_3_strong_democrat_dim_standard_error_pp,Figure 3,pipeline,1.4
+figure_3_strong_democrat_ols_estimate_pp,Figure 3,pipeline,5.3
+figure_3_strong_democrat_ols_standard_error_pp,Figure 3,pipeline,1.4
+figure_5_full_sample_dim_estimate_pp,Figure 5,pipeline,9.1
+figure_5_full_sample_dim_standard_error_pp,Figure 5,pipeline,1.5
+figure_5_full_sample_ols_estimate_pp,Figure 5,pipeline,8.3
+figure_5_full_sample_ols_standard_error_pp,Figure 5,pipeline,1.3
+figure_5_strong_republican_dim_estimate_pp,Figure 5,pipeline,5.3
+figure_5_strong_republican_dim_standard_error_pp,Figure 5,pipeline,3.4
+figure_5_strong_republican_ols_estimate_pp,Figure 5,pipeline,5.5
+figure_5_strong_republican_ols_standard_error_pp,Figure 5,pipeline,3.2
+figure_5_weak_republican_dim_estimate_pp,Figure 5,pipeline,10.1
+figure_5_weak_republican_dim_standard_error_pp,Figure 5,pipeline,4.0
+figure_5_weak_republican_ols_estimate_pp,Figure 5,pipeline,9.7
+figure_5_weak_republican_ols_standard_error_pp,Figure 5,pipeline,3.5
+figure_5_lean_republican_dim_estimate_pp,Figure 5,pipeline,8.6
+figure_5_lean_republican_dim_standard_error_pp,Figure 5,pipeline,4.8
+figure_5_lean_republican_ols_estimate_pp,Figure 5,pipeline,7.9
+figure_5_lean_republican_ols_standard_error_pp,Figure 5,pipeline,4.2
+figure_5_independent_dim_estimate_pp,Figure 5,pipeline,6.1
+figure_5_independent_dim_standard_error_pp,Figure 5,pipeline,3.8
+figure_5_independent_ols_estimate_pp,Figure 5,pipeline,4.8
+figure_5_independent_ols_standard_error_pp,Figure 5,pipeline,3.3
+figure_5_lean_democrat_dim_estimate_pp,Figure 5,pipeline,12.3
+figure_5_lean_democrat_dim_standard_error_pp,Figure 5,pipeline,4.5
+figure_5_lean_democrat_ols_estimate_pp,Figure 5,pipeline,12.5
+figure_5_lean_democrat_ols_standard_error_pp,Figure 5,pipeline,3.8
+figure_5_weak_democrat_dim_estimate_pp,Figure 5,pipeline,15.7
+figure_5_weak_democrat_dim_standard_error_pp,Figure 5,pipeline,3.8
+figure_5_weak_democrat_ols_estimate_pp,Figure 5,pipeline,17.1
+figure_5_weak_democrat_ols_standard_error_pp,Figure 5,pipeline,3.5
+figure_5_strong_democrat_dim_estimate_pp,Figure 5,pipeline,6.3
+figure_5_strong_democrat_dim_standard_error_pp,Figure 5,pipeline,2.5
+figure_5_strong_democrat_ols_estimate_pp,Figure 5,pipeline,4.6
+figure_5_strong_democrat_ols_standard_error_pp,Figure 5,pipeline,2.3
+figure_2_plotted_coefficients_and_confidence_intervals,Figure 2,pipeline,NA
+figure_2_series_labels_for_the_personal_and_social_framings,Figure 2,pipeline,NA
+figure_4_plotted_coefficients_and_confidence_intervals,Figure 4,pipeline,NA
+results_endorsements_e_1_trump_endorsement_average_treatment_effect,"Results, p. 4",pipeline,-0.092
+results_endorsements_e_1_trump_endorsement_standard_error,"Results, p. 4",pipeline,0.026
+results_endorsements_e_1_control_group_intention_to_vaccinate,"Results, p. 5",descriptive,
+results_endorsements_e_1_fauci_endorsement_average_treatment_effect,"Results, p. 5",pipeline,0.055
+results_endorsements_e_1_fauci_endorsement_standard_error,"Results, p. 5",pipeline,0.024
+results_endorsements_e_1_joint_test_of_the_personal_and_social_framings_p_value,"Results, p. 4",pipeline,0.37
+footnote_c_e_1_trump_minus_physician_treatment_by_party_interaction,"Note c, p. 11",pipeline,0.068
+footnote_c_e_1_trump_minus_physician_interaction_standard_error,"Note c, p. 11",pipeline,0.012
+results_endorsements_e_2_biden_endorsement_average_treatment_effect,"Results, p. 5",pipeline,-0.097
+results_endorsements_e_2_biden_endorsement_standard_error,"Results, p. 5",pipeline,0.036
+results_endorsements_e_2_obama_endorsement_average_treatment_effect,"Results, p. 5",pipeline,-0.109
+results_endorsements_e_2_obama_endorsement_standard_error,"Results, p. 5",pipeline,0.035
+results_endorsements_e_2_unvaccinated_respondents_interviewed,"Results, p. 5",pipeline,"7,249"
+results_endorsements_e_2_democrats_likely_to_get_the_vaccine,"Results, p. 5",pipeline,79%
+results_endorsements_e_2_independents_likely_to_get_the_vaccine,"Results, p. 5",pipeline,50%
+results_endorsements_e_2_republicans_likely_to_get_the_vaccine,"Results, p. 5",pipeline,45%
+results_guidance_g_1_control_group_support_for_the_mixed_policy,"Results, p. 7",pipeline,23.7%
+results_guidance_g_3_control_group_support_for_the_more_restrictive_policy,"Results, p. 7",pipeline,68%
+footnote_f_g_2_joint_test_of_the_solo_and_friend_versions_p_value,"Note f, p. 11",pipeline,0.10
+footnote_g_i_1_joint_test_of_the_information_source_p_value,"Note g, p. 11",pipeline,0.91
+results_information_i_1_control_group_willing_to_be_vaccinated,"Results, p. 9",pipeline,20%
+results_information_i_2_control_group_willing_to_be_vaccinated,"Results, p. 9",pipeline,28%
+results_information_i_3_effect_on_booster_intentions_percentage_points,"Results, p. 10",pipeline,8.3
+results_information_i_4_effect_on_intentions_to_boost_a_child_percentage_points,"Results, p. 10",pipeline,16.2
+results_information_i_4_control_group_parents_intending_to_boost_their_children,"Results, p. 10",pipeline,60%
+results_guidance_g_2_baseline_willingness_across_the_four_vignettes,"Results, p. 7",descriptive,
+appendix_figure_s47_g_1_chi_squared_statistic_on_the_three_category_outcome,Appendix Figure S47,pipeline,111.78
+materials_and_methods_adults_with_at_least_one_vaccine_dose_spring_2021,"Materials and methods, p. 3",pipeline,48.8%
+materials_and_methods_interaction_terms_not_significant_weighted_that_become_significant_unweighted,"Materials and methods, p. 3",descriptive,3
+materials_and_methods_guidance_experiments_affirming_equivalence_at_5_points,"Materials and methods, p. 4",descriptive,2
+materials_and_methods_mandate_vignettes_affirming_equivalence_at_10_points,"Materials and methods, p. 4",descriptive,2
+materials_and_methods_information_experiments_with_a_significant_difference_in_cates,"Materials and methods, p. 4",descriptive,0
+materials_and_methods_information_experiments_affirming_equivalence_at_10_points,"Materials and methods, p. 4",descriptive,3
+materials_and_methods_experiments_where_the_interaction_term_and_the_difference_in_cates_disagree,"Materials and methods, p. 4",descriptive,1
+abstract_n_experiments,Abstract,structural,10
+abstract_period_years,Abstract,structural,2
+significance_years,Significance Statement,structural,2020
+intro_democrats_approve,"Introduction, p. 2",transcribed,89%
+intro_republicans_approve,"Introduction, p. 2",transcribed,84%
+intro_articles_summarised,"Introduction, p. 2",transcribed,747
+intro_claims_summarised,"Introduction, p. 2",transcribed,15
+intro_n_treatments,"Introduction, p. 2",structural,41
+methods_n_waves,"Materials and methods, p. 2",structural,8
+methods_early_wave_size,"Materials and methods, p. 2",structural,"15,000"
+methods_late_wave_size,"Materials and methods, p. 2",structural,"30,000"
+methods_cdc_first_dose,"Materials and methods, p. 3",transcribed,44.6%
+methods_pid_scale,"Materials and methods, p. 3",definitional,7
+methods_equivalence_bands,"Materials and methods, p. 4",definitional,5
+results_e1_endorsers,"Results, p. 4",structural,7
+results_e2_endorsers,"Results, p. 4",structural,8
+results_g2_activities,"Results, p. 7",structural,4
+results_unvaccinated_share,"Results, p. 7",transcribed,2
+results_i1_arms,"Results, p. 8",structural,3
+results_i1_treatment_text,"Results, p. 8",definitional,90%
+footnote_e_categories,"Note e, p. 11",structural,3

@@ -1,0 +1,29 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Mandate experiment (G-2). (F) and (S) are the friend and solo versions of the vignettes.},
+note{}={* p \num{< 0.05}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-9}{solid, black, 0.05em},
+hline{10}={1-9}{solid, black, 0.05em},
+hline{1}={1-9}{solid, black, 0.08em},
+hline{13}={1-9}{solid, black, 0.08em},
+column{2-9}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Concert (F) & Restaurant (F) & Team (F) & Trip (F) & Concert (S) & Restaurant (S) & Team (S) & Trip (S) \\
+(Intercept) & 0.204* & 0.165* & 0.201* & 0.238* & 0.172* & 0.142* & 0.160* & 0.221* \\
+& (0.023) & (0.022) & (0.022) & (0.026) & (0.020) & (0.019) & (0.018) & (0.023) \\
+Treatment & 0.006 & 0.056 & 0.059 & 0.074* & -0.007 & 0.071* & 0.040 & 0.058 \\
+& (0.030) & (0.032) & (0.032) & (0.036) & (0.027) & (0.030) & (0.027) & (0.034) \\
+Party ID (7-Point) & -0.052* & -0.020 & -0.036* & -0.018 & -0.052* & -0.046* & -0.038* & -0.035* \\
+& (0.015) & (0.013) & (0.011) & (0.015) & (0.012) & (0.013) & (0.010) & (0.013) \\
+Treatment x Party ID & 0.008 & -0.022 & -0.042* & -0.007 & 0.014 & 0.039* & -0.008 & -0.010 \\
+& (0.019) & (0.019) & (0.017) & (0.021) & (0.015) & (0.019) & (0.016) & (0.020) \\
+Num.Obs. & 1270 & 1322 & 1234 & 1316 & 1283 & 1362 & 1224 & 1264 \\
+R2 & 0.244 & 0.173 & 0.199 & 0.172 & 0.229 & 0.194 & 0.213 & 0.151 \\
+Covariates & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+\end{talltblr}
+\end{table}

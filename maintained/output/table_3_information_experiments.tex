@@ -1,0 +1,30 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Information experiments (I-1 through I-5)},
+note{}={* p \num{< 0.05}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{10}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{14}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Contagiousness (I-1) & Delta (I-2) & Adult booster (I-3) & Child booster (I-4) & Child vaccine (I-5) \\
+(Intercept) & 0.197* & 0.277* & 0.556* & 0.598* & 0.391* \\
+& (0.009) & (0.010) & (0.010) & (0.024) & (0.024) \\
+Treatment & -0.010 & 0.016 & 0.083* & 0.162* & 0.057 \\
+& (0.013) & (0.014) & (0.013) & (0.032) & (0.034) \\
+Party ID (7-Point) & -0.032* & -0.045* & -0.061* & -0.058* & -0.056* \\
+& (0.006) & (0.006) & (0.005) & (0.013) & (0.011) \\
+Treatment x Party ID & 0.008 & 0.009 & 0.000 & 0.019 & -0.001 \\
+& (0.008) & (0.009) & (0.006) & (0.017) & (0.017) \\
+Num.Obs. & 8659 & 8690 & 10677 & 1626 & 1711 \\
+R2 & 0.165 & 0.207 & 0.197 & 0.198 & 0.146 \\
+Covariates & Yes & Yes & Yes & Yes & Yes \\
+Sample & Unvacc. adults & Unvacc. adults & Vacc. adults, no booster & Vacc. kids in household & Unvacc. kids in household \\
+\end{talltblr}
+\end{table}

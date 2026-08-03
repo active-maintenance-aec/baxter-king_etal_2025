@@ -1,0 +1,17 @@
+claim,value
+Interaction terms not significant weighted that become significant unweighted,3
+Guidance experiments affirming equivalence at 5 points,2
+Guidance experiments tested,2
+Mandate vignettes affirming equivalence at 10 points,1
+Mandate vignettes tested,4
+Information experiments with a significant difference-in-CATEs,0
+Information experiments affirming equivalence at 10 points,3
+Information experiments tested,5
+Experiments where the interaction term and the difference-in-CATEs disagree in sign or significance,10
+Experiments where the two disagree on significance alone,2
+Experiments where the interaction term and the difference-in-CATEs are discordant,2
+Experiments discordant under the deposit's standard error,2
+Experiments compared,26
+Mandate vignettes affirming equivalence at 10 points under the deposit's standard error,2
+Guidance experiments affirming equivalence at 5 points under the deposit's standard error,2
+Information experiments affirming equivalence at 10 points under the deposit's standard error,3

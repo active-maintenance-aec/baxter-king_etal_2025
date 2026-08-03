@@ -1,0 +1,21 @@
+claim,value
+"E-1 Trump endorsement, average treatment effect",-0.09228478251109223
+"E-1 Trump endorsement, standard error",0.025764560013641382
+"E-1 Trump arm, covariate-adjusted control group mean",0.6533186556307073
+"E-1 Fauci endorsement, average treatment effect",0.05467182529748348
+"E-1 Fauci endorsement, standard error",0.023913308330907778
+"E-1 joint test of Personal versus Social framing, p-value",0.3704908718467333
+E-1 Trump minus physician treatment-by-party interaction,0.06774575789546593
+"E-1 Trump minus physician interaction, standard error",0.011509521623966089
+"E-1 Trump minus physician interaction, p-value",3.955059904675442e-9
+"E-2 Biden endorsement, average treatment effect",-0.09682095467939994
+"E-2 Biden endorsement, standard error",0.036166708111833555
+"E-2 Obama endorsement, average treatment effect",-0.10865337878007902
+"E-2 Obama endorsement, standard error",0.035149598431081445
+E-2 respondents in the deposited analysis file,7197
+"E-2 share likely to vaccinate, Democrats (leaners with independents)",0.7913195849554913
+"E-2 share likely to vaccinate, independents (leaners with independents)",0.49604732919381006
+"E-2 share likely to vaccinate, Republicans (leaners with independents)",0.4451877759449586
+"E-2 share likely to vaccinate, Democrats (leaners with party)",0.7712017213984892
+"E-2 share likely to vaccinate, independents (leaners with party)",0.4570094141602882
+"E-2 share likely to vaccinate, Republicans (leaners with party)",0.44071772252370733
