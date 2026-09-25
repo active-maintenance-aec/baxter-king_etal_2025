@@ -710,6 +710,29 @@ write_csv(section_c_cells |> select(float, contrast, subgroup, estimator, quanti
                                     value_paper, value_rewrite, cell_agrees),
           here::here("ground_truth", "section_c_cells.csv"))
 
+# Cells whose published value depends on which collinear column was dropped ----
+# In the Strong Republican cell of each E-2 endorsement contrast the AAPI
+# category is empty in one of the two arms. That makes four columns of the Lin
+# design exactly collinear, because the centred AAPI covariate and its treatment
+# interaction satisfy AAPI_c - Z * AAPI_c = -mean(AAPI) * (1 - Z) to the last
+# bit. The fit is the same whichever column is dropped, with identical fitted
+# values and an identical R squared, but the treatment coefficient is not, so
+# the printed estimate is whichever column the decomposition happened to alias.
+# estimatr 1.0.6 produced the published numbers and dropped the covariate main
+# effect; 2.0 follows stats::lm() and drops the later column, the interaction.
+# Neither is wrong: the quantity lm_lin reports, the effect at the covariate
+# means, is not identified in these cells under any version. The locus is
+# environment because the published value records a version of the software
+# rather than a decision in the article or in the deposit.
+section_c_unidentified <-
+  section_c_cells |>
+  filter(!is.na(cell_agrees), cell_agrees == 0) |>
+  group_by(float) |>
+  summarize(
+    moved = paste(paste(subgroup, estimator, quantity), collapse = ", "),
+    .groups = "drop"
+  )
+
 section_c_rows <-
   section_c_cells |>
   group_by(float, contrast) |>
@@ -721,6 +744,7 @@ section_c_rows <-
   ) |>
   mutate(float_number = as.integer(str_extract(float, "\\d+"))) |>
   arrange(float_number) |>
+  left_join(section_c_unidentified, by = "float") |>
   transmute(
     table_figure = float,
     claim = paste0(contrast, ", printed estimates and standard errors reproduced"),
@@ -728,8 +752,14 @@ section_c_rows <-
     value_paper = as.character(cells),
     value_rewrite = cells_rewrite,
     expect_rewrite = TRUE,
-    defect_locus = NA_character_,
-    notes = "The panel prints eight subgroups by two estimators, each as an estimate and a standard error in percentage points, and those numbers appear in no table. Cells are compared one by one in section_c_cells.csv."
+    defect_locus = if_else(is.na(moved), NA_character_, "environment"),
+    notes = if_else(
+      is.na(moved),
+      "The panel prints eight subgroups by two estimators, each as an estimate and a standard error in percentage points, and those numbers appear in no table. Cells are compared one by one in section_c_cells.csv.",
+      paste0("The panel prints eight subgroups by two estimators, each as an estimate and a standard error in percentage points, and those numbers appear in no table. Cells are compared one by one in section_c_cells.csv. These cells do not match: ",
+             moved,
+             ". The AAPI category is empty in one arm of this contrast's Strong Republican cell, which makes the centred AAPI covariate, its treatment interaction, the intercept and the treatment indicator exactly collinear. The fit is the same whichever column is dropped, with identical fitted values and R squared, but the treatment coefficient is not, so the effect at the covariate means is not identified here. estimatr 1.0.6 produced the published number and dropped the covariate main effect; 2.0 follows stats::lm() and drops the interaction.")
+    )
   )
 
 # Figures with no printed numbers ----

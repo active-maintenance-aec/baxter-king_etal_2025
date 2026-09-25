@@ -1,19 +1,19 @@
 claim,value
-G-1 covariate-adjusted control group mean,0.23693100367593964
+G-1 covariate-adjusted control group mean,0.2369310036759402
 G-1 average treatment effect,0.05982114960867598
-G-3 covariate-adjusted control group mean,0.6799578572644076
-G-3 average treatment effect,0.015402564883121939
-G-2 lowest control group mean across the four vignettes,0.1542206844248348
-G-2 highest control group mean across the four vignettes,0.22761511430044531
-"G-2 joint test of solo versus friend version, p-value",0.09957604491877442
-I-1 covariate-adjusted control group mean,0.19722085933437727
-"I-1 joint test of information source, p-value",0.9072530723796897
-I-2 covariate-adjusted control group mean,0.2765335679401039
-I-3 average treatment effect,0.08323766581825884
-I-3 standard error,0.013249847371647206
-I-4 covariate-adjusted control group mean,0.5982965283519703
-I-4 average treatment effect,0.16249807086690252
-I-4 standard error,0.032294380185469526
+G-3 covariate-adjusted control group mean,0.6799578572644213
+G-3 average treatment effect,0.015402564883122034
+G-2 lowest control group mean across the four vignettes,0.1542206844248349
+G-2 highest control group mean across the four vignettes,0.22761511430044523
+"G-2 joint test of solo versus friend version, p-value",0.09957604491876862
+I-1 covariate-adjusted control group mean,0.19722085933437772
+"I-1 joint test of information source, p-value",0.9072530723796924
+I-2 covariate-adjusted control group mean,0.2765335679401035
+I-3 average treatment effect,0.08323766581825888
+I-3 standard error,0.013249847371647212
+I-4 covariate-adjusted control group mean,0.5982965283519701
+I-4 average treatment effect,0.16249807086690254
+I-4 standard error,0.032294380185469505
 G-1 chi-squared statistic on the three-category outcome,111.78386671072666
 G-1 chi-squared p-value,5.326497908916111e-25
 G-3 chi-squared statistic on the three-category outcome,8.23069461260744
