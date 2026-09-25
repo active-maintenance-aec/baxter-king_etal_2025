@@ -130,9 +130,9 @@ intentions by 8.3 points, again without partisan heterogeneity.
 ## Summary
 
 The ground truth carries 506 rows. Where the deposited code produces a
-number the article prints, it reproduces it: 451 such comparisons agree
-at the precision the page prints and 1 do not. The maintained rewrite
-agrees with the article on 486 values and disagrees on 14, and 6 rows
+number the article prints, it reproduces it: 445 such comparisons agree
+at the precision the page prints and 7 do not. The maintained rewrite
+agrees with the article on 475 values and disagrees on 25, and 6 rows
 are unverifiable because the article states no number.
 
 ### Does the deposited archive run?
@@ -146,15 +146,33 @@ could know without measuring it.
 
 ### Does the maintained rewrite reproduce the paper?
 
-Yes, with one class of exception. Every coefficient, standard error,
+Yes, with two classes of exception. Every coefficient, standard error,
 sample size and R-squared in Tables 2 and 3 and in appendix Tables S1 to
 S4 reproduces, as does every estimate and standard error printed on
-Figures 1, 3 and 5, every one of the 704 printed on the section C
-appendix figures, and every number the article states in prose or in a
-footnote. The 14 disagreements are the sample sizes of Table 1, which
-count respondents enrolled in each experiment while the deposited
-analysis files hold fewer rows, and one appendix claim that turns on a
-coding error in the deposit.
+Figures 1, 3 and 5, and every number the article states in prose or in a
+footnote. Of the 704 numbers printed on the section C appendix figures,
+663 reproduce and 41 do not.
+
+The first class is the sample sizes of Table 1, which count respondents
+enrolled in each experiment while the deposited analysis files hold
+fewer rows, together with one appendix claim that turns on a coding
+error in the deposit. The second is new and is a choice this rewrite
+makes rather than a defect in the article. `lm_lin()` reports the effect
+at the covariate means, and that quantity exists only while every
+covariate is interacted with the treatment. In 21 of the 154 conditional
+cells behind the section C panels, on 11 of the 22 figures, one race
+category is empty in one of the two arms, which makes the centred race
+covariate, its treatment interaction, the intercept and the treatment
+indicator four exactly collinear columns. The fit is the same whichever
+of the four is dropped and the treatment coefficient is not, so the
+published number in those cells records which column the decomposition
+aliased rather than an effect, and no version of any software identifies
+the quantity there. The rewrite removes the race covariate from those
+cells and from no others, which restores the estimand where it was
+missing and leaves the other 133 cells at the covariate list the article
+used. The `covariates_trimmed` column of
+`ground_truth/section_c_cells.csv` names the covariate wherever one was
+removed.
 
 ------------------------------------------------------------------------
 
@@ -295,28 +313,28 @@ gives the same digits.
 | Footnote c                |    2 |              0 |              2 |               0 |
 | Abstract and Introduction |    1 |              0 |              0 |               1 |
 | Appendix Figure S1        |    1 |              1 |              1 |               0 |
-| Appendix Figure S10       |    1 |              1 |              1 |               0 |
-| Appendix Figure S11       |    1 |              1 |              1 |               0 |
-| Appendix Figure S12       |    1 |              1 |              1 |               0 |
-| Appendix Figure S13       |    1 |              1 |              1 |               0 |
-| Appendix Figure S14       |    1 |              1 |              1 |               0 |
-| Appendix Figure S15       |    1 |              1 |              1 |               0 |
+| Appendix Figure S10       |    1 |              0 |              0 |               1 |
+| Appendix Figure S11       |    1 |              1 |              0 |               1 |
+| Appendix Figure S12       |    1 |              0 |              0 |               1 |
+| Appendix Figure S13       |    1 |              0 |              0 |               1 |
+| Appendix Figure S14       |    1 |              0 |              0 |               1 |
+| Appendix Figure S15       |    1 |              0 |              0 |               1 |
 | Appendix Figure S16       |    1 |              1 |              1 |               0 |
 | Appendix Figure S17       |    1 |              1 |              1 |               0 |
 | Appendix Figure S18       |    1 |              1 |              1 |               0 |
 | Appendix Figure S19       |    1 |              1 |              1 |               0 |
-| Appendix Figure S2        |    1 |              1 |              1 |               0 |
+| Appendix Figure S2        |    1 |              1 |              0 |               1 |
 | Appendix Figure S20       |    1 |              1 |              1 |               0 |
-| Appendix Figure S21       |    1 |              1 |              1 |               0 |
-| Appendix Figure S22       |    1 |              1 |              1 |               0 |
+| Appendix Figure S21       |    1 |              1 |              0 |               1 |
+| Appendix Figure S22       |    1 |              1 |              0 |               1 |
 | Appendix Figure S3        |    1 |              1 |              1 |               0 |
 | Appendix Figure S4        |    1 |              1 |              1 |               0 |
 | Appendix Figure S47       |    1 |              0 |              1 |               0 |
 | Appendix Figure S5        |    1 |              1 |              1 |               0 |
 | Appendix Figure S6        |    1 |              1 |              1 |               0 |
 | Appendix Figure S7        |    1 |              1 |              1 |               0 |
-| Appendix Figure S8        |    1 |              1 |              1 |               0 |
-| Appendix Figure S9        |    1 |              1 |              1 |               0 |
+| Appendix Figure S8        |    1 |              0 |              0 |               1 |
+| Appendix Figure S9        |    1 |              1 |              0 |               1 |
 | Figure 4                  |    1 |              0 |              0 |               0 |
 | Footnote f                |    1 |              0 |              1 |               0 |
 | Footnote g                |    1 |              0 |              1 |               0 |
@@ -338,6 +356,17 @@ Ground truth by location in the article
 | I-4: Bivalent booster information (children), N | 1,628 | 1626 | archive |
 | I-5: Holiday surge information (children), N | 1,715 | 1711 | archive |
 | Survey respondents across the ten experiments | 85,191 | 96567 | archive |
+| E-1: Fauci, printed estimates and standard errors reproduced | 32 | 28 | rewrite |
+| E-2: Trump, printed estimates and standard errors reproduced | 32 | 30 | rewrite |
+| E-2: Trump and Fauci, printed estimates and standard errors reproduced | 32 | 22 | rewrite |
+| E-2: Fauci, printed estimates and standard errors reproduced | 32 | 29 | rewrite |
+| E-2: Biden and Fauci, printed estimates and standard errors reproduced | 32 | 28 | rewrite |
+| E-2: Biden, printed estimates and standard errors reproduced | 32 | 28 | rewrite |
+| E-2: Obama, printed estimates and standard errors reproduced | 32 | 28 | rewrite |
+| E-2: James, printed estimates and standard errors reproduced | 32 | 30 | rewrite |
+| E-2: Ramos, printed estimates and standard errors reproduced | 32 | 30 | rewrite |
+| I-4: Bivalent Booster - Child, printed estimates and standard errors reproduced | 32 | 28 | rewrite |
+| I-5: Vaccince - Child, printed estimates and standard errors reproduced | 32 | 30 | rewrite |
 | E-2 unvaccinated respondents interviewed | 7,249 | 7197 | archive |
 | Mandate vignettes affirming equivalence at 10 points | 2 | 1 | archive |
 | Experiments where the interaction term and the difference-in-CATEs disagree | 1 | 2 | paper_internal |
@@ -384,8 +413,9 @@ conditional estimates.
 `ground_truth/extract_published_appendix_values.R` parses them out of
 the published PDF by position rather than by reading order, and the
 parse is checked against Figures 1, 3 and 5, whose values were
-transcribed independently from rendered pages. All 704 of them
-reproduce.
+transcribed independently from rendered pages. 663 of them reproduce,
+and the 41 that do not are the cells whose published specification is
+not identified, discussed above.
 
 The 39 uncovered floats are appendix figures, and the largest group is
 section D, which repeats the section C panels among respondents a
@@ -482,9 +512,9 @@ E-2 appendix panels come out with the signs the article prints.
 ## Figure Verification
 
 Figures 1, 3 and 5 print every estimate and standard error on the panel,
-in percentage points. All 96 of those numbers reproduce, as do all 704
-printed on the 22 appendix figures that draw the same panels for the
-other contrasts.
+in percentage points. All 96 of those numbers reproduce, as do 663 of
+the 704 printed on the 22 appendix figures that draw the same panels for
+the other contrasts.
 
 <img src="maintained/output/figure_1_trump_endorsement.png"
 style="width:100.0%" />
@@ -524,15 +554,15 @@ The acceptance test for a full run is that
 
 ## R Environment
 
-| Component    | Version |
-|:-------------|:--------|
-| R            | 4.6.0   |
-| tidyverse    | 2.0.0   |
-| estimatr     | 1.0.6   |
-| modelsummary | 2.6.0   |
-| ggplot2      | 4.0.3   |
-| patchwork    | 1.3.2   |
-| kableExtra   | 1.4.0   |
-| here         | 1.0.2   |
+| Component    | Version    |
+|:-------------|:-----------|
+| R            | 4.6.0      |
+| tidyverse    | 2.0.0      |
+| estimatr     | 2.0.0.9000 |
+| modelsummary | 2.6.0      |
+| ggplot2      | 4.0.3      |
+| patchwork    | 1.3.2      |
+| kableExtra   | 1.4.0      |
+| here         | 1.0.2      |
 
 Package versions this report was built under

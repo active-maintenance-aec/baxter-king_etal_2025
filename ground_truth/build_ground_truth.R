@@ -693,7 +693,7 @@ section_c_cells <-
   join_checked(
     section_c_rewrite |>
       pivot_longer(c(estimate, std.error), names_to = "quantity", values_to = "value_rewrite") |>
-      select(float, subgroup, estimator, quantity, value_rewrite),
+      select(float, subgroup, estimator, quantity, value_rewrite, covariates_trimmed),
     by = c("float", "subgroup", "estimator", "quantity")
   ) |>
   mutate(
@@ -707,23 +707,55 @@ section_c_cells <-
   )
 
 write_csv(section_c_cells |> select(float, contrast, subgroup, estimator, quantity,
-                                    value_paper, value_rewrite, cell_agrees),
+                                    value_paper, value_rewrite, cell_agrees,
+                                    covariates_trimmed),
           here::here("ground_truth", "section_c_cells.csv"))
 
-# Cells whose published value depends on which collinear column was dropped ----
-# In the Strong Republican cell of each E-2 endorsement contrast the AAPI
-# category is empty in one of the two arms. That makes four columns of the Lin
-# design exactly collinear, because the centred AAPI covariate and its treatment
-# interaction satisfy AAPI_c - Z * AAPI_c = -mean(AAPI) * (1 - Z) to the last
-# bit. The fit is the same whichever column is dropped, with identical fitted
-# values and an identical R squared, but the treatment coefficient is not, so
-# the printed estimate is whichever column the decomposition happened to alias.
-# estimatr 1.0.6 produced the published numbers and dropped the covariate main
-# effect; 2.0 follows stats::lm() and drops the later column, the interaction.
-# Neither is wrong: the quantity lm_lin reports, the effect at the covariate
-# means, is not identified in these cells under any version. The locus is
-# environment because the published value records a version of the software
-# rather than a decision in the article or in the deposit.
+# Cells whose published specification is not identified in the cell ----
+# lm_lin() reports the effect at the covariate means, and that quantity exists
+# only while every covariate is interacted with the treatment. In 21 of the 154
+# conditional cells behind these panels, on 11 of the 22 figures, one race
+# category is empty in one of the two arms. Because lm_lin() centres before
+# interacting, the centred covariate and its interaction then satisfy
+# x_c - Z * x_c = -mean(x) * (1 - Z) to the last bit, so the intercept, the
+# treatment indicator, the centred covariate and its interaction are four
+# exactly collinear columns. The fit is the same whichever of the four is
+# dropped, with identical fitted values and an identical R squared, and the
+# treatment coefficient is not: it moves by up to six percentage points. The
+# published number in those cells therefore records which column the
+# decomposition aliased rather than an effect, and no version of any software
+# identifies the quantity there. estimatr 1.0.6 produced the published numbers
+# and dropped the covariate main effect; 2.0 follows stats::lm() and drops the
+# interaction.
+#
+# The maintained rewrite removes the offending covariate from those cells and
+# from no others, which restores the estimand where it was missing and leaves
+# the other 133 cells at the covariate list the article used. Dropping race
+# from every cell would have been the larger change, moving 64 of the 133
+# identified cells by more than a percentage point and one of them by 14. The
+# locus is rewrite because the difference is a deliberate property of the
+# maintained code rather than a defect in the article, in the deposit, or in a
+# package version.
+section_c_trimmed <-
+  section_c_cells |>
+  filter(covariates_trimmed != "") |>
+  distinct(float, subgroup, estimator, covariates_trimmed)
+
+# Every cell that disagrees is a cell the rewrite respecified. A disagreement
+# anywhere else is a different finding and must stop the build rather than
+# inherit this explanation.
+section_c_unexplained <-
+  section_c_cells |>
+  filter(!is.na(cell_agrees), cell_agrees == 0) |>
+  anti_join(section_c_trimmed, by = c("float", "subgroup", "estimator"))
+
+if (nrow(section_c_unexplained) > 0) {
+  stop("Section C cells disagree outside the respecified set: ",
+       paste(paste(section_c_unexplained$float, section_c_unexplained$subgroup,
+                   section_c_unexplained$estimator, section_c_unexplained$quantity),
+             collapse = "; "), ".")
+}
+
 section_c_unidentified <-
   section_c_cells |>
   filter(!is.na(cell_agrees), cell_agrees == 0) |>
@@ -752,13 +784,13 @@ section_c_rows <-
     value_paper = as.character(cells),
     value_rewrite = cells_rewrite,
     expect_rewrite = TRUE,
-    defect_locus = if_else(is.na(moved), NA_character_, "environment"),
+    defect_locus = if_else(is.na(moved), NA_character_, "rewrite"),
     notes = if_else(
       is.na(moved),
       "The panel prints eight subgroups by two estimators, each as an estimate and a standard error in percentage points, and those numbers appear in no table. Cells are compared one by one in section_c_cells.csv.",
       paste0("The panel prints eight subgroups by two estimators, each as an estimate and a standard error in percentage points, and those numbers appear in no table. Cells are compared one by one in section_c_cells.csv. These cells do not match: ",
              moved,
-             ". The AAPI category is empty in one arm of this contrast's Strong Republican cell, which makes the centred AAPI covariate, its treatment interaction, the intercept and the treatment indicator exactly collinear. The fit is the same whichever column is dropped, with identical fitted values and R squared, but the treatment coefficient is not, so the effect at the covariate means is not identified here. estimatr 1.0.6 produced the published number and dropped the covariate main effect; 2.0 follows stats::lm() and drops the interaction.")
+             ". One race category is empty in one arm of those cells, which makes the centred race covariate, its treatment interaction, the intercept and the treatment indicator exactly collinear. The fit is the same whichever column is dropped, with identical fitted values and R squared, but the treatment coefficient is not, so the effect at the covariate means, which is what lm_lin reports, is not identified there under any version of any software. The published number records which column the decomposition aliased. The rewrite removes the race covariate from those cells and from no others, and names it in the covariates_trimmed column of section_c_cells.csv.")
     )
   )
 

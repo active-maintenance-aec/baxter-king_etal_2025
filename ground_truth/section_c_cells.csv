@@ -1,705 +1,705 @@
-float,contrast,subgroup,estimator,quantity,value_paper,value_rewrite,cell_agrees
-Appendix Figure S1,E-1: Trump,Full sample,DIM,estimate,-9.5,-9.48780284984628,1
-Appendix Figure S1,E-1: Trump,Full sample,DIM,std.error,2.8,2.7923208585207107,1
-Appendix Figure S1,E-1: Trump,Full sample,OLS,estimate,-9.2,-9.228478251109246,1
-Appendix Figure S1,E-1: Trump,Full sample,OLS,std.error,2.6,2.576456001364143,1
-Appendix Figure S1,E-1: Trump,Strong Republican,DIM,estimate,16.2,16.17141523055901,1
-Appendix Figure S1,E-1: Trump,Strong Republican,DIM,std.error,5.3,5.265356343742102,1
-Appendix Figure S1,E-1: Trump,Strong Republican,OLS,estimate,14.7,14.743053492081565,1
-Appendix Figure S1,E-1: Trump,Strong Republican,OLS,std.error,4.4,4.362581982165552,1
-Appendix Figure S1,E-1: Trump,Weak Republican,DIM,estimate,3.0,3.017723451356722,1
-Appendix Figure S1,E-1: Trump,Weak Republican,DIM,std.error,7.7,7.677107475886675,1
-Appendix Figure S1,E-1: Trump,Weak Republican,OLS,estimate,5.8,5.752498087191941,1
-Appendix Figure S1,E-1: Trump,Weak Republican,OLS,std.error,6.3,6.268450850977472,1
-Appendix Figure S1,E-1: Trump,Lean Republican,DIM,estimate,1.4,1.350257671958145,1
-Appendix Figure S1,E-1: Trump,Lean Republican,DIM,std.error,11.2,11.169802484047093,1
-Appendix Figure S1,E-1: Trump,Lean Republican,OLS,estimate,-10.6,-10.601994462281422,1
-Appendix Figure S1,E-1: Trump,Lean Republican,OLS,std.error,10.1,10.057204144789717,1
-Appendix Figure S1,E-1: Trump,Independent,DIM,estimate,-5.2,-5.238519274536665,1
-Appendix Figure S1,E-1: Trump,Independent,DIM,std.error,7.2,7.150245716177326,1
-Appendix Figure S1,E-1: Trump,Independent,OLS,estimate,-1.3,-1.2525259909129305,1
-Appendix Figure S1,E-1: Trump,Independent,OLS,std.error,6.1,6.096226730552614,1
-Appendix Figure S1,E-1: Trump,Lean Democrat,DIM,estimate,-19.6,-19.64294972833804,1
-Appendix Figure S1,E-1: Trump,Lean Democrat,DIM,std.error,9.1,9.134479051891017,1
-Appendix Figure S1,E-1: Trump,Lean Democrat,OLS,estimate,-18.5,-18.45229687389448,1
-Appendix Figure S1,E-1: Trump,Lean Democrat,OLS,std.error,7.4,7.437758977663702,1
-Appendix Figure S1,E-1: Trump,Weak Democrat,DIM,estimate,-31.5,-31.46550289283583,1
-Appendix Figure S1,E-1: Trump,Weak Democrat,DIM,std.error,8.0,7.980433031388697,1
-Appendix Figure S1,E-1: Trump,Weak Democrat,OLS,estimate,-34.0,-34.018762450054915,1
-Appendix Figure S1,E-1: Trump,Weak Democrat,OLS,std.error,6.6,6.6225291832573525,1
-Appendix Figure S1,E-1: Trump,Strong Democrat,DIM,estimate,-29.4,-29.362154528987748,1
-Appendix Figure S1,E-1: Trump,Strong Democrat,DIM,std.error,5.6,5.636388934424474,1
-Appendix Figure S1,E-1: Trump,Strong Democrat,OLS,estimate,-27.2,-27.206776661957765,1
-Appendix Figure S1,E-1: Trump,Strong Democrat,OLS,std.error,5.0,5.042787720445962,1
-Appendix Figure S2,E-1: Fauci,Full sample,DIM,estimate,5.0,4.97722064041374,1
-Appendix Figure S2,E-1: Fauci,Full sample,DIM,std.error,2.7,2.694259006327244,1
-Appendix Figure S2,E-1: Fauci,Full sample,OLS,estimate,5.5,5.467182529748349,1
-Appendix Figure S2,E-1: Fauci,Full sample,OLS,std.error,2.4,2.391330833090779,1
-Appendix Figure S2,E-1: Fauci,Strong Republican,DIM,estimate,1.0,0.9912050684857948,1
-Appendix Figure S2,E-1: Fauci,Strong Republican,DIM,std.error,5.7,5.698412903102768,1
-Appendix Figure S2,E-1: Fauci,Strong Republican,OLS,estimate,0.8,0.8017360638250725,1
-Appendix Figure S2,E-1: Fauci,Strong Republican,OLS,std.error,4.3,4.281384955429539,1
-Appendix Figure S2,E-1: Fauci,Weak Republican,DIM,estimate,10.2,10.201807748306113,1
-Appendix Figure S2,E-1: Fauci,Weak Republican,DIM,std.error,7.3,7.288848670274407,1
-Appendix Figure S2,E-1: Fauci,Weak Republican,OLS,estimate,11.2,11.182431439343263,1
-Appendix Figure S2,E-1: Fauci,Weak Republican,OLS,std.error,6.1,6.096400547906701,1
-Appendix Figure S2,E-1: Fauci,Lean Republican,DIM,estimate,9.0,8.987383124061031,1
-Appendix Figure S2,E-1: Fauci,Lean Republican,DIM,std.error,10.8,10.781679405138922,1
-Appendix Figure S2,E-1: Fauci,Lean Republican,OLS,estimate,5.6,5.564643514364938,1
-Appendix Figure S2,E-1: Fauci,Lean Republican,OLS,std.error,8.7,8.74460092054774,1
-Appendix Figure S2,E-1: Fauci,Independent,DIM,estimate,6.9,6.930125523693284,1
-Appendix Figure S2,E-1: Fauci,Independent,DIM,std.error,7.1,7.073831428020223,1
-Appendix Figure S2,E-1: Fauci,Independent,OLS,estimate,9.7,9.660666213353815,1
-Appendix Figure S2,E-1: Fauci,Independent,OLS,std.error,5.9,5.879748293601142,1
-Appendix Figure S2,E-1: Fauci,Lean Democrat,DIM,estimate,-2.9,-2.8513983456048506,1
-Appendix Figure S2,E-1: Fauci,Lean Democrat,DIM,std.error,8.3,8.314499876322156,1
-Appendix Figure S2,E-1: Fauci,Lean Democrat,OLS,estimate,3.3,3.311002633337308,1
-Appendix Figure S2,E-1: Fauci,Lean Democrat,OLS,std.error,6.2,6.244988150957127,1
-Appendix Figure S2,E-1: Fauci,Weak Democrat,DIM,estimate,10.9,10.932462951396207,1
-Appendix Figure S2,E-1: Fauci,Weak Democrat,DIM,std.error,7.5,7.470911335333318,1
-Appendix Figure S2,E-1: Fauci,Weak Democrat,OLS,estimate,8.5,8.492355550897807,1
-Appendix Figure S2,E-1: Fauci,Weak Democrat,OLS,std.error,6.5,6.536198936313692,1
-Appendix Figure S2,E-1: Fauci,Strong Democrat,DIM,estimate,5.9,5.8909854673638815,1
-Appendix Figure S2,E-1: Fauci,Strong Democrat,DIM,std.error,5.2,5.231437850311958,1
-Appendix Figure S2,E-1: Fauci,Strong Democrat,OLS,estimate,6.9,6.898811715687518,1
-Appendix Figure S2,E-1: Fauci,Strong Democrat,OLS,std.error,4.4,4.416045245971222,1
-Appendix Figure S3,E-1: Trump and Fauci,Full sample,DIM,estimate,-3.7,-3.721429015633578,1
-Appendix Figure S3,E-1: Trump and Fauci,Full sample,DIM,std.error,2.8,2.7945395536227697,1
-Appendix Figure S3,E-1: Trump and Fauci,Full sample,OLS,estimate,-3.5,-3.498540358359166,1
-Appendix Figure S3,E-1: Trump and Fauci,Full sample,OLS,std.error,2.5,2.5363592040544867,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,DIM,estimate,8.7,8.682553066007994,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,DIM,std.error,5.4,5.440746460967165,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,OLS,estimate,4.8,4.821536528801394,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,OLS,std.error,4.4,4.394097229629052,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,DIM,estimate,6.2,6.169481719376853,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,DIM,std.error,7.5,7.523098209951288,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,OLS,estimate,4.8,4.779100179100588,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,OLS,std.error,6.4,6.407098328336347,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,DIM,estimate,0.6,0.6186801272084206,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,DIM,std.error,10.6,10.624446404887506,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,OLS,estimate,-5.6,-5.6218944230475145,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,OLS,std.error,8.6,8.58509638336711,1
-Appendix Figure S3,E-1: Trump and Fauci,Independent,DIM,estimate,-0.3,-0.32097202375435585,1
-Appendix Figure S3,E-1: Trump and Fauci,Independent,DIM,std.error,7.1,7.112886189814752,1
-Appendix Figure S3,E-1: Trump and Fauci,Independent,OLS,estimate,3.9,3.869746259644289,1
-Appendix Figure S3,E-1: Trump and Fauci,Independent,OLS,std.error,6.0,5.963110772992095,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,DIM,estimate,-7.3,-7.324500034974546,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,DIM,std.error,9.1,9.10369650731248,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,OLS,estimate,-3.6,-3.6342563399758543,1
-Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,OLS,std.error,8.0,7.979882168439422,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,DIM,estimate,-13.4,-13.351234901995715,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,DIM,std.error,8.1,8.07130530256059,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,OLS,estimate,-15.6,-15.592644499358435,1
-Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,OLS,std.error,6.6,6.6251234436091915,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,DIM,estimate,-12.4,-12.378789296453988,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,DIM,std.error,5.8,5.788715925140045,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,OLS,estimate,-10.3,-10.329631255541509,1
-Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,OLS,std.error,4.7,4.690701428599371,1
-Appendix Figure S4,E-1: Physician,Full sample,DIM,estimate,1.7,1.7491652567334908,1
-Appendix Figure S4,E-1: Physician,Full sample,DIM,std.error,2.7,2.713636842730373,1
-Appendix Figure S4,E-1: Physician,Full sample,OLS,estimate,2.4,2.3618422457804806,1
-Appendix Figure S4,E-1: Physician,Full sample,OLS,std.error,2.5,2.503599733089028,1
-Appendix Figure S4,E-1: Physician,Strong Republican,DIM,estimate,2.5,2.4582278170183,1
-Appendix Figure S4,E-1: Physician,Strong Republican,DIM,std.error,5.6,5.581343808034378,1
-Appendix Figure S4,E-1: Physician,Strong Republican,OLS,estimate,0.3,0.31713964027490404,1
-Appendix Figure S4,E-1: Physician,Strong Republican,OLS,std.error,4.6,4.58804534468405,1
-Appendix Figure S4,E-1: Physician,Weak Republican,DIM,estimate,-6.2,-6.173399179719433,1
-Appendix Figure S4,E-1: Physician,Weak Republican,DIM,std.error,8.0,7.995084600858582,1
-Appendix Figure S4,E-1: Physician,Weak Republican,OLS,estimate,-5.3,-5.2802843005490905,1
-Appendix Figure S4,E-1: Physician,Weak Republican,OLS,std.error,6.6,6.645624356809393,1
-Appendix Figure S4,E-1: Physician,Lean Republican,DIM,estimate,27.1,27.104834018564578,1
-Appendix Figure S4,E-1: Physician,Lean Republican,DIM,std.error,10.4,10.442695747093422,1
-Appendix Figure S4,E-1: Physician,Lean Republican,OLS,estimate,7.9,7.875834506159669,1
-Appendix Figure S4,E-1: Physician,Lean Republican,OLS,std.error,8.6,8.550217725689125,1
-Appendix Figure S4,E-1: Physician,Independent,DIM,estimate,5.2,5.228858702270359,1
-Appendix Figure S4,E-1: Physician,Independent,DIM,std.error,7.1,7.085903747896813,1
-Appendix Figure S4,E-1: Physician,Independent,OLS,estimate,5.5,5.506719496887209,1
-Appendix Figure S4,E-1: Physician,Independent,OLS,std.error,5.5,5.5352098472646345,1
-Appendix Figure S4,E-1: Physician,Lean Democrat,DIM,estimate,4.5,4.547120783668706,1
-Appendix Figure S4,E-1: Physician,Lean Democrat,DIM,std.error,8.5,8.499159150996755,1
-Appendix Figure S4,E-1: Physician,Lean Democrat,OLS,estimate,8.4,8.359892225425137,1
-Appendix Figure S4,E-1: Physician,Lean Democrat,OLS,std.error,7.3,7.329327774727125,1
-Appendix Figure S4,E-1: Physician,Weak Democrat,DIM,estimate,-0.6,-0.6142317997599546,1
-Appendix Figure S4,E-1: Physician,Weak Democrat,DIM,std.error,7.8,7.782923370031996,1
-Appendix Figure S4,E-1: Physician,Weak Democrat,OLS,estimate,-2.5,-2.50508996824187,1
-Appendix Figure S4,E-1: Physician,Weak Democrat,OLS,std.error,6.3,6.301528448592575,1
-Appendix Figure S4,E-1: Physician,Strong Democrat,DIM,estimate,-5.0,-4.957221451222528,1
-Appendix Figure S4,E-1: Physician,Strong Democrat,DIM,std.error,5.5,5.457503279327059,1
-Appendix Figure S4,E-1: Physician,Strong Democrat,OLS,estimate,-3.8,-3.832485099127078,1
-Appendix Figure S4,E-1: Physician,Strong Democrat,OLS,std.error,4.9,4.88582448038538,1
-Appendix Figure S5,E-1: Pharmacy,Full sample,DIM,estimate,2.4,2.3809623282891197,1
-Appendix Figure S5,E-1: Pharmacy,Full sample,DIM,std.error,2.7,2.7107333978058104,1
-Appendix Figure S5,E-1: Pharmacy,Full sample,OLS,estimate,3.9,3.890682972563536,1
-Appendix Figure S5,E-1: Pharmacy,Full sample,OLS,std.error,2.5,2.47609050109458,1
-Appendix Figure S5,E-1: Pharmacy,Strong Republican,DIM,estimate,7.6,7.59770660283657,1
-Appendix Figure S5,E-1: Pharmacy,Strong Republican,DIM,std.error,5.6,5.553996674120652,1
-Appendix Figure S5,E-1: Pharmacy,Strong Republican,OLS,estimate,6.3,6.268426370026595,1
-Appendix Figure S5,E-1: Pharmacy,Strong Republican,OLS,std.error,4.4,4.402487935659488,1
-Appendix Figure S5,E-1: Pharmacy,Weak Republican,DIM,estimate,-7.7,-7.652806687552069,1
-Appendix Figure S5,E-1: Pharmacy,Weak Republican,DIM,std.error,8.2,8.189991067886096,1
-Appendix Figure S5,E-1: Pharmacy,Weak Republican,OLS,estimate,-5.4,-5.403746983649134,1
-Appendix Figure S5,E-1: Pharmacy,Weak Republican,OLS,std.error,6.3,6.339840667159262,1
-Appendix Figure S5,E-1: Pharmacy,Lean Republican,DIM,estimate,13.8,13.792797581364033,1
-Appendix Figure S5,E-1: Pharmacy,Lean Republican,DIM,std.error,11.1,11.051986164636222,1
-Appendix Figure S5,E-1: Pharmacy,Lean Republican,OLS,estimate,-0.3,-0.31953742616924435,1
-Appendix Figure S5,E-1: Pharmacy,Lean Republican,OLS,std.error,8.8,8.847301610202113,1
-Appendix Figure S5,E-1: Pharmacy,Independent,DIM,estimate,-0.1,-0.1313564959164491,1
-Appendix Figure S5,E-1: Pharmacy,Independent,DIM,std.error,7.0,7.02180491081748,1
-Appendix Figure S5,E-1: Pharmacy,Independent,OLS,estimate,7.8,7.825962612791475,1
-Appendix Figure S5,E-1: Pharmacy,Independent,OLS,std.error,6.0,6.045197305939689,1
-Appendix Figure S5,E-1: Pharmacy,Lean Democrat,DIM,estimate,3.0,2.9733664498293058,1
-Appendix Figure S5,E-1: Pharmacy,Lean Democrat,DIM,std.error,7.6,7.60877879103119,1
-Appendix Figure S5,E-1: Pharmacy,Lean Democrat,OLS,estimate,10.9,10.919564296720011,1
-Appendix Figure S5,E-1: Pharmacy,Lean Democrat,OLS,std.error,6.8,6.781456730181394,1
-Appendix Figure S5,E-1: Pharmacy,Weak Democrat,DIM,estimate,5.6,5.625945107887659,1
-Appendix Figure S5,E-1: Pharmacy,Weak Democrat,DIM,std.error,7.4,7.449165626477116,1
-Appendix Figure S5,E-1: Pharmacy,Weak Democrat,OLS,estimate,5.3,5.284123901743625,1
-Appendix Figure S5,E-1: Pharmacy,Weak Democrat,OLS,std.error,6.1,6.1088368035732,1
-Appendix Figure S5,E-1: Pharmacy,Strong Democrat,DIM,estimate,-0.6,-0.5987789686394224,1
-Appendix Figure S5,E-1: Pharmacy,Strong Democrat,DIM,std.error,5.3,5.332844723209777,1
-Appendix Figure S5,E-1: Pharmacy,Strong Democrat,OLS,estimate,0.8,0.7741452811340467,1
-Appendix Figure S5,E-1: Pharmacy,Strong Democrat,OLS,std.error,4.6,4.5844658278335615,1
-Appendix Figure S6,E-1: Insurance,Full sample,DIM,estimate,3.2,3.1725639650834747,1
-Appendix Figure S6,E-1: Insurance,Full sample,DIM,std.error,2.7,2.688472257197695,1
-Appendix Figure S6,E-1: Insurance,Full sample,OLS,estimate,3.3,3.303738564584027,1
-Appendix Figure S6,E-1: Insurance,Full sample,OLS,std.error,2.5,2.45977128872201,1
-Appendix Figure S6,E-1: Insurance,Strong Republican,DIM,estimate,11.4,11.425436970034704,1
-Appendix Figure S6,E-1: Insurance,Strong Republican,DIM,std.error,5.2,5.211432853260045,1
-Appendix Figure S6,E-1: Insurance,Strong Republican,OLS,estimate,6.4,6.378963341040375,1
-Appendix Figure S6,E-1: Insurance,Strong Republican,OLS,std.error,4.3,4.2706653518490185,1
-Appendix Figure S6,E-1: Insurance,Weak Republican,DIM,estimate,-0.4,-0.3925507381149247,1
-Appendix Figure S6,E-1: Insurance,Weak Republican,DIM,std.error,7.8,7.757098891203401,1
-Appendix Figure S6,E-1: Insurance,Weak Republican,OLS,estimate,-2.0,-2.03350694445767,1
-Appendix Figure S6,E-1: Insurance,Weak Republican,OLS,std.error,6.4,6.4019994009266865,1
-Appendix Figure S6,E-1: Insurance,Lean Republican,DIM,estimate,17.9,17.919648340418878,1
-Appendix Figure S6,E-1: Insurance,Lean Republican,DIM,std.error,11.4,11.440746478114567,1
-Appendix Figure S6,E-1: Insurance,Lean Republican,OLS,estimate,21.4,21.408157385372213,1
-Appendix Figure S6,E-1: Insurance,Lean Republican,OLS,std.error,9.6,9.645900764578142,1
-Appendix Figure S6,E-1: Insurance,Independent,DIM,estimate,2.4,2.422363727762866,1
-Appendix Figure S6,E-1: Insurance,Independent,DIM,std.error,7.0,6.965482103034643,1
-Appendix Figure S6,E-1: Insurance,Independent,OLS,estimate,3.9,3.93933544634305,1
-Appendix Figure S6,E-1: Insurance,Independent,OLS,std.error,6.1,6.142481277104586,1
-Appendix Figure S6,E-1: Insurance,Lean Democrat,DIM,estimate,-9.1,-9.093010305232225,1
-Appendix Figure S6,E-1: Insurance,Lean Democrat,DIM,std.error,8.6,8.57631162647341,1
-Appendix Figure S6,E-1: Insurance,Lean Democrat,OLS,estimate,-4.6,-4.572853601223928,1
-Appendix Figure S6,E-1: Insurance,Lean Democrat,OLS,std.error,6.9,6.88513511237305,1
-Appendix Figure S6,E-1: Insurance,Weak Democrat,DIM,estimate,-2.1,-2.0638401752533,1
-Appendix Figure S6,E-1: Insurance,Weak Democrat,DIM,std.error,7.9,7.881340223439157,1
-Appendix Figure S6,E-1: Insurance,Weak Democrat,OLS,estimate,-2.6,-2.61552405242096,1
-Appendix Figure S6,E-1: Insurance,Weak Democrat,OLS,std.error,6.1,6.145089162127304,1
-Appendix Figure S6,E-1: Insurance,Strong Democrat,DIM,estimate,1.6,1.558298954048229,1
-Appendix Figure S6,E-1: Insurance,Strong Democrat,DIM,std.error,5.3,5.308939919673221,1
-Appendix Figure S6,E-1: Insurance,Strong Democrat,OLS,estimate,3.7,3.733886775822127,1
-Appendix Figure S6,E-1: Insurance,Strong Democrat,OLS,std.error,4.8,4.7906828578091245,1
-Appendix Figure S7,E-1: Spiritual Leader,Full sample,DIM,estimate,-4.6,-4.567666047999567,1
-Appendix Figure S7,E-1: Spiritual Leader,Full sample,DIM,std.error,2.8,2.7751271207369252,1
-Appendix Figure S7,E-1: Spiritual Leader,Full sample,OLS,estimate,-4.7,-4.7153380499053865,1
-Appendix Figure S7,E-1: Spiritual Leader,Full sample,OLS,std.error,2.5,2.5371821373466217,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,DIM,estimate,8.8,8.80865514708402,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,DIM,std.error,5.5,5.484799944428341,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,OLS,estimate,7.1,7.101212458556068,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,OLS,std.error,4.4,4.395614332561422,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,DIM,estimate,-9.6,-9.5562461819707,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,DIM,std.error,7.7,7.740625650013033,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,OLS,estimate,-12.9,-12.923431153820657,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,OLS,std.error,6.8,6.812712317813389,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,DIM,estimate,2.6,2.5625568770401457,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,DIM,std.error,12.0,12.032118760322168,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,OLS,estimate,-9.4,-9.374853437861152,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,OLS,std.error,9.4,9.366072314234678,1
-Appendix Figure S7,E-1: Spiritual Leader,Independent,DIM,estimate,-1.4,-1.4324079062995083,1
-Appendix Figure S7,E-1: Spiritual Leader,Independent,DIM,std.error,7.2,7.177590959301712,1
-Appendix Figure S7,E-1: Spiritual Leader,Independent,OLS,estimate,-0.4,-0.4251720250531505,1
-Appendix Figure S7,E-1: Spiritual Leader,Independent,OLS,std.error,6.0,5.977573351501107,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,DIM,estimate,-13.6,-13.619299156523354,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,DIM,std.error,8.9,8.868895745129432,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,OLS,estimate,-10.1,-10.067633946969517,1
-Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,OLS,std.error,6.9,6.869754893383331,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,DIM,estimate,-2.8,-2.7525311001610357,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,DIM,std.error,7.9,7.850535644974768,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,OLS,estimate,-4.7,-4.670761304564124,1
-Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,OLS,std.error,6.1,6.129850918960442,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,DIM,estimate,-16.3,-16.307233979664023,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,DIM,std.error,5.7,5.665165931779071,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,OLS,estimate,-13.4,-13.447859759260266,1
-Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,OLS,std.error,4.9,4.928887153924291,1
-Appendix Figure S8,E-2: Trump,Full sample,DIM,estimate,-5.5,-5.534245170841642,1
-Appendix Figure S8,E-2: Trump,Full sample,DIM,std.error,3.9,3.892614617312401,1
-Appendix Figure S8,E-2: Trump,Full sample,OLS,estimate,-4.7,-4.688615886957842,1
-Appendix Figure S8,E-2: Trump,Full sample,OLS,std.error,3.6,3.5789160453790427,1
-Appendix Figure S8,E-2: Trump,Strong Republican,DIM,estimate,6.5,6.478189483941353,1
-Appendix Figure S8,E-2: Trump,Strong Republican,DIM,std.error,9.1,9.068033275442431,1
-Appendix Figure S8,E-2: Trump,Strong Republican,OLS,estimate,-1.6,-2.0027773745052624,0
-Appendix Figure S8,E-2: Trump,Strong Republican,OLS,std.error,7.3,7.282557706262879,1
-Appendix Figure S8,E-2: Trump,Weak Republican,DIM,estimate,-1.4,-1.373660093507848,1
-Appendix Figure S8,E-2: Trump,Weak Republican,DIM,std.error,11.2,11.246822894414562,1
-Appendix Figure S8,E-2: Trump,Weak Republican,OLS,estimate,-1.8,-1.7514978494887985,1
-Appendix Figure S8,E-2: Trump,Weak Republican,OLS,std.error,10.3,10.324055404723724,1
-Appendix Figure S8,E-2: Trump,Lean Republican,DIM,estimate,0.8,0.7920642490330384,1
-Appendix Figure S8,E-2: Trump,Lean Republican,DIM,std.error,14.2,14.179137048410755,1
-Appendix Figure S8,E-2: Trump,Lean Republican,OLS,estimate,17.2,17.198733449077285,1
-Appendix Figure S8,E-2: Trump,Lean Republican,OLS,std.error,8.9,8.884165591867383,1
-Appendix Figure S8,E-2: Trump,Independent,DIM,estimate,-5.5,-5.473496244356949,1
-Appendix Figure S8,E-2: Trump,Independent,DIM,std.error,8.7,8.682809332093973,1
-Appendix Figure S8,E-2: Trump,Independent,OLS,estimate,-5.0,-5.006681189050241,1
-Appendix Figure S8,E-2: Trump,Independent,OLS,std.error,7.7,7.721036471814808,1
-Appendix Figure S8,E-2: Trump,Lean Democrat,DIM,estimate,-24.4,-24.445038631318212,1
-Appendix Figure S8,E-2: Trump,Lean Democrat,DIM,std.error,12.6,12.634306483360502,1
-Appendix Figure S8,E-2: Trump,Lean Democrat,OLS,estimate,12.5,12.518696620923034,1
-Appendix Figure S8,E-2: Trump,Lean Democrat,OLS,std.error,9.6,9.60532613285056,1
-Appendix Figure S8,E-2: Trump,Weak Democrat,DIM,estimate,-5.4,-5.413287329723941,1
-Appendix Figure S8,E-2: Trump,Weak Democrat,DIM,std.error,7.5,7.503530165299366,1
-Appendix Figure S8,E-2: Trump,Weak Democrat,OLS,estimate,-5.9,-5.894292315442283,1
-Appendix Figure S8,E-2: Trump,Weak Democrat,OLS,std.error,6.5,6.510494078742328,1
-Appendix Figure S8,E-2: Trump,Strong Democrat,DIM,estimate,-13.8,-13.760597443949244,1
-Appendix Figure S8,E-2: Trump,Strong Democrat,DIM,std.error,8.3,8.28402318319647,1
-Appendix Figure S8,E-2: Trump,Strong Democrat,OLS,estimate,-16.7,-16.66596781985749,1
-Appendix Figure S8,E-2: Trump,Strong Democrat,OLS,std.error,6.0,6.036237806717595,1
-Appendix Figure S9,E-2: Trump and Fauci,Full sample,DIM,estimate,-7.0,-6.985373042613185,1
-Appendix Figure S9,E-2: Trump and Fauci,Full sample,DIM,std.error,4.0,4.010889424213387,1
-Appendix Figure S9,E-2: Trump and Fauci,Full sample,OLS,estimate,-6.4,-6.41157239108939,1
-Appendix Figure S9,E-2: Trump and Fauci,Full sample,OLS,std.error,3.6,3.55058462808018,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,DIM,estimate,-10.6,-10.62427796882766,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,DIM,std.error,8.6,8.60102729496076,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,OLS,estimate,-12.8,-12.789632529944171,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,OLS,std.error,6.9,6.947052404099301,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,DIM,estimate,-15.3,-15.320263695685355,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,DIM,std.error,11.4,11.379986539383246,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,OLS,estimate,-6.9,-6.8946222432034,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,OLS,std.error,9.7,9.7301966810832,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,DIM,estimate,2.7,2.664482249985839,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,DIM,std.error,13.6,13.61051121837038,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,OLS,estimate,21.2,21.237653413812605,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,OLS,std.error,11.6,11.594692405783483,1
-Appendix Figure S9,E-2: Trump and Fauci,Independent,DIM,estimate,-0.5,-0.533844514590129,1
-Appendix Figure S9,E-2: Trump and Fauci,Independent,DIM,std.error,8.8,8.771156429486851,1
-Appendix Figure S9,E-2: Trump and Fauci,Independent,OLS,estimate,2.6,2.5526334421494936,1
-Appendix Figure S9,E-2: Trump and Fauci,Independent,OLS,std.error,6.9,6.9427968353662894,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,DIM,estimate,-20.1,-20.11878520007935,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,DIM,std.error,13.8,13.825851958296669,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,OLS,estimate,-18.1,-18.059467150883677,1
-Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,OLS,std.error,7.4,7.446516048111978,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,DIM,estimate,-8.7,-8.667867660148437,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,DIM,std.error,9.0,9.015927243912715,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,OLS,estimate,-10.6,-10.628489255040286,1
-Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,OLS,std.error,6.1,6.116878314123052,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,DIM,estimate,1.4,1.4306293419585032,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,DIM,std.error,7.5,7.50230752794968,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,OLS,estimate,-3.7,-3.655048467405248,1
-Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,OLS,std.error,5.1,5.069175196888968,1
-Appendix Figure S10,E-2: Fauci,Full sample,DIM,estimate,-4.4,-4.429783987961526,1
-Appendix Figure S10,E-2: Fauci,Full sample,DIM,std.error,3.9,3.898603083464552,1
-Appendix Figure S10,E-2: Fauci,Full sample,OLS,estimate,-3.2,-3.159711316474568,1
-Appendix Figure S10,E-2: Fauci,Full sample,OLS,std.error,3.5,3.5241574588665037,1
-Appendix Figure S10,E-2: Fauci,Strong Republican,DIM,estimate,0.2,0.1746244641348932,1
-Appendix Figure S10,E-2: Fauci,Strong Republican,DIM,std.error,9.0,8.986620178278425,1
-Appendix Figure S10,E-2: Fauci,Strong Republican,OLS,estimate,-8.1,-8.195667735060502,0
-Appendix Figure S10,E-2: Fauci,Strong Republican,OLS,std.error,6.9,6.911641885925303,1
-Appendix Figure S10,E-2: Fauci,Weak Republican,DIM,estimate,1.8,1.7533011980839754,1
-Appendix Figure S10,E-2: Fauci,Weak Republican,DIM,std.error,12.0,11.98432386206274,1
-Appendix Figure S10,E-2: Fauci,Weak Republican,OLS,estimate,-0.7,-0.6772587396958332,1
-Appendix Figure S10,E-2: Fauci,Weak Republican,OLS,std.error,8.4,8.413724787441483,1
-Appendix Figure S10,E-2: Fauci,Lean Republican,DIM,estimate,-10.1,-10.146014523843984,1
-Appendix Figure S10,E-2: Fauci,Lean Republican,DIM,std.error,12.5,12.492010053502757,1
-Appendix Figure S10,E-2: Fauci,Lean Republican,OLS,estimate,3.6,3.5504459907689996,1
-Appendix Figure S10,E-2: Fauci,Lean Republican,OLS,std.error,8.5,8.524441890108948,1
-Appendix Figure S10,E-2: Fauci,Independent,DIM,estimate,-10.9,-10.923972154053695,1
-Appendix Figure S10,E-2: Fauci,Independent,DIM,std.error,8.3,8.268535617196566,1
-Appendix Figure S10,E-2: Fauci,Independent,OLS,estimate,-4.3,-4.325193709792185,1
-Appendix Figure S10,E-2: Fauci,Independent,OLS,std.error,6.5,6.493048652790177,1
-Appendix Figure S10,E-2: Fauci,Lean Democrat,DIM,estimate,-3.2,-3.1696928006426344,1
-Appendix Figure S10,E-2: Fauci,Lean Democrat,DIM,std.error,12.3,12.334502980489695,1
-Appendix Figure S10,E-2: Fauci,Lean Democrat,OLS,estimate,24.2,24.17422671295036,1
-Appendix Figure S10,E-2: Fauci,Lean Democrat,OLS,std.error,10.4,10.44192531818901,1
-Appendix Figure S10,E-2: Fauci,Weak Democrat,DIM,estimate,-12.0,-11.95723939116676,1
-Appendix Figure S10,E-2: Fauci,Weak Democrat,DIM,std.error,8.8,8.792242257519524,1
-Appendix Figure S10,E-2: Fauci,Weak Democrat,OLS,estimate,-11.2,-11.169253121967069,1
-Appendix Figure S10,E-2: Fauci,Weak Democrat,OLS,std.error,7.6,7.611574345466011,1
-Appendix Figure S10,E-2: Fauci,Strong Democrat,DIM,estimate,6.3,6.285405113339728,1
-Appendix Figure S10,E-2: Fauci,Strong Democrat,DIM,std.error,7.2,7.173830975034254,1
-Appendix Figure S10,E-2: Fauci,Strong Democrat,OLS,estimate,2.1,2.0928645200411338,1
-Appendix Figure S10,E-2: Fauci,Strong Democrat,OLS,std.error,5.3,5.2621618670542745,1
-Appendix Figure S11,E-2: Biden and Fauci,Full sample,DIM,estimate,-8.7,-8.728503195148951,1
-Appendix Figure S11,E-2: Biden and Fauci,Full sample,DIM,std.error,4.0,4.014478671824876,1
-Appendix Figure S11,E-2: Biden and Fauci,Full sample,OLS,estimate,-5.6,-5.550017976144163,1
-Appendix Figure S11,E-2: Biden and Fauci,Full sample,OLS,std.error,3.6,3.5961274099411287,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,DIM,estimate,-9.9,-9.924752795077245,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,DIM,std.error,9.0,8.965764926797737,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,OLS,estimate,-27.8,-27.824893528452467,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,OLS,std.error,7.0,6.984302998583809,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,DIM,estimate,1.4,1.4087798769605704,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,DIM,std.error,12.1,12.113306563041345,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,OLS,estimate,-6.0,-6.002168224271226,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,OLS,std.error,9.0,9.048802957182277,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,DIM,estimate,-20.4,-20.36259399241801,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,DIM,std.error,12.3,12.27460847459426,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,OLS,estimate,-1.0,-1.0186824772799434,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,OLS,std.error,9.5,9.453580990435322,1
-Appendix Figure S11,E-2: Biden and Fauci,Independent,DIM,estimate,-8.6,-8.551249464926983,1
-Appendix Figure S11,E-2: Biden and Fauci,Independent,DIM,std.error,8.7,8.698704514430094,1
-Appendix Figure S11,E-2: Biden and Fauci,Independent,OLS,estimate,-3.3,-3.2913481711759665,1
-Appendix Figure S11,E-2: Biden and Fauci,Independent,OLS,std.error,6.4,6.399637270330244,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,DIM,estimate,-25.2,-25.219100424877105,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,DIM,std.error,14.1,14.072978540497772,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,OLS,estimate,-11.4,-11.382216011785298,1
-Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,OLS,std.error,11.8,11.780681587270696,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,DIM,estimate,-8.7,-8.714002141233196,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,DIM,std.error,8.4,8.359707342214104,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,OLS,estimate,-6.1,-6.103057411663259,1
-Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,OLS,std.error,6.8,6.791928744248378,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,DIM,estimate,-1.0,-1.016866835148887,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,DIM,std.error,7.9,7.886286727052255,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,OLS,estimate,1.3,1.3027170318493484,1
-Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,OLS,std.error,6.1,6.061089146019226,1
-Appendix Figure S12,E-2: Biden,Full sample,DIM,estimate,-13.2,-13.202392647108883,1
-Appendix Figure S12,E-2: Biden,Full sample,DIM,std.error,4.1,4.051363437290903,1
-Appendix Figure S12,E-2: Biden,Full sample,OLS,estimate,-9.7,-9.682095467939988,1
-Appendix Figure S12,E-2: Biden,Full sample,OLS,std.error,3.6,3.616670811183355,1
-Appendix Figure S12,E-2: Biden,Strong Republican,DIM,estimate,-20.6,-20.597610242309877,1
-Appendix Figure S12,E-2: Biden,Strong Republican,DIM,std.error,8.4,8.41426159872409,1
-Appendix Figure S12,E-2: Biden,Strong Republican,OLS,estimate,-24.2,-24.09357799828762,0
-Appendix Figure S12,E-2: Biden,Strong Republican,OLS,std.error,6.6,6.6135533712190036,1
-Appendix Figure S12,E-2: Biden,Weak Republican,DIM,estimate,-4.2,-4.233740535019127,1
-Appendix Figure S12,E-2: Biden,Weak Republican,DIM,std.error,11.7,11.744560315688348,1
-Appendix Figure S12,E-2: Biden,Weak Republican,OLS,estimate,0.4,0.4429249217142593,1
-Appendix Figure S12,E-2: Biden,Weak Republican,OLS,std.error,9.7,9.73317940480736,1
-Appendix Figure S12,E-2: Biden,Lean Republican,DIM,estimate,-8.8,-8.75278339238374,1
-Appendix Figure S12,E-2: Biden,Lean Republican,DIM,std.error,13.6,13.64835543373551,1
-Appendix Figure S12,E-2: Biden,Lean Republican,OLS,estimate,-1.4,-1.3766598852243557,1
-Appendix Figure S12,E-2: Biden,Lean Republican,OLS,std.error,11.5,11.530393748302435,1
-Appendix Figure S12,E-2: Biden,Independent,DIM,estimate,-18.5,-18.48123587422864,1
-Appendix Figure S12,E-2: Biden,Independent,DIM,std.error,8.4,8.357697605349458,1
-Appendix Figure S12,E-2: Biden,Independent,OLS,estimate,-13.3,-13.318964764049568,1
-Appendix Figure S12,E-2: Biden,Independent,OLS,std.error,7.2,7.150639178219495,1
-Appendix Figure S12,E-2: Biden,Lean Democrat,DIM,estimate,-5.6,-5.565812244138605,1
-Appendix Figure S12,E-2: Biden,Lean Democrat,DIM,std.error,12.1,12.1242857045442,1
-Appendix Figure S12,E-2: Biden,Lean Democrat,OLS,estimate,10.2,10.23840418429642,1
-Appendix Figure S12,E-2: Biden,Lean Democrat,OLS,std.error,10.1,10.055381376146803,1
-Appendix Figure S12,E-2: Biden,Weak Democrat,DIM,estimate,-8.5,-8.461349907411423,1
-Appendix Figure S12,E-2: Biden,Weak Democrat,DIM,std.error,9.3,9.311638222966437,1
-Appendix Figure S12,E-2: Biden,Weak Democrat,OLS,estimate,-13.6,-13.565881149904849,1
-Appendix Figure S12,E-2: Biden,Weak Democrat,OLS,std.error,6.8,6.787046987075971,1
-Appendix Figure S12,E-2: Biden,Strong Democrat,DIM,estimate,0.7,0.7087318061495106,1
-Appendix Figure S12,E-2: Biden,Strong Democrat,DIM,std.error,7.7,7.691845015320427,1
-Appendix Figure S12,E-2: Biden,Strong Democrat,OLS,estimate,3.1,3.068011988333074,1
-Appendix Figure S12,E-2: Biden,Strong Democrat,OLS,std.error,5.2,5.235595964483474,1
-Appendix Figure S13,E-2: Obama,Full sample,DIM,estimate,-13.4,-13.442485812622037,1
-Appendix Figure S13,E-2: Obama,Full sample,DIM,std.error,4.0,3.9625804799561815,1
-Appendix Figure S13,E-2: Obama,Full sample,OLS,estimate,-10.9,-10.865337878007912,1
-Appendix Figure S13,E-2: Obama,Full sample,OLS,std.error,3.5,3.514959843108144,1
-Appendix Figure S13,E-2: Obama,Strong Republican,DIM,estimate,-10.9,-10.85221750633466,1
-Appendix Figure S13,E-2: Obama,Strong Republican,DIM,std.error,8.4,8.430171094445885,1
-Appendix Figure S13,E-2: Obama,Strong Republican,OLS,estimate,-19.3,-19.257971012632645,1
-Appendix Figure S13,E-2: Obama,Strong Republican,OLS,std.error,6.6,6.741059426760698,0
-Appendix Figure S13,E-2: Obama,Weak Republican,DIM,estimate,-17.4,-17.38410397862465,1
-Appendix Figure S13,E-2: Obama,Weak Republican,DIM,std.error,11.9,11.893377482296538,1
-Appendix Figure S13,E-2: Obama,Weak Republican,OLS,estimate,-8.3,-8.290189426460902,1
-Appendix Figure S13,E-2: Obama,Weak Republican,OLS,std.error,9.4,9.397412311622784,1
-Appendix Figure S13,E-2: Obama,Lean Republican,DIM,estimate,-35.4,-35.43765579910822,1
-Appendix Figure S13,E-2: Obama,Lean Republican,DIM,std.error,11.9,11.910738739853624,1
-Appendix Figure S13,E-2: Obama,Lean Republican,OLS,estimate,-23.0,-22.99957098412849,1
-Appendix Figure S13,E-2: Obama,Lean Republican,OLS,std.error,7.7,7.725895374681229,1
-Appendix Figure S13,E-2: Obama,Independent,DIM,estimate,-14.0,-13.99440332116176,1
-Appendix Figure S13,E-2: Obama,Independent,DIM,std.error,8.4,8.39525901303178,1
-Appendix Figure S13,E-2: Obama,Independent,OLS,estimate,-9.7,-9.68710029573229,1
-Appendix Figure S13,E-2: Obama,Independent,OLS,std.error,6.2,6.15074505229974,1
-Appendix Figure S13,E-2: Obama,Lean Democrat,DIM,estimate,-8.1,-8.147800437989094,1
-Appendix Figure S13,E-2: Obama,Lean Democrat,DIM,std.error,12.3,12.258576924093402,1
-Appendix Figure S13,E-2: Obama,Lean Democrat,OLS,estimate,-6.0,-5.988435329070198,1
-Appendix Figure S13,E-2: Obama,Lean Democrat,OLS,std.error,9.6,9.61047869756337,1
-Appendix Figure S13,E-2: Obama,Weak Democrat,DIM,estimate,-17.2,-17.150540892587504,1
-Appendix Figure S13,E-2: Obama,Weak Democrat,DIM,std.error,9.1,9.069293226236413,1
-Appendix Figure S13,E-2: Obama,Weak Democrat,OLS,estimate,-27.3,-27.29947989114337,1
-Appendix Figure S13,E-2: Obama,Weak Democrat,OLS,std.error,8.9,8.898610448720037,1
-Appendix Figure S13,E-2: Obama,Strong Democrat,DIM,estimate,-0.6,-0.6262764743964463,1
-Appendix Figure S13,E-2: Obama,Strong Democrat,DIM,std.error,7.6,7.57225776866291,1
-Appendix Figure S13,E-2: Obama,Strong Democrat,OLS,estimate,-4.3,-4.299435999554472,1
-Appendix Figure S13,E-2: Obama,Strong Democrat,OLS,std.error,5.4,5.401894646025038,1
-Appendix Figure S14,E-2: James,Full sample,DIM,estimate,-5.8,-5.767417041969389,1
-Appendix Figure S14,E-2: James,Full sample,DIM,std.error,3.9,3.9015142525708577,1
-Appendix Figure S14,E-2: James,Full sample,OLS,estimate,-3.0,-3.0205928275360048,1
-Appendix Figure S14,E-2: James,Full sample,OLS,std.error,3.5,3.527886151077395,1
-Appendix Figure S14,E-2: James,Strong Republican,DIM,estimate,-9.9,-9.868095463779737,1
-Appendix Figure S14,E-2: James,Strong Republican,DIM,std.error,8.8,8.83790815401233,1
-Appendix Figure S14,E-2: James,Strong Republican,OLS,estimate,-16.4,-16.016995470745258,0
-Appendix Figure S14,E-2: James,Strong Republican,OLS,std.error,7.0,7.1193916453696895,0
-Appendix Figure S14,E-2: James,Weak Republican,DIM,estimate,-3.3,-3.336722821163303,1
-Appendix Figure S14,E-2: James,Weak Republican,DIM,std.error,11.5,11.516492073748145,1
-Appendix Figure S14,E-2: James,Weak Republican,OLS,estimate,-5.1,-5.116131708798174,1
-Appendix Figure S14,E-2: James,Weak Republican,OLS,std.error,9.7,9.696240192024591,1
-Appendix Figure S14,E-2: James,Lean Republican,DIM,estimate,0.5,0.5251066471514948,1
-Appendix Figure S14,E-2: James,Lean Republican,DIM,std.error,13.6,13.610378609739582,1
-Appendix Figure S14,E-2: James,Lean Republican,OLS,estimate,11.3,11.324040837529074,1
-Appendix Figure S14,E-2: James,Lean Republican,OLS,std.error,7.9,7.868037071396239,1
-Appendix Figure S14,E-2: James,Independent,DIM,estimate,-6.2,-6.211807576634307,1
-Appendix Figure S14,E-2: James,Independent,DIM,std.error,8.6,8.586653244024973,1
-Appendix Figure S14,E-2: James,Independent,OLS,estimate,-0.3,-0.331611030186698,1
-Appendix Figure S14,E-2: James,Independent,OLS,std.error,7.1,7.146292839186931,1
-Appendix Figure S14,E-2: James,Lean Democrat,DIM,estimate,-8.6,-8.602409485997219,1
-Appendix Figure S14,E-2: James,Lean Democrat,DIM,std.error,12.5,12.496927652112706,1
-Appendix Figure S14,E-2: James,Lean Democrat,OLS,estimate,19.2,19.161037093039603,1
-Appendix Figure S14,E-2: James,Lean Democrat,OLS,std.error,11.0,11.023251283127149,1
-Appendix Figure S14,E-2: James,Weak Democrat,DIM,estimate,-2.4,-2.444529408147197,1
-Appendix Figure S14,E-2: James,Weak Democrat,DIM,std.error,6.9,6.870326999414456,1
-Appendix Figure S14,E-2: James,Weak Democrat,OLS,estimate,2.1,2.057388556721196,1
-Appendix Figure S14,E-2: James,Weak Democrat,OLS,std.error,5.7,5.682417128021587,1
-Appendix Figure S14,E-2: James,Strong Democrat,DIM,estimate,-2.8,-2.8448134520718953,1
-Appendix Figure S14,E-2: James,Strong Democrat,DIM,std.error,8.0,8.014905401573298,1
-Appendix Figure S14,E-2: James,Strong Democrat,OLS,estimate,-4.9,-4.947451804853502,1
-Appendix Figure S14,E-2: James,Strong Democrat,OLS,std.error,5.6,5.5983499242495895,1
-Appendix Figure S15,E-2: Ramos,Full sample,DIM,estimate,-8.8,-8.792582296560084,1
-Appendix Figure S15,E-2: Ramos,Full sample,DIM,std.error,4.0,4.012402175606737,1
-Appendix Figure S15,E-2: Ramos,Full sample,OLS,estimate,-5.5,-5.539747588791609,1
-Appendix Figure S15,E-2: Ramos,Full sample,OLS,std.error,3.6,3.5587212300353244,1
-Appendix Figure S15,E-2: Ramos,Strong Republican,DIM,estimate,-12.3,-12.277957949400092,1
-Appendix Figure S15,E-2: Ramos,Strong Republican,DIM,std.error,9.0,9.00556662168599,1
-Appendix Figure S15,E-2: Ramos,Strong Republican,OLS,estimate,-25.8,-25.72923265576697,0
-Appendix Figure S15,E-2: Ramos,Strong Republican,OLS,std.error,7.0,7.058793536545791,0
-Appendix Figure S15,E-2: Ramos,Weak Republican,DIM,estimate,-9.4,-9.419397301037566,1
-Appendix Figure S15,E-2: Ramos,Weak Republican,DIM,std.error,11.8,11.797771663350382,1
-Appendix Figure S15,E-2: Ramos,Weak Republican,OLS,estimate,-8.2,-8.225537383316054,1
-Appendix Figure S15,E-2: Ramos,Weak Republican,OLS,std.error,7.9,7.9425390164176175,1
-Appendix Figure S15,E-2: Ramos,Lean Republican,DIM,estimate,-4.7,-4.735989483830784,1
-Appendix Figure S15,E-2: Ramos,Lean Republican,DIM,std.error,14.3,14.313363527238096,1
-Appendix Figure S15,E-2: Ramos,Lean Republican,OLS,estimate,-2.7,-2.6879044920434754,1
-Appendix Figure S15,E-2: Ramos,Lean Republican,OLS,std.error,8.8,8.789578647276967,1
-Appendix Figure S15,E-2: Ramos,Independent,DIM,estimate,-14.6,-14.64331135345657,1
-Appendix Figure S15,E-2: Ramos,Independent,DIM,std.error,8.5,8.505869013202764,1
-Appendix Figure S15,E-2: Ramos,Independent,OLS,estimate,-10.8,-10.800419693395192,1
-Appendix Figure S15,E-2: Ramos,Independent,OLS,std.error,6.9,6.933742787400473,1
-Appendix Figure S15,E-2: Ramos,Lean Democrat,DIM,estimate,-13.7,-13.650633202775644,1
-Appendix Figure S15,E-2: Ramos,Lean Democrat,DIM,std.error,12.9,12.915164734234164,1
-Appendix Figure S15,E-2: Ramos,Lean Democrat,OLS,estimate,-15.8,-15.795272425221452,1
-Appendix Figure S15,E-2: Ramos,Lean Democrat,OLS,std.error,7.7,7.689879483457234,1
-Appendix Figure S15,E-2: Ramos,Weak Democrat,DIM,estimate,-17.3,-17.34688561930895,1
-Appendix Figure S15,E-2: Ramos,Weak Democrat,DIM,std.error,9.9,9.889835568294812,1
-Appendix Figure S15,E-2: Ramos,Weak Democrat,OLS,estimate,-15.3,-15.348471557175849,1
-Appendix Figure S15,E-2: Ramos,Weak Democrat,OLS,std.error,7.8,7.777387371555854,1
-Appendix Figure S15,E-2: Ramos,Strong Democrat,DIM,estimate,8.5,8.49804982543027,1
-Appendix Figure S15,E-2: Ramos,Strong Democrat,DIM,std.error,7.0,6.969318789688995,1
-Appendix Figure S15,E-2: Ramos,Strong Democrat,OLS,estimate,10.9,10.904656397550903,1
-Appendix Figure S15,E-2: Ramos,Strong Democrat,OLS,std.error,4.5,4.464897668096986,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,DIM,estimate,6.0,5.960099913507569,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,DIM,std.error,0.7,0.7406825931679651,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,OLS,estimate,6.0,5.982114960867598,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,OLS,std.error,0.7,0.7187027164967242,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,DIM,estimate,4.6,4.640347427843623,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,DIM,std.error,1.7,1.6657092495543036,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,OLS,estimate,4.9,4.927798766893745,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,OLS,std.error,1.6,1.5847714533181214,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,DIM,estimate,4.5,4.500796765672321,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,DIM,std.error,2.3,2.3092199442178782,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,OLS,estimate,5.2,5.218872527665911,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,OLS,std.error,2.2,2.211960702749451,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,DIM,estimate,12.4,12.356049105538895,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,DIM,std.error,2.7,2.659917410882475,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,OLS,estimate,11.5,11.493177083307598,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,OLS,std.error,2.6,2.6061086891107967,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,DIM,estimate,6.6,6.645821151780126,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,DIM,std.error,1.7,1.723436476174605,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,OLS,estimate,6.6,6.580429047545539,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,OLS,std.error,1.7,1.6844036934992832,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,DIM,estimate,9.4,9.445409814175957,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,DIM,std.error,2.7,2.739905596623765,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,OLS,estimate,8.8,8.778716280807044,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,OLS,std.error,2.7,2.6900730113179003,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,DIM,estimate,2.9,2.9431308571925694,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,DIM,std.error,2.2,2.1766651754982305,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,OLS,estimate,3.6,3.6052278541363663,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,OLS,std.error,2.1,2.0513043990866464,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,DIM,estimate,5.2,5.242540176813339,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,DIM,std.error,1.4,1.4385416820854144,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,OLS,estimate,5.3,5.282485842385633,1
-Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,OLS,std.error,1.4,1.3553485675776482,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,DIM,estimate,1.2,1.168375200610324,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,DIM,std.error,0.8,0.8056292727762491,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,OLS,estimate,1.5,1.5402564883122034,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,OLS,std.error,0.7,0.7429736890122256,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,DIM,estimate,2.5,2.453567027494905,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,DIM,std.error,1.9,1.9486809607024425,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,OLS,estimate,2.8,2.7897369984919376,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,OLS,std.error,1.8,1.8123949128068813,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,DIM,estimate,-3.0,-3.0138338416078323,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,DIM,std.error,2.6,2.560826631776362,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,OLS,estimate,-1.6,-1.6200719509747743,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,OLS,std.error,2.4,2.429600623714619,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,DIM,estimate,6.0,5.9861893535072035,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,DIM,std.error,3.0,3.022233374885645,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,OLS,estimate,7.9,7.9196314364220655,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,OLS,std.error,2.7,2.7288380763840587,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Independent,DIM,estimate,0.1,0.11760306446453836,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Independent,DIM,std.error,2.0,1.9913452048023847,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Independent,OLS,estimate,0.7,0.7098067303724311,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Independent,OLS,std.error,1.9,1.8552978839352456,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,DIM,estimate,5.9,5.881683969919789,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,DIM,std.error,2.7,2.668699510400294,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,OLS,estimate,6.3,6.271174477705385,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,OLS,std.error,2.5,2.498306748669902,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,DIM,estimate,-1.6,-1.5622914711056126,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,DIM,std.error,2.0,1.9956652857386863,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,OLS,estimate,-1.5,-1.4590612169700872,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,OLS,std.error,1.9,1.9414061935527969,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,DIM,estimate,1.4,1.359871015261164,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,DIM,std.error,1.2,1.1778084150735606,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,OLS,estimate,1.1,1.064846581733598,1
-Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,OLS,std.error,1.1,1.1338840204210008,1
-Appendix Figure S18,I-1: Contagiousness,Full sample,DIM,estimate,-1.0,-1.0396019733445738,1
-Appendix Figure S18,I-1: Contagiousness,Full sample,DIM,std.error,1.4,1.402286406987955,1
-Appendix Figure S18,I-1: Contagiousness,Full sample,OLS,estimate,-1.0,-0.9569165315850552,1
-Appendix Figure S18,I-1: Contagiousness,Full sample,OLS,std.error,1.3,1.284222813696647,1
-Appendix Figure S18,I-1: Contagiousness,Strong Republican,DIM,estimate,-1.5,-1.475077750174967,1
-Appendix Figure S18,I-1: Contagiousness,Strong Republican,DIM,std.error,2.3,2.275576907261029,1
-Appendix Figure S18,I-1: Contagiousness,Strong Republican,OLS,estimate,-0.6,-0.5596906649714196,1
-Appendix Figure S18,I-1: Contagiousness,Strong Republican,OLS,std.error,2.0,1.9750353871552089,1
-Appendix Figure S18,I-1: Contagiousness,Weak Republican,DIM,estimate,0.8,0.8246552220123788,1
-Appendix Figure S18,I-1: Contagiousness,Weak Republican,DIM,std.error,4.1,4.132726984498845,1
-Appendix Figure S18,I-1: Contagiousness,Weak Republican,OLS,estimate,-0.8,-0.782376806471951,1
-Appendix Figure S18,I-1: Contagiousness,Weak Republican,OLS,std.error,3.7,3.673207662098539,1
-Appendix Figure S18,I-1: Contagiousness,Lean Republican,DIM,estimate,-0.1,-0.06264288438035237,1
-Appendix Figure S18,I-1: Contagiousness,Lean Republican,DIM,std.error,3.8,3.755902303445939,1
-Appendix Figure S18,I-1: Contagiousness,Lean Republican,OLS,estimate,2.0,1.971669260375341,1
-Appendix Figure S18,I-1: Contagiousness,Lean Republican,OLS,std.error,3.0,2.9508707649557877,1
-Appendix Figure S18,I-1: Contagiousness,Independent,DIM,estimate,3.1,3.0702325407637456,1
-Appendix Figure S18,I-1: Contagiousness,Independent,DIM,std.error,2.5,2.53685789601562,1
-Appendix Figure S18,I-1: Contagiousness,Independent,OLS,estimate,1.8,1.8307823417418825,1
-Appendix Figure S18,I-1: Contagiousness,Independent,OLS,std.error,2.3,2.2861428078082566,1
-Appendix Figure S18,I-1: Contagiousness,Lean Democrat,DIM,estimate,-6.4,-6.41745545116742,1
-Appendix Figure S18,I-1: Contagiousness,Lean Democrat,DIM,std.error,6.5,6.517488735325461,1
-Appendix Figure S18,I-1: Contagiousness,Lean Democrat,OLS,estimate,-2.1,-2.1027190432195475,1
-Appendix Figure S18,I-1: Contagiousness,Lean Democrat,OLS,std.error,5.7,5.678280417863952,1
-Appendix Figure S18,I-1: Contagiousness,Weak Democrat,DIM,estimate,-0.6,-0.5926701099738202,1
-Appendix Figure S18,I-1: Contagiousness,Weak Democrat,DIM,std.error,4.9,4.946650585883248,1
-Appendix Figure S18,I-1: Contagiousness,Weak Democrat,OLS,estimate,-0.6,-0.6140211992910001,1
-Appendix Figure S18,I-1: Contagiousness,Weak Democrat,OLS,std.error,4.3,4.3044333789592155,1
-Appendix Figure S18,I-1: Contagiousness,Strong Democrat,DIM,estimate,-11.3,-11.315834986749245,1
-Appendix Figure S18,I-1: Contagiousness,Strong Democrat,DIM,std.error,5.4,5.395035932817057,1
-Appendix Figure S18,I-1: Contagiousness,Strong Democrat,OLS,estimate,-9.7,-9.686530760823985,1
-Appendix Figure S18,I-1: Contagiousness,Strong Democrat,OLS,std.error,4.5,4.538043548064734,1
-Appendix Figure S19,I-2: Delta Variant,Full sample,DIM,estimate,1.5,1.5420427879167882,1
-Appendix Figure S19,I-2: Delta Variant,Full sample,DIM,std.error,1.6,1.609814380136099,1
-Appendix Figure S19,I-2: Delta Variant,Full sample,OLS,estimate,1.6,1.642129823306598,1
-Appendix Figure S19,I-2: Delta Variant,Full sample,OLS,std.error,1.4,1.4287600291765388,1
-Appendix Figure S19,I-2: Delta Variant,Strong Republican,DIM,estimate,4.0,3.953228224698188,1
-Appendix Figure S19,I-2: Delta Variant,Strong Republican,DIM,std.error,2.9,2.892002014905786,1
-Appendix Figure S19,I-2: Delta Variant,Strong Republican,OLS,estimate,2.7,2.652909540506931,1
-Appendix Figure S19,I-2: Delta Variant,Strong Republican,OLS,std.error,2.4,2.406945177442026,1
-Appendix Figure S19,I-2: Delta Variant,Weak Republican,DIM,estimate,4.0,4.04489505665981,1
-Appendix Figure S19,I-2: Delta Variant,Weak Republican,DIM,std.error,4.5,4.5187106898586595,1
-Appendix Figure S19,I-2: Delta Variant,Weak Republican,OLS,estimate,7.6,7.62706477898777,1
-Appendix Figure S19,I-2: Delta Variant,Weak Republican,OLS,std.error,3.8,3.831057451873664,1
-Appendix Figure S19,I-2: Delta Variant,Lean Republican,DIM,estimate,-4.1,-4.0807623506977615,1
-Appendix Figure S19,I-2: Delta Variant,Lean Republican,DIM,std.error,3.9,3.927509683549967,1
-Appendix Figure S19,I-2: Delta Variant,Lean Republican,OLS,estimate,-3.4,-3.4088962522396846,1
-Appendix Figure S19,I-2: Delta Variant,Lean Republican,OLS,std.error,3.0,3.045700400490018,1
-Appendix Figure S19,I-2: Delta Variant,Independent,DIM,estimate,1.1,1.143586353131175,1
-Appendix Figure S19,I-2: Delta Variant,Independent,DIM,std.error,2.9,2.937465841347824,1
-Appendix Figure S19,I-2: Delta Variant,Independent,OLS,estimate,1.5,1.465296323974839,1
-Appendix Figure S19,I-2: Delta Variant,Independent,OLS,std.error,2.6,2.6229966644393294,1
-Appendix Figure S19,I-2: Delta Variant,Lean Democrat,DIM,estimate,-0.9,-0.8893784511389202,1
-Appendix Figure S19,I-2: Delta Variant,Lean Democrat,DIM,std.error,7.2,7.195093426581052,1
-Appendix Figure S19,I-2: Delta Variant,Lean Democrat,OLS,estimate,4.6,4.609002333623775,1
-Appendix Figure S19,I-2: Delta Variant,Lean Democrat,OLS,std.error,6.4,6.35308734569212,1
-Appendix Figure S19,I-2: Delta Variant,Weak Democrat,DIM,estimate,6.5,6.54307546457039,1
-Appendix Figure S19,I-2: Delta Variant,Weak Democrat,DIM,std.error,5.9,5.9484904100072615,1
-Appendix Figure S19,I-2: Delta Variant,Weak Democrat,OLS,estimate,6.0,6.014871382535867,1
-Appendix Figure S19,I-2: Delta Variant,Weak Democrat,OLS,std.error,5.1,5.13602692909209,1
-Appendix Figure S19,I-2: Delta Variant,Strong Democrat,DIM,estimate,-1.8,-1.7880141624790666,1
-Appendix Figure S19,I-2: Delta Variant,Strong Democrat,DIM,std.error,5.4,5.421985014276751,1
-Appendix Figure S19,I-2: Delta Variant,Strong Democrat,OLS,estimate,-3.9,-3.9261400953355334,1
-Appendix Figure S19,I-2: Delta Variant,Strong Democrat,OLS,std.error,4.6,4.5845441531899205,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,DIM,estimate,9.1,9.094961066916303,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,DIM,std.error,1.5,1.4655502624100183,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,OLS,estimate,8.3,8.323766581825888,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,OLS,std.error,1.3,1.3249847371647212,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,DIM,estimate,5.3,5.3404589871361265,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,DIM,std.error,3.4,3.4347025816675107,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,OLS,estimate,5.5,5.5253551017576195,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,OLS,std.error,3.2,3.150512951835041,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,DIM,estimate,10.1,10.08807287187342,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,DIM,std.error,4.0,3.973241252970499,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,OLS,estimate,9.7,9.73806967327436,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,OLS,std.error,3.5,3.503347713333859,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,DIM,estimate,8.6,8.550807759650116,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,DIM,std.error,4.8,4.803913901776558,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,OLS,estimate,7.9,7.858497499141497,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,OLS,std.error,4.2,4.170957707830851,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,DIM,estimate,6.1,6.134136155101191,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,DIM,std.error,3.8,3.763981169300412,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,OLS,estimate,4.8,4.7929344178882465,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,OLS,std.error,3.3,3.2815386231794106,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,DIM,estimate,12.3,12.28781407339252,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,DIM,std.error,4.5,4.515233555394809,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,OLS,estimate,12.5,12.524418222772724,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,OLS,std.error,3.8,3.795993203677867,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,DIM,estimate,15.7,15.680512276969836,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,DIM,std.error,3.8,3.830382192352043,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,OLS,estimate,17.1,17.114558304511263,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,OLS,std.error,3.5,3.5475671432860505,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,DIM,estimate,6.3,6.30992899064437,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,DIM,std.error,2.5,2.545176753738339,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,OLS,estimate,4.6,4.63554518568954,1
-Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,OLS,std.error,2.3,2.3395665864977415,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,DIM,estimate,15.5,15.531575326469206,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,DIM,std.error,3.6,3.5878319323166084,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,OLS,estimate,16.2,16.249807086690254,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,OLS,std.error,3.2,3.2294380185469507,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,DIM,estimate,24.3,24.312320000317243,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,DIM,std.error,9.8,9.84642741322058,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,OLS,estimate,23.8,23.80158785900963,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,OLS,std.error,8.5,8.537918704272307,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,DIM,estimate,16.2,16.202838085820257,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,DIM,std.error,10.0,9.951753253236449,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,OLS,estimate,15.5,15.539452186962269,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,OLS,std.error,8.9,8.876222956594985,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,DIM,estimate,21.3,21.328518589584665,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,DIM,std.error,14.8,14.84594854965666,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,OLS,estimate,16.4,16.439249037046004,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,OLS,std.error,13.1,13.144678194032142,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,DIM,estimate,7.1,7.086090260688334,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,DIM,std.error,9.2,9.249792756972996,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,OLS,estimate,10.7,10.709068879506209,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,OLS,std.error,7.3,7.334036725609057,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,DIM,estimate,10.0,10.006671226063908,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,DIM,std.error,10.6,10.589332455017043,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,OLS,estimate,-2.3,-2.268699202776714,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,OLS,std.error,7.5,7.505986922098691,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,DIM,estimate,24.9,24.887043449527138,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,DIM,std.error,8.5,8.540785489689235,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,OLS,estimate,26.1,26.08510443353607,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,OLS,std.error,6.7,6.700866913001395,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,DIM,estimate,13.4,13.388407399491689,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,DIM,std.error,5.7,5.664284774187394,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,OLS,estimate,11.3,11.25570399318383,1
-Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,OLS,std.error,4.6,4.647436810009474,1
-Appendix Figure S22,I-5: Vaccince - Child,Full sample,DIM,estimate,6.7,6.739162328502947,1
-Appendix Figure S22,I-5: Vaccince - Child,Full sample,DIM,std.error,3.7,3.732109731305782,1
-Appendix Figure S22,I-5: Vaccince - Child,Full sample,OLS,estimate,5.7,5.733106818649237,1
-Appendix Figure S22,I-5: Vaccince - Child,Full sample,OLS,std.error,3.4,3.427430319620025,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,DIM,estimate,-2.6,-2.5843920921182413,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,DIM,std.error,8.2,8.20697967331892,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,OLS,estimate,-1.2,-1.2075538867040354,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,OLS,std.error,6.5,6.505106279684801,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,DIM,estimate,13.2,13.16573485966208,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,DIM,std.error,8.0,7.963778018742988,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,OLS,estimate,15.1,15.1295571148864,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,OLS,std.error,5.8,5.8458722324647185,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,DIM,estimate,-7.6,-7.629799912420925,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,DIM,std.error,11.8,11.754350149465754,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,OLS,estimate,-2.2,-2.2450045670766072,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,OLS,std.error,8.9,8.944647184949165,1
-Appendix Figure S22,I-5: Vaccince - Child,Independent,DIM,estimate,16.2,16.202475664758804,1
-Appendix Figure S22,I-5: Vaccince - Child,Independent,DIM,std.error,8.8,8.802297426771776,1
-Appendix Figure S22,I-5: Vaccince - Child,Independent,OLS,estimate,15.2,15.179292490748624,1
-Appendix Figure S22,I-5: Vaccince - Child,Independent,OLS,std.error,7.4,7.402965575435529,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,DIM,estimate,11.8,11.840598231611306,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,DIM,std.error,12.5,12.53508904659744,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,OLS,estimate,11.6,11.573886122260063,1
-Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,OLS,std.error,8.8,8.81739882536063,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,DIM,estimate,-2.5,-2.461496075358628,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,DIM,std.error,10.2,10.197934043598522,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,OLS,estimate,2.7,2.653523535588006,1
-Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,OLS,std.error,9.0,9.006222132507334,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,DIM,estimate,5.3,5.262916757418898,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,DIM,std.error,7.7,7.71002992229215,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,OLS,estimate,5.9,5.877500720513354,1
-Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,OLS,std.error,7.3,7.2658009109212465,1
+float,contrast,subgroup,estimator,quantity,value_paper,value_rewrite,cell_agrees,covariates_trimmed
+Appendix Figure S1,E-1: Trump,Full sample,DIM,estimate,-9.5,-9.48780284984628,1,NA
+Appendix Figure S1,E-1: Trump,Full sample,DIM,std.error,2.8,2.7923208585207107,1,NA
+Appendix Figure S1,E-1: Trump,Full sample,OLS,estimate,-9.2,-9.228478251109246,1,NA
+Appendix Figure S1,E-1: Trump,Full sample,OLS,std.error,2.6,2.576456001364143,1,NA
+Appendix Figure S1,E-1: Trump,Strong Republican,DIM,estimate,16.2,16.17141523055901,1,NA
+Appendix Figure S1,E-1: Trump,Strong Republican,DIM,std.error,5.3,5.265356343742102,1,NA
+Appendix Figure S1,E-1: Trump,Strong Republican,OLS,estimate,14.7,14.743053492081565,1,NA
+Appendix Figure S1,E-1: Trump,Strong Republican,OLS,std.error,4.4,4.362581982165552,1,NA
+Appendix Figure S1,E-1: Trump,Weak Republican,DIM,estimate,3.0,3.017723451356722,1,NA
+Appendix Figure S1,E-1: Trump,Weak Republican,DIM,std.error,7.7,7.677107475886675,1,NA
+Appendix Figure S1,E-1: Trump,Weak Republican,OLS,estimate,5.8,5.752498087191941,1,NA
+Appendix Figure S1,E-1: Trump,Weak Republican,OLS,std.error,6.3,6.268450850977472,1,NA
+Appendix Figure S1,E-1: Trump,Lean Republican,DIM,estimate,1.4,1.350257671958145,1,NA
+Appendix Figure S1,E-1: Trump,Lean Republican,DIM,std.error,11.2,11.169802484047093,1,NA
+Appendix Figure S1,E-1: Trump,Lean Republican,OLS,estimate,-10.6,-10.601994462281422,1,NA
+Appendix Figure S1,E-1: Trump,Lean Republican,OLS,std.error,10.1,10.057204144789717,1,NA
+Appendix Figure S1,E-1: Trump,Independent,DIM,estimate,-5.2,-5.238519274536665,1,NA
+Appendix Figure S1,E-1: Trump,Independent,DIM,std.error,7.2,7.150245716177326,1,NA
+Appendix Figure S1,E-1: Trump,Independent,OLS,estimate,-1.3,-1.2525259909129305,1,NA
+Appendix Figure S1,E-1: Trump,Independent,OLS,std.error,6.1,6.096226730552614,1,NA
+Appendix Figure S1,E-1: Trump,Lean Democrat,DIM,estimate,-19.6,-19.64294972833804,1,NA
+Appendix Figure S1,E-1: Trump,Lean Democrat,DIM,std.error,9.1,9.134479051891017,1,NA
+Appendix Figure S1,E-1: Trump,Lean Democrat,OLS,estimate,-18.5,-18.45229687389448,1,NA
+Appendix Figure S1,E-1: Trump,Lean Democrat,OLS,std.error,7.4,7.437758977663702,1,NA
+Appendix Figure S1,E-1: Trump,Weak Democrat,DIM,estimate,-31.5,-31.46550289283583,1,NA
+Appendix Figure S1,E-1: Trump,Weak Democrat,DIM,std.error,8.0,7.980433031388697,1,NA
+Appendix Figure S1,E-1: Trump,Weak Democrat,OLS,estimate,-34.0,-34.018762450054915,1,NA
+Appendix Figure S1,E-1: Trump,Weak Democrat,OLS,std.error,6.6,6.6225291832573525,1,NA
+Appendix Figure S1,E-1: Trump,Strong Democrat,DIM,estimate,-29.4,-29.362154528987748,1,NA
+Appendix Figure S1,E-1: Trump,Strong Democrat,DIM,std.error,5.6,5.636388934424474,1,NA
+Appendix Figure S1,E-1: Trump,Strong Democrat,OLS,estimate,-27.2,-27.206776661957765,1,NA
+Appendix Figure S1,E-1: Trump,Strong Democrat,OLS,std.error,5.0,5.042787720445962,1,NA
+Appendix Figure S2,E-1: Fauci,Full sample,DIM,estimate,5.0,4.97722064041374,1,NA
+Appendix Figure S2,E-1: Fauci,Full sample,DIM,std.error,2.7,2.694259006327244,1,NA
+Appendix Figure S2,E-1: Fauci,Full sample,OLS,estimate,5.5,5.467182529748349,1,NA
+Appendix Figure S2,E-1: Fauci,Full sample,OLS,std.error,2.4,2.391330833090779,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Republican,DIM,estimate,1.0,0.9912050684857948,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Republican,DIM,std.error,5.7,5.698412903102768,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Republican,OLS,estimate,0.8,0.8017360638250725,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Republican,OLS,std.error,4.3,4.281384955429539,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Republican,DIM,estimate,10.2,10.201807748306113,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Republican,DIM,std.error,7.3,7.288848670274407,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Republican,OLS,estimate,11.2,11.38550755100201,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S2,E-1: Fauci,Weak Republican,OLS,std.error,6.1,6.271427547436799,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S2,E-1: Fauci,Lean Republican,DIM,estimate,9.0,8.987383124061031,1,NA
+Appendix Figure S2,E-1: Fauci,Lean Republican,DIM,std.error,10.8,10.781679405138922,1,NA
+Appendix Figure S2,E-1: Fauci,Lean Republican,OLS,estimate,5.6,9.737627638749276,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S2,E-1: Fauci,Lean Republican,OLS,std.error,8.7,9.33194339235206,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S2,E-1: Fauci,Independent,DIM,estimate,6.9,6.930125523693284,1,NA
+Appendix Figure S2,E-1: Fauci,Independent,DIM,std.error,7.1,7.073831428020223,1,NA
+Appendix Figure S2,E-1: Fauci,Independent,OLS,estimate,9.7,9.660666213353815,1,NA
+Appendix Figure S2,E-1: Fauci,Independent,OLS,std.error,5.9,5.879748293601142,1,NA
+Appendix Figure S2,E-1: Fauci,Lean Democrat,DIM,estimate,-2.9,-2.8513983456048506,1,NA
+Appendix Figure S2,E-1: Fauci,Lean Democrat,DIM,std.error,8.3,8.314499876322156,1,NA
+Appendix Figure S2,E-1: Fauci,Lean Democrat,OLS,estimate,3.3,3.311002633337308,1,NA
+Appendix Figure S2,E-1: Fauci,Lean Democrat,OLS,std.error,6.2,6.244988150957127,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Democrat,DIM,estimate,10.9,10.932462951396207,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Democrat,DIM,std.error,7.5,7.470911335333318,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Democrat,OLS,estimate,8.5,8.492355550897807,1,NA
+Appendix Figure S2,E-1: Fauci,Weak Democrat,OLS,std.error,6.5,6.536198936313692,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Democrat,DIM,estimate,5.9,5.8909854673638815,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Democrat,DIM,std.error,5.2,5.231437850311958,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Democrat,OLS,estimate,6.9,6.898811715687518,1,NA
+Appendix Figure S2,E-1: Fauci,Strong Democrat,OLS,std.error,4.4,4.416045245971222,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Full sample,DIM,estimate,-3.7,-3.721429015633578,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Full sample,DIM,std.error,2.8,2.7945395536227697,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Full sample,OLS,estimate,-3.5,-3.498540358359166,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Full sample,OLS,std.error,2.5,2.5363592040544867,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,DIM,estimate,8.7,8.682553066007994,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,DIM,std.error,5.4,5.440746460967165,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,OLS,estimate,4.8,4.821536528801394,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Republican,OLS,std.error,4.4,4.394097229629052,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,DIM,estimate,6.2,6.169481719376853,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,DIM,std.error,7.5,7.523098209951288,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,OLS,estimate,4.8,4.779100179100588,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Republican,OLS,std.error,6.4,6.407098328336347,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,DIM,estimate,0.6,0.6186801272084206,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,DIM,std.error,10.6,10.624446404887506,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,OLS,estimate,-5.6,-5.6218944230475145,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Republican,OLS,std.error,8.6,8.58509638336711,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Independent,DIM,estimate,-0.3,-0.32097202375435585,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Independent,DIM,std.error,7.1,7.112886189814752,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Independent,OLS,estimate,3.9,3.869746259644289,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Independent,OLS,std.error,6.0,5.963110772992095,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,DIM,estimate,-7.3,-7.324500034974546,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,DIM,std.error,9.1,9.10369650731248,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,OLS,estimate,-3.6,-3.6342563399758543,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Lean Democrat,OLS,std.error,8.0,7.979882168439422,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,DIM,estimate,-13.4,-13.351234901995715,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,DIM,std.error,8.1,8.07130530256059,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,OLS,estimate,-15.6,-15.592644499358435,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Weak Democrat,OLS,std.error,6.6,6.6251234436091915,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,DIM,estimate,-12.4,-12.378789296453988,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,DIM,std.error,5.8,5.788715925140045,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,OLS,estimate,-10.3,-10.329631255541509,1,NA
+Appendix Figure S3,E-1: Trump and Fauci,Strong Democrat,OLS,std.error,4.7,4.690701428599371,1,NA
+Appendix Figure S4,E-1: Physician,Full sample,DIM,estimate,1.7,1.7491652567334908,1,NA
+Appendix Figure S4,E-1: Physician,Full sample,DIM,std.error,2.7,2.713636842730373,1,NA
+Appendix Figure S4,E-1: Physician,Full sample,OLS,estimate,2.4,2.3618422457804806,1,NA
+Appendix Figure S4,E-1: Physician,Full sample,OLS,std.error,2.5,2.503599733089028,1,NA
+Appendix Figure S4,E-1: Physician,Strong Republican,DIM,estimate,2.5,2.4582278170183,1,NA
+Appendix Figure S4,E-1: Physician,Strong Republican,DIM,std.error,5.6,5.581343808034378,1,NA
+Appendix Figure S4,E-1: Physician,Strong Republican,OLS,estimate,0.3,0.31713964027490404,1,NA
+Appendix Figure S4,E-1: Physician,Strong Republican,OLS,std.error,4.6,4.58804534468405,1,NA
+Appendix Figure S4,E-1: Physician,Weak Republican,DIM,estimate,-6.2,-6.173399179719433,1,NA
+Appendix Figure S4,E-1: Physician,Weak Republican,DIM,std.error,8.0,7.995084600858582,1,NA
+Appendix Figure S4,E-1: Physician,Weak Republican,OLS,estimate,-5.3,-5.2802843005490905,1,NA
+Appendix Figure S4,E-1: Physician,Weak Republican,OLS,std.error,6.6,6.645624356809393,1,NA
+Appendix Figure S4,E-1: Physician,Lean Republican,DIM,estimate,27.1,27.104834018564578,1,NA
+Appendix Figure S4,E-1: Physician,Lean Republican,DIM,std.error,10.4,10.442695747093422,1,NA
+Appendix Figure S4,E-1: Physician,Lean Republican,OLS,estimate,7.9,7.875834506159669,1,NA
+Appendix Figure S4,E-1: Physician,Lean Republican,OLS,std.error,8.6,8.550217725689125,1,NA
+Appendix Figure S4,E-1: Physician,Independent,DIM,estimate,5.2,5.228858702270359,1,NA
+Appendix Figure S4,E-1: Physician,Independent,DIM,std.error,7.1,7.085903747896813,1,NA
+Appendix Figure S4,E-1: Physician,Independent,OLS,estimate,5.5,5.506719496887209,1,NA
+Appendix Figure S4,E-1: Physician,Independent,OLS,std.error,5.5,5.5352098472646345,1,NA
+Appendix Figure S4,E-1: Physician,Lean Democrat,DIM,estimate,4.5,4.547120783668706,1,NA
+Appendix Figure S4,E-1: Physician,Lean Democrat,DIM,std.error,8.5,8.499159150996755,1,NA
+Appendix Figure S4,E-1: Physician,Lean Democrat,OLS,estimate,8.4,8.359892225425137,1,NA
+Appendix Figure S4,E-1: Physician,Lean Democrat,OLS,std.error,7.3,7.329327774727125,1,NA
+Appendix Figure S4,E-1: Physician,Weak Democrat,DIM,estimate,-0.6,-0.6142317997599546,1,NA
+Appendix Figure S4,E-1: Physician,Weak Democrat,DIM,std.error,7.8,7.782923370031996,1,NA
+Appendix Figure S4,E-1: Physician,Weak Democrat,OLS,estimate,-2.5,-2.50508996824187,1,NA
+Appendix Figure S4,E-1: Physician,Weak Democrat,OLS,std.error,6.3,6.301528448592575,1,NA
+Appendix Figure S4,E-1: Physician,Strong Democrat,DIM,estimate,-5.0,-4.957221451222528,1,NA
+Appendix Figure S4,E-1: Physician,Strong Democrat,DIM,std.error,5.5,5.457503279327059,1,NA
+Appendix Figure S4,E-1: Physician,Strong Democrat,OLS,estimate,-3.8,-3.832485099127078,1,NA
+Appendix Figure S4,E-1: Physician,Strong Democrat,OLS,std.error,4.9,4.88582448038538,1,NA
+Appendix Figure S5,E-1: Pharmacy,Full sample,DIM,estimate,2.4,2.3809623282891197,1,NA
+Appendix Figure S5,E-1: Pharmacy,Full sample,DIM,std.error,2.7,2.7107333978058104,1,NA
+Appendix Figure S5,E-1: Pharmacy,Full sample,OLS,estimate,3.9,3.890682972563536,1,NA
+Appendix Figure S5,E-1: Pharmacy,Full sample,OLS,std.error,2.5,2.47609050109458,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Republican,DIM,estimate,7.6,7.59770660283657,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Republican,DIM,std.error,5.6,5.553996674120652,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Republican,OLS,estimate,6.3,6.268426370026595,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Republican,OLS,std.error,4.4,4.402487935659488,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Republican,DIM,estimate,-7.7,-7.652806687552069,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Republican,DIM,std.error,8.2,8.189991067886096,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Republican,OLS,estimate,-5.4,-5.403746983649134,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Republican,OLS,std.error,6.3,6.339840667159262,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Republican,DIM,estimate,13.8,13.792797581364033,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Republican,DIM,std.error,11.1,11.051986164636222,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Republican,OLS,estimate,-0.3,-0.31953742616924435,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Republican,OLS,std.error,8.8,8.847301610202113,1,NA
+Appendix Figure S5,E-1: Pharmacy,Independent,DIM,estimate,-0.1,-0.1313564959164491,1,NA
+Appendix Figure S5,E-1: Pharmacy,Independent,DIM,std.error,7.0,7.02180491081748,1,NA
+Appendix Figure S5,E-1: Pharmacy,Independent,OLS,estimate,7.8,7.825962612791475,1,NA
+Appendix Figure S5,E-1: Pharmacy,Independent,OLS,std.error,6.0,6.045197305939689,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Democrat,DIM,estimate,3.0,2.9733664498293058,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Democrat,DIM,std.error,7.6,7.60877879103119,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Democrat,OLS,estimate,10.9,10.919564296720011,1,NA
+Appendix Figure S5,E-1: Pharmacy,Lean Democrat,OLS,std.error,6.8,6.781456730181394,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Democrat,DIM,estimate,5.6,5.625945107887659,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Democrat,DIM,std.error,7.4,7.449165626477116,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Democrat,OLS,estimate,5.3,5.284123901743625,1,NA
+Appendix Figure S5,E-1: Pharmacy,Weak Democrat,OLS,std.error,6.1,6.1088368035732,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Democrat,DIM,estimate,-0.6,-0.5987789686394224,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Democrat,DIM,std.error,5.3,5.332844723209777,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Democrat,OLS,estimate,0.8,0.7741452811340467,1,NA
+Appendix Figure S5,E-1: Pharmacy,Strong Democrat,OLS,std.error,4.6,4.5844658278335615,1,NA
+Appendix Figure S6,E-1: Insurance,Full sample,DIM,estimate,3.2,3.1725639650834747,1,NA
+Appendix Figure S6,E-1: Insurance,Full sample,DIM,std.error,2.7,2.688472257197695,1,NA
+Appendix Figure S6,E-1: Insurance,Full sample,OLS,estimate,3.3,3.303738564584027,1,NA
+Appendix Figure S6,E-1: Insurance,Full sample,OLS,std.error,2.5,2.45977128872201,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Republican,DIM,estimate,11.4,11.425436970034704,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Republican,DIM,std.error,5.2,5.211432853260045,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Republican,OLS,estimate,6.4,6.378963341040375,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Republican,OLS,std.error,4.3,4.2706653518490185,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Republican,DIM,estimate,-0.4,-0.3925507381149247,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Republican,DIM,std.error,7.8,7.757098891203401,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Republican,OLS,estimate,-2.0,-2.03350694445767,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Republican,OLS,std.error,6.4,6.4019994009266865,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Republican,DIM,estimate,17.9,17.919648340418878,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Republican,DIM,std.error,11.4,11.440746478114567,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Republican,OLS,estimate,21.4,21.408157385372213,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Republican,OLS,std.error,9.6,9.645900764578142,1,NA
+Appendix Figure S6,E-1: Insurance,Independent,DIM,estimate,2.4,2.422363727762866,1,NA
+Appendix Figure S6,E-1: Insurance,Independent,DIM,std.error,7.0,6.965482103034643,1,NA
+Appendix Figure S6,E-1: Insurance,Independent,OLS,estimate,3.9,3.93933544634305,1,NA
+Appendix Figure S6,E-1: Insurance,Independent,OLS,std.error,6.1,6.142481277104586,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Democrat,DIM,estimate,-9.1,-9.093010305232225,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Democrat,DIM,std.error,8.6,8.57631162647341,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Democrat,OLS,estimate,-4.6,-4.572853601223928,1,NA
+Appendix Figure S6,E-1: Insurance,Lean Democrat,OLS,std.error,6.9,6.88513511237305,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Democrat,DIM,estimate,-2.1,-2.0638401752533,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Democrat,DIM,std.error,7.9,7.881340223439157,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Democrat,OLS,estimate,-2.6,-2.61552405242096,1,NA
+Appendix Figure S6,E-1: Insurance,Weak Democrat,OLS,std.error,6.1,6.145089162127304,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Democrat,DIM,estimate,1.6,1.558298954048229,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Democrat,DIM,std.error,5.3,5.308939919673221,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Democrat,OLS,estimate,3.7,3.733886775822127,1,NA
+Appendix Figure S6,E-1: Insurance,Strong Democrat,OLS,std.error,4.8,4.7906828578091245,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Full sample,DIM,estimate,-4.6,-4.567666047999567,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Full sample,DIM,std.error,2.8,2.7751271207369252,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Full sample,OLS,estimate,-4.7,-4.7153380499053865,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Full sample,OLS,std.error,2.5,2.5371821373466217,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,DIM,estimate,8.8,8.80865514708402,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,DIM,std.error,5.5,5.484799944428341,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,OLS,estimate,7.1,7.101212458556068,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Republican,OLS,std.error,4.4,4.395614332561422,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,DIM,estimate,-9.6,-9.5562461819707,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,DIM,std.error,7.7,7.740625650013033,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,OLS,estimate,-12.9,-12.923431153820657,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Republican,OLS,std.error,6.8,6.812712317813389,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,DIM,estimate,2.6,2.5625568770401457,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,DIM,std.error,12.0,12.032118760322168,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,OLS,estimate,-9.4,-9.374853437861152,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Republican,OLS,std.error,9.4,9.366072314234678,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Independent,DIM,estimate,-1.4,-1.4324079062995083,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Independent,DIM,std.error,7.2,7.177590959301712,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Independent,OLS,estimate,-0.4,-0.4251720250531505,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Independent,OLS,std.error,6.0,5.977573351501107,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,DIM,estimate,-13.6,-13.619299156523354,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,DIM,std.error,8.9,8.868895745129432,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,OLS,estimate,-10.1,-10.067633946969517,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Lean Democrat,OLS,std.error,6.9,6.869754893383331,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,DIM,estimate,-2.8,-2.7525311001610357,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,DIM,std.error,7.9,7.850535644974768,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,OLS,estimate,-4.7,-4.670761304564124,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Weak Democrat,OLS,std.error,6.1,6.129850918960442,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,DIM,estimate,-16.3,-16.307233979664023,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,DIM,std.error,5.7,5.665165931779071,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,OLS,estimate,-13.4,-13.447859759260266,1,NA
+Appendix Figure S7,E-1: Spiritual Leader,Strong Democrat,OLS,std.error,4.9,4.928887153924291,1,NA
+Appendix Figure S8,E-2: Trump,Full sample,DIM,estimate,-5.5,-5.534245170841642,1,NA
+Appendix Figure S8,E-2: Trump,Full sample,DIM,std.error,3.9,3.892614617312401,1,NA
+Appendix Figure S8,E-2: Trump,Full sample,OLS,estimate,-4.7,-4.688615886957842,1,NA
+Appendix Figure S8,E-2: Trump,Full sample,OLS,std.error,3.6,3.5789160453790427,1,NA
+Appendix Figure S8,E-2: Trump,Strong Republican,DIM,estimate,6.5,6.478189483941353,1,NA
+Appendix Figure S8,E-2: Trump,Strong Republican,DIM,std.error,9.1,9.068033275442431,1,NA
+Appendix Figure S8,E-2: Trump,Strong Republican,OLS,estimate,-1.6,-0.2967675871383715,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S8,E-2: Trump,Strong Republican,OLS,std.error,7.3,7.378453085514071,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S8,E-2: Trump,Weak Republican,DIM,estimate,-1.4,-1.373660093507848,1,NA
+Appendix Figure S8,E-2: Trump,Weak Republican,DIM,std.error,11.2,11.246822894414562,1,NA
+Appendix Figure S8,E-2: Trump,Weak Republican,OLS,estimate,-1.8,-1.7514978494887985,1,NA
+Appendix Figure S8,E-2: Trump,Weak Republican,OLS,std.error,10.3,10.324055404723724,1,NA
+Appendix Figure S8,E-2: Trump,Lean Republican,DIM,estimate,0.8,0.7920642490330384,1,NA
+Appendix Figure S8,E-2: Trump,Lean Republican,DIM,std.error,14.2,14.179137048410755,1,NA
+Appendix Figure S8,E-2: Trump,Lean Republican,OLS,estimate,17.2,17.198733449077285,1,NA
+Appendix Figure S8,E-2: Trump,Lean Republican,OLS,std.error,8.9,8.884165591867383,1,NA
+Appendix Figure S8,E-2: Trump,Independent,DIM,estimate,-5.5,-5.473496244356949,1,NA
+Appendix Figure S8,E-2: Trump,Independent,DIM,std.error,8.7,8.682809332093973,1,NA
+Appendix Figure S8,E-2: Trump,Independent,OLS,estimate,-5.0,-5.006681189050241,1,NA
+Appendix Figure S8,E-2: Trump,Independent,OLS,std.error,7.7,7.721036471814808,1,NA
+Appendix Figure S8,E-2: Trump,Lean Democrat,DIM,estimate,-24.4,-24.445038631318212,1,NA
+Appendix Figure S8,E-2: Trump,Lean Democrat,DIM,std.error,12.6,12.634306483360502,1,NA
+Appendix Figure S8,E-2: Trump,Lean Democrat,OLS,estimate,12.5,12.518696620923034,1,NA
+Appendix Figure S8,E-2: Trump,Lean Democrat,OLS,std.error,9.6,9.60532613285056,1,NA
+Appendix Figure S8,E-2: Trump,Weak Democrat,DIM,estimate,-5.4,-5.413287329723941,1,NA
+Appendix Figure S8,E-2: Trump,Weak Democrat,DIM,std.error,7.5,7.503530165299366,1,NA
+Appendix Figure S8,E-2: Trump,Weak Democrat,OLS,estimate,-5.9,-5.894292315442283,1,NA
+Appendix Figure S8,E-2: Trump,Weak Democrat,OLS,std.error,6.5,6.510494078742328,1,NA
+Appendix Figure S8,E-2: Trump,Strong Democrat,DIM,estimate,-13.8,-13.760597443949244,1,NA
+Appendix Figure S8,E-2: Trump,Strong Democrat,DIM,std.error,8.3,8.28402318319647,1,NA
+Appendix Figure S8,E-2: Trump,Strong Democrat,OLS,estimate,-16.7,-16.66596781985749,1,NA
+Appendix Figure S8,E-2: Trump,Strong Democrat,OLS,std.error,6.0,6.036237806717595,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Full sample,DIM,estimate,-7.0,-6.985373042613185,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Full sample,DIM,std.error,4.0,4.010889424213387,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Full sample,OLS,estimate,-6.4,-6.41157239108939,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Full sample,OLS,std.error,3.6,3.55058462808018,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,DIM,estimate,-10.6,-10.62427796882766,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,DIM,std.error,8.6,8.60102729496076,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,OLS,estimate,-12.8,-13.354592447567686,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Strong Republican,OLS,std.error,6.9,7.299847968886605,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,DIM,estimate,-15.3,-15.320263695685355,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,DIM,std.error,11.4,11.379986539383246,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,OLS,estimate,-6.9,-6.305827539524681,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Weak Republican,OLS,std.error,9.7,9.276615504549309,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,DIM,estimate,2.7,2.664482249985839,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,DIM,std.error,13.6,13.61051121837038,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,OLS,estimate,21.2,16.385926238230635,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Lean Republican,OLS,std.error,11.6,12.179420244345042,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Independent,DIM,estimate,-0.5,-0.533844514590129,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Independent,DIM,std.error,8.8,8.771156429486851,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Independent,OLS,estimate,2.6,2.5526334421494936,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Independent,OLS,std.error,6.9,6.9427968353662894,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,DIM,estimate,-20.1,-20.11878520007935,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,DIM,std.error,13.8,13.825851958296669,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,OLS,estimate,-18.1,-21.90746125335581,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Lean Democrat,OLS,std.error,7.4,9.534757249642675,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,DIM,estimate,-8.7,-8.667867660148437,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,DIM,std.error,9.0,9.015927243912715,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,OLS,estimate,-10.6,-10.628489255040286,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Weak Democrat,OLS,std.error,6.1,6.116878314123052,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,DIM,estimate,1.4,1.4306293419585032,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,DIM,std.error,7.5,7.50230752794968,1,NA
+Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,OLS,estimate,-3.7,-1.3935832480116697,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S9,E-2: Trump and Fauci,Strong Democrat,OLS,std.error,5.1,5.877860395961608,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S10,E-2: Fauci,Full sample,DIM,estimate,-4.4,-4.429783987961526,1,NA
+Appendix Figure S10,E-2: Fauci,Full sample,DIM,std.error,3.9,3.898603083464552,1,NA
+Appendix Figure S10,E-2: Fauci,Full sample,OLS,estimate,-3.2,-3.159711316474568,1,NA
+Appendix Figure S10,E-2: Fauci,Full sample,OLS,std.error,3.5,3.5241574588665037,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Republican,DIM,estimate,0.2,0.1746244641348932,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Republican,DIM,std.error,9.0,8.986620178278425,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Republican,OLS,estimate,-8.1,-8.268635469807046,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S10,E-2: Fauci,Strong Republican,OLS,std.error,6.9,6.926588811321981,1,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S10,E-2: Fauci,Weak Republican,DIM,estimate,1.8,1.7533011980839754,1,NA
+Appendix Figure S10,E-2: Fauci,Weak Republican,DIM,std.error,12.0,11.98432386206274,1,NA
+Appendix Figure S10,E-2: Fauci,Weak Republican,OLS,estimate,-0.7,-2.4131715548570956,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S10,E-2: Fauci,Weak Republican,OLS,std.error,8.4,8.48570270609577,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S10,E-2: Fauci,Lean Republican,DIM,estimate,-10.1,-10.146014523843984,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Republican,DIM,std.error,12.5,12.492010053502757,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Republican,OLS,estimate,3.6,3.5504459907689996,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Republican,OLS,std.error,8.5,8.524441890108948,1,NA
+Appendix Figure S10,E-2: Fauci,Independent,DIM,estimate,-10.9,-10.923972154053695,1,NA
+Appendix Figure S10,E-2: Fauci,Independent,DIM,std.error,8.3,8.268535617196566,1,NA
+Appendix Figure S10,E-2: Fauci,Independent,OLS,estimate,-4.3,-4.325193709792185,1,NA
+Appendix Figure S10,E-2: Fauci,Independent,OLS,std.error,6.5,6.493048652790177,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Democrat,DIM,estimate,-3.2,-3.1696928006426344,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Democrat,DIM,std.error,12.3,12.334502980489695,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Democrat,OLS,estimate,24.2,24.17422671295036,1,NA
+Appendix Figure S10,E-2: Fauci,Lean Democrat,OLS,std.error,10.4,10.44192531818901,1,NA
+Appendix Figure S10,E-2: Fauci,Weak Democrat,DIM,estimate,-12.0,-11.95723939116676,1,NA
+Appendix Figure S10,E-2: Fauci,Weak Democrat,DIM,std.error,8.8,8.792242257519524,1,NA
+Appendix Figure S10,E-2: Fauci,Weak Democrat,OLS,estimate,-11.2,-11.169253121967069,1,NA
+Appendix Figure S10,E-2: Fauci,Weak Democrat,OLS,std.error,7.6,7.611574345466011,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Democrat,DIM,estimate,6.3,6.285405113339728,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Democrat,DIM,std.error,7.2,7.173830975034254,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Democrat,OLS,estimate,2.1,2.0928645200411338,1,NA
+Appendix Figure S10,E-2: Fauci,Strong Democrat,OLS,std.error,5.3,5.2621618670542745,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Full sample,DIM,estimate,-8.7,-8.728503195148951,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Full sample,DIM,std.error,4.0,4.014478671824876,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Full sample,OLS,estimate,-5.6,-5.550017976144163,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Full sample,OLS,std.error,3.6,3.5961274099411287,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,DIM,estimate,-9.9,-9.924752795077245,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,DIM,std.error,9.0,8.965764926797737,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,OLS,estimate,-27.8,-21.84838797592951,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S11,E-2: Biden and Fauci,Strong Republican,OLS,std.error,7.0,7.331217379338027,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,DIM,estimate,1.4,1.4087798769605704,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,DIM,std.error,12.1,12.113306563041345,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,OLS,estimate,-6.0,-1.4874423003701416,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S11,E-2: Biden and Fauci,Weak Republican,OLS,std.error,9.0,8.908442870103102,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,DIM,estimate,-20.4,-20.36259399241801,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,DIM,std.error,12.3,12.27460847459426,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,OLS,estimate,-1.0,-1.0186824772799434,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Republican,OLS,std.error,9.5,9.453580990435322,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Independent,DIM,estimate,-8.6,-8.551249464926983,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Independent,DIM,std.error,8.7,8.698704514430094,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Independent,OLS,estimate,-3.3,-3.2913481711759665,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Independent,OLS,std.error,6.4,6.399637270330244,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,DIM,estimate,-25.2,-25.219100424877105,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,DIM,std.error,14.1,14.072978540497772,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,OLS,estimate,-11.4,-11.382216011785298,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Lean Democrat,OLS,std.error,11.8,11.780681587270696,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,DIM,estimate,-8.7,-8.714002141233196,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,DIM,std.error,8.4,8.359707342214104,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,OLS,estimate,-6.1,-6.103057411663259,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Weak Democrat,OLS,std.error,6.8,6.791928744248378,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,DIM,estimate,-1.0,-1.016866835148887,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,DIM,std.error,7.9,7.886286727052255,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,OLS,estimate,1.3,1.3027170318493484,1,NA
+Appendix Figure S11,E-2: Biden and Fauci,Strong Democrat,OLS,std.error,6.1,6.061089146019226,1,NA
+Appendix Figure S12,E-2: Biden,Full sample,DIM,estimate,-13.2,-13.202392647108883,1,NA
+Appendix Figure S12,E-2: Biden,Full sample,DIM,std.error,4.1,4.051363437290903,1,NA
+Appendix Figure S12,E-2: Biden,Full sample,OLS,estimate,-9.7,-9.682095467939988,1,NA
+Appendix Figure S12,E-2: Biden,Full sample,OLS,std.error,3.6,3.616670811183355,1,NA
+Appendix Figure S12,E-2: Biden,Strong Republican,DIM,estimate,-20.6,-20.597610242309877,1,NA
+Appendix Figure S12,E-2: Biden,Strong Republican,DIM,std.error,8.4,8.41426159872409,1,NA
+Appendix Figure S12,E-2: Biden,Strong Republican,OLS,estimate,-24.2,-23.200158470866235,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S12,E-2: Biden,Strong Republican,OLS,std.error,6.6,6.705924809516725,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S12,E-2: Biden,Weak Republican,DIM,estimate,-4.2,-4.233740535019127,1,NA
+Appendix Figure S12,E-2: Biden,Weak Republican,DIM,std.error,11.7,11.744560315688348,1,NA
+Appendix Figure S12,E-2: Biden,Weak Republican,OLS,estimate,0.4,0.4429249217142593,1,NA
+Appendix Figure S12,E-2: Biden,Weak Republican,OLS,std.error,9.7,9.73317940480736,1,NA
+Appendix Figure S12,E-2: Biden,Lean Republican,DIM,estimate,-8.8,-8.75278339238374,1,NA
+Appendix Figure S12,E-2: Biden,Lean Republican,DIM,std.error,13.6,13.64835543373551,1,NA
+Appendix Figure S12,E-2: Biden,Lean Republican,OLS,estimate,-1.4,-1.3766598852243557,1,NA
+Appendix Figure S12,E-2: Biden,Lean Republican,OLS,std.error,11.5,11.530393748302435,1,NA
+Appendix Figure S12,E-2: Biden,Independent,DIM,estimate,-18.5,-18.48123587422864,1,NA
+Appendix Figure S12,E-2: Biden,Independent,DIM,std.error,8.4,8.357697605349458,1,NA
+Appendix Figure S12,E-2: Biden,Independent,OLS,estimate,-13.3,-13.318964764049568,1,NA
+Appendix Figure S12,E-2: Biden,Independent,OLS,std.error,7.2,7.150639178219495,1,NA
+Appendix Figure S12,E-2: Biden,Lean Democrat,DIM,estimate,-5.6,-5.565812244138605,1,NA
+Appendix Figure S12,E-2: Biden,Lean Democrat,DIM,std.error,12.1,12.1242857045442,1,NA
+Appendix Figure S12,E-2: Biden,Lean Democrat,OLS,estimate,10.2,4.260813581011624,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S12,E-2: Biden,Lean Democrat,OLS,std.error,10.1,9.616007359780678,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S12,E-2: Biden,Weak Democrat,DIM,estimate,-8.5,-8.461349907411423,1,NA
+Appendix Figure S12,E-2: Biden,Weak Democrat,DIM,std.error,9.3,9.311638222966437,1,NA
+Appendix Figure S12,E-2: Biden,Weak Democrat,OLS,estimate,-13.6,-13.565881149904849,1,NA
+Appendix Figure S12,E-2: Biden,Weak Democrat,OLS,std.error,6.8,6.787046987075971,1,NA
+Appendix Figure S12,E-2: Biden,Strong Democrat,DIM,estimate,0.7,0.7087318061495106,1,NA
+Appendix Figure S12,E-2: Biden,Strong Democrat,DIM,std.error,7.7,7.691845015320427,1,NA
+Appendix Figure S12,E-2: Biden,Strong Democrat,OLS,estimate,3.1,3.068011988333074,1,NA
+Appendix Figure S12,E-2: Biden,Strong Democrat,OLS,std.error,5.2,5.235595964483474,1,NA
+Appendix Figure S13,E-2: Obama,Full sample,DIM,estimate,-13.4,-13.442485812622037,1,NA
+Appendix Figure S13,E-2: Obama,Full sample,DIM,std.error,4.0,3.9625804799561815,1,NA
+Appendix Figure S13,E-2: Obama,Full sample,OLS,estimate,-10.9,-10.865337878007912,1,NA
+Appendix Figure S13,E-2: Obama,Full sample,OLS,std.error,3.5,3.514959843108144,1,NA
+Appendix Figure S13,E-2: Obama,Strong Republican,DIM,estimate,-10.9,-10.85221750633466,1,NA
+Appendix Figure S13,E-2: Obama,Strong Republican,DIM,std.error,8.4,8.430171094445885,1,NA
+Appendix Figure S13,E-2: Obama,Strong Republican,OLS,estimate,-19.3,-18.80009950917071,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S13,E-2: Obama,Strong Republican,OLS,std.error,6.6,7.001677836503939,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S13,E-2: Obama,Weak Republican,DIM,estimate,-17.4,-17.38410397862465,1,NA
+Appendix Figure S13,E-2: Obama,Weak Republican,DIM,std.error,11.9,11.893377482296538,1,NA
+Appendix Figure S13,E-2: Obama,Weak Republican,OLS,estimate,-8.3,-4.195780123476391,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S13,E-2: Obama,Weak Republican,OLS,std.error,9.4,9.780000864244304,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S13,E-2: Obama,Lean Republican,DIM,estimate,-35.4,-35.43765579910822,1,NA
+Appendix Figure S13,E-2: Obama,Lean Republican,DIM,std.error,11.9,11.910738739853624,1,NA
+Appendix Figure S13,E-2: Obama,Lean Republican,OLS,estimate,-23.0,-22.99957098412849,1,NA
+Appendix Figure S13,E-2: Obama,Lean Republican,OLS,std.error,7.7,7.725895374681229,1,NA
+Appendix Figure S13,E-2: Obama,Independent,DIM,estimate,-14.0,-13.99440332116176,1,NA
+Appendix Figure S13,E-2: Obama,Independent,DIM,std.error,8.4,8.39525901303178,1,NA
+Appendix Figure S13,E-2: Obama,Independent,OLS,estimate,-9.7,-9.68710029573229,1,NA
+Appendix Figure S13,E-2: Obama,Independent,OLS,std.error,6.2,6.15074505229974,1,NA
+Appendix Figure S13,E-2: Obama,Lean Democrat,DIM,estimate,-8.1,-8.147800437989094,1,NA
+Appendix Figure S13,E-2: Obama,Lean Democrat,DIM,std.error,12.3,12.258576924093402,1,NA
+Appendix Figure S13,E-2: Obama,Lean Democrat,OLS,estimate,-6.0,-5.988435329070198,1,NA
+Appendix Figure S13,E-2: Obama,Lean Democrat,OLS,std.error,9.6,9.61047869756337,1,NA
+Appendix Figure S13,E-2: Obama,Weak Democrat,DIM,estimate,-17.2,-17.150540892587504,1,NA
+Appendix Figure S13,E-2: Obama,Weak Democrat,DIM,std.error,9.1,9.069293226236413,1,NA
+Appendix Figure S13,E-2: Obama,Weak Democrat,OLS,estimate,-27.3,-27.29947989114337,1,NA
+Appendix Figure S13,E-2: Obama,Weak Democrat,OLS,std.error,8.9,8.898610448720037,1,NA
+Appendix Figure S13,E-2: Obama,Strong Democrat,DIM,estimate,-0.6,-0.6262764743964463,1,NA
+Appendix Figure S13,E-2: Obama,Strong Democrat,DIM,std.error,7.6,7.57225776866291,1,NA
+Appendix Figure S13,E-2: Obama,Strong Democrat,OLS,estimate,-4.3,-4.299435999554472,1,NA
+Appendix Figure S13,E-2: Obama,Strong Democrat,OLS,std.error,5.4,5.401894646025038,1,NA
+Appendix Figure S14,E-2: James,Full sample,DIM,estimate,-5.8,-5.767417041969389,1,NA
+Appendix Figure S14,E-2: James,Full sample,DIM,std.error,3.9,3.9015142525708577,1,NA
+Appendix Figure S14,E-2: James,Full sample,OLS,estimate,-3.0,-3.0205928275360048,1,NA
+Appendix Figure S14,E-2: James,Full sample,OLS,std.error,3.5,3.527886151077395,1,NA
+Appendix Figure S14,E-2: James,Strong Republican,DIM,estimate,-9.9,-9.868095463779737,1,NA
+Appendix Figure S14,E-2: James,Strong Republican,DIM,std.error,8.8,8.83790815401233,1,NA
+Appendix Figure S14,E-2: James,Strong Republican,OLS,estimate,-16.4,-14.147250744305392,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S14,E-2: James,Strong Republican,OLS,std.error,7.0,7.235185734042029,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S14,E-2: James,Weak Republican,DIM,estimate,-3.3,-3.336722821163303,1,NA
+Appendix Figure S14,E-2: James,Weak Republican,DIM,std.error,11.5,11.516492073748145,1,NA
+Appendix Figure S14,E-2: James,Weak Republican,OLS,estimate,-5.1,-5.116131708798174,1,NA
+Appendix Figure S14,E-2: James,Weak Republican,OLS,std.error,9.7,9.696240192024591,1,NA
+Appendix Figure S14,E-2: James,Lean Republican,DIM,estimate,0.5,0.5251066471514948,1,NA
+Appendix Figure S14,E-2: James,Lean Republican,DIM,std.error,13.6,13.610378609739582,1,NA
+Appendix Figure S14,E-2: James,Lean Republican,OLS,estimate,11.3,11.324040837529074,1,NA
+Appendix Figure S14,E-2: James,Lean Republican,OLS,std.error,7.9,7.868037071396239,1,NA
+Appendix Figure S14,E-2: James,Independent,DIM,estimate,-6.2,-6.211807576634307,1,NA
+Appendix Figure S14,E-2: James,Independent,DIM,std.error,8.6,8.586653244024973,1,NA
+Appendix Figure S14,E-2: James,Independent,OLS,estimate,-0.3,-0.331611030186698,1,NA
+Appendix Figure S14,E-2: James,Independent,OLS,std.error,7.1,7.146292839186931,1,NA
+Appendix Figure S14,E-2: James,Lean Democrat,DIM,estimate,-8.6,-8.602409485997219,1,NA
+Appendix Figure S14,E-2: James,Lean Democrat,DIM,std.error,12.5,12.496927652112706,1,NA
+Appendix Figure S14,E-2: James,Lean Democrat,OLS,estimate,19.2,19.161037093039603,1,NA
+Appendix Figure S14,E-2: James,Lean Democrat,OLS,std.error,11.0,11.023251283127149,1,NA
+Appendix Figure S14,E-2: James,Weak Democrat,DIM,estimate,-2.4,-2.444529408147197,1,NA
+Appendix Figure S14,E-2: James,Weak Democrat,DIM,std.error,6.9,6.870326999414456,1,NA
+Appendix Figure S14,E-2: James,Weak Democrat,OLS,estimate,2.1,2.057388556721196,1,NA
+Appendix Figure S14,E-2: James,Weak Democrat,OLS,std.error,5.7,5.682417128021587,1,NA
+Appendix Figure S14,E-2: James,Strong Democrat,DIM,estimate,-2.8,-2.8448134520718953,1,NA
+Appendix Figure S14,E-2: James,Strong Democrat,DIM,std.error,8.0,8.014905401573298,1,NA
+Appendix Figure S14,E-2: James,Strong Democrat,OLS,estimate,-4.9,-4.947451804853502,1,NA
+Appendix Figure S14,E-2: James,Strong Democrat,OLS,std.error,5.6,5.5983499242495895,1,NA
+Appendix Figure S15,E-2: Ramos,Full sample,DIM,estimate,-8.8,-8.792582296560084,1,NA
+Appendix Figure S15,E-2: Ramos,Full sample,DIM,std.error,4.0,4.012402175606737,1,NA
+Appendix Figure S15,E-2: Ramos,Full sample,OLS,estimate,-5.5,-5.539747588791609,1,NA
+Appendix Figure S15,E-2: Ramos,Full sample,OLS,std.error,3.6,3.5587212300353244,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Republican,DIM,estimate,-12.3,-12.277957949400092,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Republican,DIM,std.error,9.0,9.00556662168599,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Republican,OLS,estimate,-25.8,-24.14751977036882,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S15,E-2: Ramos,Strong Republican,OLS,std.error,7.0,7.202613900301526,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S15,E-2: Ramos,Weak Republican,DIM,estimate,-9.4,-9.419397301037566,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Republican,DIM,std.error,11.8,11.797771663350382,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Republican,OLS,estimate,-8.2,-8.225537383316054,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Republican,OLS,std.error,7.9,7.9425390164176175,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Republican,DIM,estimate,-4.7,-4.735989483830784,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Republican,DIM,std.error,14.3,14.313363527238096,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Republican,OLS,estimate,-2.7,-2.6879044920434754,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Republican,OLS,std.error,8.8,8.789578647276967,1,NA
+Appendix Figure S15,E-2: Ramos,Independent,DIM,estimate,-14.6,-14.64331135345657,1,NA
+Appendix Figure S15,E-2: Ramos,Independent,DIM,std.error,8.5,8.505869013202764,1,NA
+Appendix Figure S15,E-2: Ramos,Independent,OLS,estimate,-10.8,-10.800419693395192,1,NA
+Appendix Figure S15,E-2: Ramos,Independent,OLS,std.error,6.9,6.933742787400473,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Democrat,DIM,estimate,-13.7,-13.650633202775644,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Democrat,DIM,std.error,12.9,12.915164734234164,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Democrat,OLS,estimate,-15.8,-15.795272425221452,1,NA
+Appendix Figure S15,E-2: Ramos,Lean Democrat,OLS,std.error,7.7,7.689879483457234,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Democrat,DIM,estimate,-17.3,-17.34688561930895,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Democrat,DIM,std.error,9.9,9.889835568294812,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Democrat,OLS,estimate,-15.3,-15.348471557175849,1,NA
+Appendix Figure S15,E-2: Ramos,Weak Democrat,OLS,std.error,7.8,7.777387371555854,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Democrat,DIM,estimate,8.5,8.49804982543027,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Democrat,DIM,std.error,7.0,6.969318789688995,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Democrat,OLS,estimate,10.9,10.904656397550903,1,NA
+Appendix Figure S15,E-2: Ramos,Strong Democrat,OLS,std.error,4.5,4.464897668096986,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,DIM,estimate,6.0,5.960099913507569,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,DIM,std.error,0.7,0.7406825931679651,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,OLS,estimate,6.0,5.982114960867598,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Full sample,OLS,std.error,0.7,0.7187027164967242,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,DIM,estimate,4.6,4.640347427843623,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,DIM,std.error,1.7,1.6657092495543036,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,OLS,estimate,4.9,4.927798766893745,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Republican,OLS,std.error,1.6,1.5847714533181214,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,DIM,estimate,4.5,4.500796765672321,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,DIM,std.error,2.3,2.3092199442178782,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,OLS,estimate,5.2,5.218872527665911,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Republican,OLS,std.error,2.2,2.211960702749451,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,DIM,estimate,12.4,12.356049105538895,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,DIM,std.error,2.7,2.659917410882475,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,OLS,estimate,11.5,11.493177083307598,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Republican,OLS,std.error,2.6,2.6061086891107967,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,DIM,estimate,6.6,6.645821151780126,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,DIM,std.error,1.7,1.723436476174605,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,OLS,estimate,6.6,6.580429047545539,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Independent,OLS,std.error,1.7,1.6844036934992832,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,DIM,estimate,9.4,9.445409814175957,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,DIM,std.error,2.7,2.739905596623765,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,OLS,estimate,8.8,8.778716280807044,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Lean Democrat,OLS,std.error,2.7,2.6900730113179003,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,DIM,estimate,2.9,2.9431308571925694,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,DIM,std.error,2.2,2.1766651754982305,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,OLS,estimate,3.6,3.6052278541363663,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Weak Democrat,OLS,std.error,2.1,2.0513043990866464,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,DIM,estimate,5.2,5.242540176813339,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,DIM,std.error,1.4,1.4385416820854144,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,OLS,estimate,5.3,5.282485842385633,1,NA
+Appendix Figure S16,G-1: Less restrictive mask guidance,Strong Democrat,OLS,std.error,1.4,1.3553485675776482,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,DIM,estimate,1.2,1.168375200610324,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,DIM,std.error,0.8,0.8056292727762491,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,OLS,estimate,1.5,1.5402564883122034,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Full sample,OLS,std.error,0.7,0.7429736890122256,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,DIM,estimate,2.5,2.453567027494905,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,DIM,std.error,1.9,1.9486809607024425,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,OLS,estimate,2.8,2.7897369984919376,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Republican,OLS,std.error,1.8,1.8123949128068813,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,DIM,estimate,-3.0,-3.0138338416078323,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,DIM,std.error,2.6,2.560826631776362,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,OLS,estimate,-1.6,-1.6200719509747743,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Republican,OLS,std.error,2.4,2.429600623714619,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,DIM,estimate,6.0,5.9861893535072035,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,DIM,std.error,3.0,3.022233374885645,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,OLS,estimate,7.9,7.9196314364220655,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Republican,OLS,std.error,2.7,2.7288380763840587,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Independent,DIM,estimate,0.1,0.11760306446453836,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Independent,DIM,std.error,2.0,1.9913452048023847,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Independent,OLS,estimate,0.7,0.7098067303724311,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Independent,OLS,std.error,1.9,1.8552978839352456,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,DIM,estimate,5.9,5.881683969919789,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,DIM,std.error,2.7,2.668699510400294,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,OLS,estimate,6.3,6.271174477705385,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Lean Democrat,OLS,std.error,2.5,2.498306748669902,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,DIM,estimate,-1.6,-1.5622914711056126,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,DIM,std.error,2.0,1.9956652857386863,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,OLS,estimate,-1.5,-1.4590612169700872,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Weak Democrat,OLS,std.error,1.9,1.9414061935527969,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,DIM,estimate,1.4,1.359871015261164,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,DIM,std.error,1.2,1.1778084150735606,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,OLS,estimate,1.1,1.064846581733598,1,NA
+Appendix Figure S17,G-3: More restrictive mask guidance,Strong Democrat,OLS,std.error,1.1,1.1338840204210008,1,NA
+Appendix Figure S18,I-1: Contagiousness,Full sample,DIM,estimate,-1.0,-1.0396019733445738,1,NA
+Appendix Figure S18,I-1: Contagiousness,Full sample,DIM,std.error,1.4,1.402286406987955,1,NA
+Appendix Figure S18,I-1: Contagiousness,Full sample,OLS,estimate,-1.0,-0.9569165315850552,1,NA
+Appendix Figure S18,I-1: Contagiousness,Full sample,OLS,std.error,1.3,1.284222813696647,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Republican,DIM,estimate,-1.5,-1.475077750174967,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Republican,DIM,std.error,2.3,2.275576907261029,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Republican,OLS,estimate,-0.6,-0.5596906649714196,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Republican,OLS,std.error,2.0,1.9750353871552089,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Republican,DIM,estimate,0.8,0.8246552220123788,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Republican,DIM,std.error,4.1,4.132726984498845,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Republican,OLS,estimate,-0.8,-0.782376806471951,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Republican,OLS,std.error,3.7,3.673207662098539,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Republican,DIM,estimate,-0.1,-0.06264288438035237,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Republican,DIM,std.error,3.8,3.755902303445939,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Republican,OLS,estimate,2.0,1.971669260375341,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Republican,OLS,std.error,3.0,2.9508707649557877,1,NA
+Appendix Figure S18,I-1: Contagiousness,Independent,DIM,estimate,3.1,3.0702325407637456,1,NA
+Appendix Figure S18,I-1: Contagiousness,Independent,DIM,std.error,2.5,2.53685789601562,1,NA
+Appendix Figure S18,I-1: Contagiousness,Independent,OLS,estimate,1.8,1.8307823417418825,1,NA
+Appendix Figure S18,I-1: Contagiousness,Independent,OLS,std.error,2.3,2.2861428078082566,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Democrat,DIM,estimate,-6.4,-6.41745545116742,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Democrat,DIM,std.error,6.5,6.517488735325461,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Democrat,OLS,estimate,-2.1,-2.1027190432195475,1,NA
+Appendix Figure S18,I-1: Contagiousness,Lean Democrat,OLS,std.error,5.7,5.678280417863952,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Democrat,DIM,estimate,-0.6,-0.5926701099738202,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Democrat,DIM,std.error,4.9,4.946650585883248,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Democrat,OLS,estimate,-0.6,-0.6140211992910001,1,NA
+Appendix Figure S18,I-1: Contagiousness,Weak Democrat,OLS,std.error,4.3,4.3044333789592155,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Democrat,DIM,estimate,-11.3,-11.315834986749245,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Democrat,DIM,std.error,5.4,5.395035932817057,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Democrat,OLS,estimate,-9.7,-9.686530760823985,1,NA
+Appendix Figure S18,I-1: Contagiousness,Strong Democrat,OLS,std.error,4.5,4.538043548064734,1,NA
+Appendix Figure S19,I-2: Delta Variant,Full sample,DIM,estimate,1.5,1.5420427879167882,1,NA
+Appendix Figure S19,I-2: Delta Variant,Full sample,DIM,std.error,1.6,1.609814380136099,1,NA
+Appendix Figure S19,I-2: Delta Variant,Full sample,OLS,estimate,1.6,1.642129823306598,1,NA
+Appendix Figure S19,I-2: Delta Variant,Full sample,OLS,std.error,1.4,1.4287600291765388,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Republican,DIM,estimate,4.0,3.953228224698188,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Republican,DIM,std.error,2.9,2.892002014905786,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Republican,OLS,estimate,2.7,2.652909540506931,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Republican,OLS,std.error,2.4,2.406945177442026,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Republican,DIM,estimate,4.0,4.04489505665981,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Republican,DIM,std.error,4.5,4.5187106898586595,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Republican,OLS,estimate,7.6,7.62706477898777,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Republican,OLS,std.error,3.8,3.831057451873664,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Republican,DIM,estimate,-4.1,-4.0807623506977615,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Republican,DIM,std.error,3.9,3.927509683549967,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Republican,OLS,estimate,-3.4,-3.4088962522396846,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Republican,OLS,std.error,3.0,3.045700400490018,1,NA
+Appendix Figure S19,I-2: Delta Variant,Independent,DIM,estimate,1.1,1.143586353131175,1,NA
+Appendix Figure S19,I-2: Delta Variant,Independent,DIM,std.error,2.9,2.937465841347824,1,NA
+Appendix Figure S19,I-2: Delta Variant,Independent,OLS,estimate,1.5,1.465296323974839,1,NA
+Appendix Figure S19,I-2: Delta Variant,Independent,OLS,std.error,2.6,2.6229966644393294,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Democrat,DIM,estimate,-0.9,-0.8893784511389202,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Democrat,DIM,std.error,7.2,7.195093426581052,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Democrat,OLS,estimate,4.6,4.609002333623775,1,NA
+Appendix Figure S19,I-2: Delta Variant,Lean Democrat,OLS,std.error,6.4,6.35308734569212,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Democrat,DIM,estimate,6.5,6.54307546457039,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Democrat,DIM,std.error,5.9,5.9484904100072615,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Democrat,OLS,estimate,6.0,6.014871382535867,1,NA
+Appendix Figure S19,I-2: Delta Variant,Weak Democrat,OLS,std.error,5.1,5.13602692909209,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Democrat,DIM,estimate,-1.8,-1.7880141624790666,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Democrat,DIM,std.error,5.4,5.421985014276751,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Democrat,OLS,estimate,-3.9,-3.9261400953355334,1,NA
+Appendix Figure S19,I-2: Delta Variant,Strong Democrat,OLS,std.error,4.6,4.5845441531899205,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,DIM,estimate,9.1,9.094961066916303,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,DIM,std.error,1.5,1.4655502624100183,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,OLS,estimate,8.3,8.323766581825888,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Full sample,OLS,std.error,1.3,1.3249847371647212,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,DIM,estimate,5.3,5.3404589871361265,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,DIM,std.error,3.4,3.4347025816675107,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,OLS,estimate,5.5,5.5253551017576195,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Republican,OLS,std.error,3.2,3.150512951835041,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,DIM,estimate,10.1,10.08807287187342,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,DIM,std.error,4.0,3.973241252970499,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,OLS,estimate,9.7,9.73806967327436,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Republican,OLS,std.error,3.5,3.503347713333859,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,DIM,estimate,8.6,8.550807759650116,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,DIM,std.error,4.8,4.803913901776558,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,OLS,estimate,7.9,7.858497499141497,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Republican,OLS,std.error,4.2,4.170957707830851,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,DIM,estimate,6.1,6.134136155101191,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,DIM,std.error,3.8,3.763981169300412,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,OLS,estimate,4.8,4.7929344178882465,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Independent,OLS,std.error,3.3,3.2815386231794106,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,DIM,estimate,12.3,12.28781407339252,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,DIM,std.error,4.5,4.515233555394809,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,OLS,estimate,12.5,12.524418222772724,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Lean Democrat,OLS,std.error,3.8,3.795993203677867,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,DIM,estimate,15.7,15.680512276969836,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,DIM,std.error,3.8,3.830382192352043,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,OLS,estimate,17.1,17.114558304511263,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Weak Democrat,OLS,std.error,3.5,3.5475671432860505,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,DIM,estimate,6.3,6.30992899064437,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,DIM,std.error,2.5,2.545176753738339,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,OLS,estimate,4.6,4.63554518568954,1,NA
+Appendix Figure S20,I-3: Bivalent Booster - Adult,Strong Democrat,OLS,std.error,2.3,2.3395665864977415,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,DIM,estimate,15.5,15.531575326469206,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,DIM,std.error,3.6,3.5878319323166084,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,OLS,estimate,16.2,16.249807086690254,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Full sample,OLS,std.error,3.2,3.2294380185469507,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,DIM,estimate,24.3,24.312320000317243,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,DIM,std.error,9.8,9.84642741322058,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,OLS,estimate,23.8,26.273945237668805,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Republican,OLS,std.error,8.5,8.196474482431281,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,DIM,estimate,16.2,16.202838085820257,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,DIM,std.error,10.0,9.951753253236449,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,OLS,estimate,15.5,15.539452186962269,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Republican,OLS,std.error,8.9,8.876222956594985,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,DIM,estimate,21.3,21.328518589584665,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,DIM,std.error,14.8,14.84594854965666,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,OLS,estimate,16.4,16.439249037046004,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Republican,OLS,std.error,13.1,13.144678194032142,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,DIM,estimate,7.1,7.086090260688334,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,DIM,std.error,9.2,9.249792756972996,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,OLS,estimate,10.7,10.709068879506209,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Independent,OLS,std.error,7.3,7.334036725609057,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,DIM,estimate,10.0,10.006671226063908,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,DIM,std.error,10.6,10.589332455017043,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,OLS,estimate,-2.3,-2.268699202776714,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Lean Democrat,OLS,std.error,7.5,7.505986922098691,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,DIM,estimate,24.9,24.887043449527138,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,DIM,std.error,8.5,8.540785489689235,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,OLS,estimate,26.1,25.102233150616115,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S21,I-4: Bivalent Booster - Child,Weak Democrat,OLS,std.error,6.7,7.24230494642311,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,DIM,estimate,13.4,13.388407399491689,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,DIM,std.error,5.7,5.664284774187394,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,OLS,estimate,11.3,11.25570399318383,1,NA
+Appendix Figure S21,I-4: Bivalent Booster - Child,Strong Democrat,OLS,std.error,4.6,4.647436810009474,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Full sample,DIM,estimate,6.7,6.739162328502947,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Full sample,DIM,std.error,3.7,3.732109731305782,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Full sample,OLS,estimate,5.7,5.733106818649237,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Full sample,OLS,std.error,3.4,3.427430319620025,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,DIM,estimate,-2.6,-2.5843920921182413,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,DIM,std.error,8.2,8.20697967331892,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,OLS,estimate,-1.2,-2.4529051079600945,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S22,I-5: Vaccince - Child,Strong Republican,OLS,std.error,6.5,6.908629192111682,0,covariate_pre_lucid_race_hispanic_binned
+Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,DIM,estimate,13.2,13.16573485966208,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,DIM,std.error,8.0,7.963778018742988,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,OLS,estimate,15.1,15.1295571148864,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Republican,OLS,std.error,5.8,5.8458722324647185,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,DIM,estimate,-7.6,-7.629799912420925,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,DIM,std.error,11.8,11.754350149465754,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,OLS,estimate,-2.2,-2.2450045670766072,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Republican,OLS,std.error,8.9,8.944647184949165,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Independent,DIM,estimate,16.2,16.202475664758804,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Independent,DIM,std.error,8.8,8.802297426771776,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Independent,OLS,estimate,15.2,15.179292490748624,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Independent,OLS,std.error,7.4,7.402965575435529,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,DIM,estimate,11.8,11.840598231611306,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,DIM,std.error,12.5,12.53508904659744,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,OLS,estimate,11.6,11.573886122260063,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Lean Democrat,OLS,std.error,8.8,8.81739882536063,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,DIM,estimate,-2.5,-2.461496075358628,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,DIM,std.error,10.2,10.197934043598522,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,OLS,estimate,2.7,2.653523535588006,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Weak Democrat,OLS,std.error,9.0,9.006222132507334,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,DIM,estimate,5.3,5.262916757418898,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,DIM,std.error,7.7,7.71002992229215,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,OLS,estimate,5.9,5.877500720513354,1,NA
+Appendix Figure S22,I-5: Vaccince - Child,Strong Democrat,OLS,std.error,7.3,7.2658009109212465,1,NA

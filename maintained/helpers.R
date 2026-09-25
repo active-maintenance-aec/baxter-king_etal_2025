@@ -108,6 +108,61 @@ levels_data <- function(data) {
     select(subgroup, Z, estimate, std.error, conf.low, conf.high, df)
 }
 
+# Fitting the Lin specification where the cell can carry it ----
+# The covariates whose treatment interaction was dropped while their own main
+# effect survived. A covariate that loses both halves of lm_lin()'s expansion
+# is redundant, and what remains is the same specification on the covariates
+# that are left; only a covariate that keeps its main effect and loses its
+# interaction costs the estimand.
+lost_interactions <- function(fit, covs) {
+  na_terms <- fit$term[is.na(fit$coefficients)]
+  owner <- function(term) {
+    term <- str_remove(term, "^[^:]*:")
+    hits <- covs[str_detect(term, fixed(covs))]
+    if (length(hits) == 0) NA_character_ else hits[which.max(nchar(hits))]
+  }
+  interactions <- na_terms[str_detect(na_terms, ":")]
+  main_effects <- setdiff(na_terms, interactions)
+  setdiff(
+    unique(na.omit(map_chr(interactions, owner))),
+    unique(na.omit(map_chr(main_effects, owner)))
+  )
+}
+
+# lm_lin() reports the effect at the covariate means, and that quantity exists
+# only while every covariate is interacted with the treatment. In a thin party
+# identification cell a race category can be empty in one arm, and because
+# lm_lin() centres before interacting, x_c - Z * x_c equals -mean(x) * (1 - Z):
+# the intercept, the treatment indicator, the centred covariate and its
+# interaction are then exactly collinear. One of the four is dropped, the fit
+# is the same whichever it is, and the treatment coefficient is not, so the
+# published number in such a cell records which column the decomposition
+# aliased rather than an effect. That is 21 of the 154 conditional cells behind
+# the appendix panels, on 11 of the 22 figures, and the empty category is AAPI
+# in 9 of them, Other in 8 and Black in 4.
+#
+# The covariate is therefore removed from the cells that cannot identify it,
+# and from those cells only. Every other cell keeps the covariate list the
+# article used, which is what makes this different from respecifying the whole
+# analysis: dropping race everywhere would move 64 of the 133 identified cells
+# by more than a percentage point and one of them by 14. The specification each
+# cell actually used travels out with its estimate in covariates_trimmed, so a
+# reader is never left to recover it by refitting.
+lin_cell <- function(cell_data, covariates) {
+  covs <- all.vars(covariates)
+  trimmed <- character(0)
+  repeat {
+    fit <- lm_lin(Y ~ Z, covariates = reformulate(covs), weights = weights,
+                  se_type = "HC1", data = cell_data)
+    lost <- lost_interactions(fit, covs)
+    if (length(lost) == 0) break
+    trimmed <- c(trimmed, lost)
+    covs <- setdiff(covs, lost)
+    stopifnot(length(covs) > 0)
+  }
+  tidy(fit) |> mutate(covariates_trimmed = paste(sort(trimmed), collapse = "; "))
+}
+
 # Data behind the right panel of each of Figures 1, 3 and 5: difference-in-means
 # and Lin-adjusted effects, overall and within each level of party ID. Estimates
 # are on the percentage-point scale, as the published panels are.
@@ -134,21 +189,13 @@ aces_data <- function(data) {
   cates_pid_7_ols <-
     data |>
     group_by(demo_pid7) |>
-    reframe(tidy(lm_lin(Y ~ Z,
-                        covariates = ols_formula_within_party,
-                        weights = weights,
-                        se_type = "HC1",
-                        data = pick(everything())))) |>
+    reframe(lin_cell(pick(everything()), ols_formula_within_party)) |>
     filter(term != "(Intercept)", !str_detect(term, "covariate"))
 
   ate_ols <-
     data |>
     mutate(pid_7 = as.numeric(demo_pid7)) |>
-    reframe(tidy(lm_lin(Y ~ Z,
-                        covariates = ols_formula_covariates,
-                        weights = weights,
-                        se_type = "HC1",
-                        data = pick(everything())))) |>
+    reframe(lin_cell(pick(everything()), ols_formula_covariates)) |>
     filter(term != "(Intercept)",
            !str_detect(term, "covariate"),
            !str_detect(term, "pid_7"))
@@ -158,10 +205,11 @@ aces_data <- function(data) {
       estimator = if_else(model %in% c("1", "2"), "DIM", "OLS"),
       across(c(estimate, std.error, conf.low, conf.high), ~ .x * 100),
       subgroup = fct_na_value_to_level(demo_pid7, level = "Full sample"),
-      entry = sprintf("%.1f (%.1f)", estimate, std.error)
+      entry = sprintf("%.1f (%.1f)", estimate, std.error),
+      covariates_trimmed = replace_na(covariates_trimmed, "")
     ) |>
     select(subgroup, estimator, term, estimate, std.error, p.value,
-           conf.low, conf.high, entry)
+           conf.low, conf.high, entry, covariates_trimmed)
 }
 
 levels_plot <- function(gg_df) {

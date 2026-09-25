@@ -60,7 +60,7 @@ panels <-
   select(float, contrast, estimates) |>
   unnest(estimates) |>
   select(float, contrast, subgroup, estimator, estimate, std.error, p.value,
-         conf.low, conf.high, entry)
+         conf.low, conf.high, entry, covariates_trimmed)
 
 stopifnot(nrow(panels) == nrow(contrasts) * 16)
 
