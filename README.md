@@ -259,6 +259,18 @@ error 2 of the four vignettes affirm equivalence at ten points; under
 the corrected one, 1 does. The ground truth records this row as a
 mismatch with `defect_locus = archive`.
 
+The article itself needs two corrections, both counts of survey
+respondents and neither touching an estimate. The abstract, the
+Significance Statement, and the Introduction give the headline count as
+85,191 respondents, where the ten deposited analysis files hold 96,567
+distinct respondent identifiers and no sum of the article’s own printed
+N figures produces 85,191. The Materials and methods put wave five at
+30,000 respondents alongside waves six to eight, where the deposited
+wave-five files and the appendix’s CONSORT diagram hold 14,557.
+`errata.qmd` sets them out and renders to
+`baxter-king_etal_2025_errata.pdf` at the root of this repository,
+reading the first count from `maintained/output/` when it is rendered.
+
 Two further defects in the deposit are reported rather than corrected,
 because correcting them would change the published figures rather than a
 computation.
@@ -556,9 +568,9 @@ The acceptance test for a full run is that
 
 | Component    | Version    |
 |:-------------|:-----------|
-| R            | 4.6.0      |
+| R            | 4.6.1      |
 | tidyverse    | 2.0.0      |
-| estimatr     | 2.0.0.9000 |
+| estimatr     | 2.0.1.9000 |
 | modelsummary | 2.6.0      |
 | ggplot2      | 4.0.3      |
 | patchwork    | 1.3.2      |

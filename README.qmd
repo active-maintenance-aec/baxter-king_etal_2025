@@ -34,6 +34,14 @@ published_claims <- read_csv(here("ground_truth", "published_claims.csv"), show_
 equivalence <- read_csv(here("maintained", "output", "text_equivalence_claims.csv"),
                         show_col_types = FALSE)
 section_c <- read_csv(here("ground_truth", "section_c_cells.csv"), show_col_types = FALSE)
+# The errata spine, defined once in errata.qmd and written out by it. This report reads it
+# rather than restating the entries, so the two cannot drift.
+spine <- read_csv(here("errata_entries.csv"), show_col_types = FALSE)
+n_errata_word <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+                   "ten")[nrow(spine)]
+table_1_out <- read_csv(here("maintained", "output", "table_1_experiment_directory.csv"),
+                        show_col_types = FALSE)
+n_any_experiment <- table_1_out$n_deposited[table_1_out$experiment == "Any of the ten experiments"]
 section_c_total <- nrow(section_c)
 section_c_ok <- sum(section_c$cell_agrees == 1, na.rm = TRUE)
 section_c_differ <- sum(section_c$cell_agrees == 0, na.rm = TRUE)
@@ -195,6 +203,8 @@ affirm_deposited <- sum(vignettes$affirms_10pp_deposited)
 ```
 
 The correction moves a published claim. The article says that among the four vaccine mandate vignettes "we can affirm equivalence at 10 points in two cases but cannot in two cases." Under the deposit's standard error `r affirm_deposited` of the four vignettes affirm equivalence at ten points; under the corrected one, `r affirm_corrected` does. The ground truth records this row as a mismatch with `defect_locus = archive`.
+
+The article itself needs `r n_errata_word` corrections, both counts of survey respondents and neither touching an estimate. The abstract, the Significance Statement, and the Introduction give the headline count as 85,191 respondents, where the ten deposited analysis files hold `r format(n_any_experiment, big.mark = ",")` distinct respondent identifiers and no sum of the article's own printed N figures produces 85,191. The Materials and methods put wave five at 30,000 respondents alongside waves six to eight, where the deposited wave-five files and the appendix's CONSORT diagram hold 14,557. `errata.qmd` sets them out and renders to `baxter-king_etal_2025_errata.pdf` at the root of this repository, reading the first count from `maintained/output/` when it is rendered.
 
 Two further defects in the deposit are reported rather than corrected, because correcting them would change the published figures rather than a computation.
 

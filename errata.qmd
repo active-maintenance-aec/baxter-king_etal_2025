@@ -1,0 +1,143 @@
+---
+title: "Errata"
+subtitle: "On Baxter-King, Coppock, Straus and Vavreck (2025), *PNAS Nexus* 4(6)"
+format:
+  pdf:
+    output-file: baxter-king_etal_2025_errata.pdf
+    geometry: margin=1.25in
+    fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(here)
+library(tidyverse)
+here::i_am("errata.qmd")
+
+# Entry 1's corrected count is read from the maintained pipeline's output rather than
+# typed here: table_1_experiment_directory.R takes the union of the respondent identifiers
+# in the ten deposited analysis files and writes it as the last row of Table 1.
+table_1 <- read_csv(here("maintained", "output", "table_1_experiment_directory.csv"),
+                    show_col_types = FALSE)
+n_any <- table_1$n_deposited[table_1$experiment == "Any of the ten experiments"]
+stopifnot(length(n_any) == 1, n_any > 85191)
+n_ten_rows <- sum(table_1$n_deposited[table_1$experiment != "Any of the ten experiments"])
+
+# Entry 2's counts are the number of distinct respondent identifiers in the deposited
+# analysis files from each of waves five to eight, measured on 2026-10-31 and recorded
+# here because the deposit is downloaded rather than committed. When the deposit is
+# present the chunk recounts and refuses to render if the figures have moved.
+wave_counts <- tribble(
+  ~wave, ~largest_file,           ~n_largest, ~n_union, ~n_consort,
+  5,     "data_w5_masking",        14557,      14557,    14557,
+  6,     "data_w6_conversation",   30857,      30857,    30857,
+  7,     "data_w7_cdcmask",        32943,      32989,    33088,
+  8,     "data_w8_bivalent_all",   29448,      29448,    29448
+)
+data_dir <- here("original", "replication_archive", "data", "clean", "rds")
+if (dir.exists(data_dir)) {
+  recount <- tibble(file = list.files(data_dir, pattern = "^data_w[5-8]_.*[.]rds$")) |>
+    mutate(wave = as.numeric(str_extract(file, "(?<=^data_w)\\d")),
+           ids = map(file, function(f) read_rds(file.path(data_dir, f))$respondent_id)) |>
+    group_by(wave) |>
+    summarise(n_largest = max(lengths(ids)), n_union = length(reduce(ids, union)), .groups = "drop")
+  stopifnot(nrow(recount) == nrow(wave_counts),
+            all(recount$wave == wave_counts$wave),
+            all(recount$n_largest == wave_counts$n_largest),
+            all(recount$n_union == wave_counts$n_union))
+}
+fmt <- function(x) format(x, big.mark = ",")
+```
+
+```{r entries}
+# THE ERRATA SPINE. Every entry is defined once, here, and rendered from here: into this
+# document, and into whatever else needs it, which reads the errata_entries.csv written at
+# the bottom of this file rather than keeping a second hand-typed copy.
+#
+# [[...]] marks the span that changes. Each renderer supplies its own markup for it: bold
+# here, \was{} in an edition. Nothing else in a field is markup, so the same string can be
+# set by either.
+#
+# Numbering is APPEND-ONLY once this note is published: an entry can already have been
+# cited, so a later finding is added at the end and never interleaved.
+#
+# claim_ids names the ground-truth rows an entry corrects, semicolon-separated.
+entries <- tribble(
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
+
+  1, "quantity", "pipeline", "full",
+  "The headline count of survey respondents",
+  "published p. 1, abstract; repeated in the Significance Statement on p. 1 and the Introduction on p. 2",
+  "Using data from 10 experiments with [[85,191]] survey respondents conducted over a 2-year period during the COVID-19 pandemic, we assess the effectiveness of these three types of persuasive messages.",
+  paste0("Using data from 10 experiments with [[", fmt(n_any), "]] survey respondents conducted over a 2-year period during the COVID-19 pandemic, we assess the effectiveness of these three types of persuasive messages."),
+  paste0("The same figure appears three times: here, in the Significance Statement (\"Ten experiments ",
+         "conducted between 2020 and 2022 with 85,191 respondents\"), and in the Introduction (\"conducted ",
+         "among 85,191 survey respondents interviewed between 2020 and 2022\"). The ten deposited analysis ",
+         "files, one per experiment in Table 1, hold ", fmt(n_ten_rows), " rows and ", fmt(n_any),
+         " distinct respondent identifiers. Every identifier carries its wave as a prefix and no identifier ",
+         "appears in two waves, so the overlap is entirely within waves, whose experiments draw on the same ",
+         "respondents: the mandate vignettes and the first mask-guidance experiment share wave six, the two ",
+         "conversation experiments and the second mask-guidance experiment share wave seven, and the three ",
+         "booster experiments share wave eight. The analysis files run ",
+         "0.1 to 0.7 percent short of the enrollment Table 1 reports, so the count of enrolled respondents is ",
+         "larger still: Table 1's own N column, with the nested experiments counted once as the appendix's ",
+         "CONSORT diagrams show them, gives at least 96,840. No sum of the N figures the article prints ",
+         "produces 85,191, and the deposit contains no file from which it could have been counted. The ",
+         "figure given here is the deposit's."),
+  "abstract_and_introduction_survey_respondents_across_the_ten_experiments",
+
+  2, "quantity", "pipeline", "full",
+  "Wave five holds half the respondents the Materials and methods give it",
+  "published p. 2, Materials and methods",
+  "Waves five through eight, which consist of 30,000 respondents each, were conducted 2021 March 25 to April 13, 2021 June 17 to July 6, 2021 September 3 to October 4, and 2022 October 24 to December 20.",
+  "[[Wave five, which consists of 15,000 respondents, and waves six]] through eight, which consist of 30,000 respondents each, were conducted 2021 March 25 to April 13, 2021 June 17 to July 6, 2021 September 3 to October 4, and 2022 October 24 to December 20.",
+  paste0("The deposit ships experiment subsets rather than waves, but three of its wave-five files ",
+         "(the masking, sick-leave, and incentive experiments, none of them in this article) each hold ",
+         fmt(wave_counts$n_union[wave_counts$wave == 5]), " respondents, which is the N the appendix's CONSORT ",
+         "diagram gives for the wave in which E-2 was fielded. The largest deposited files from waves six, ",
+         "seven, and eight hold ", fmt(wave_counts$n_largest[wave_counts$wave == 6]), ", ",
+         fmt(wave_counts$n_largest[wave_counts$wave == 7]), ", and ", fmt(wave_counts$n_largest[wave_counts$wave == 8]),
+         " respondents against CONSORT Ns of ", fmt(wave_counts$n_consort[wave_counts$wave == 6]), ", ",
+         fmt(wave_counts$n_consort[wave_counts$wave == 7]), ", and ", fmt(wave_counts$n_consort[wave_counts$wave == 8]),
+         ", so those three waves are the 30,000 the sentence describes and wave five is not. The corrected ",
+         "sentence rounds as the article does, which gives wave three's 14,946 enrolled respondents as 15,000 ",
+         "and wave eight's 29,448 as 30,000. The field dates are unchanged."),
+  "methods_late_wave_size"
+) |>
+  mutate(across(c(title, published, corrected, note, claim_ids), as.character))
+
+stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
+
+spell <- function(n) {
+  words <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
+  stopifnot(n >= 1, n <= length(words))
+  words[n]
+}
+
+# The spine's markup, resolved for this document. Another renderer resolves it differently.
+bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
+```
+
+This note lists `r spell(nrow(entries))` corrections to "Endorsements vs. information: experimental evidence of backlash and parallel persuasion during the COVID-19 public health crisis," published in *PNAS Nexus* 4(6):pgaf185, doi [10.1093/pnasnexus/pgaf185](https://doi.org/10.1093/pnasnexus/pgaf185). **Both are counts of survey respondents, and neither changes an estimate or a conclusion of the paper.** The first is the headline count of respondents across the ten experiments, which the abstract, the Significance Statement, and the Introduction all give as 85,191 where the deposited analysis files hold `r fmt(n_any)`. The second is the size of survey wave five, which the Materials and methods put at 30,000 respondents alongside waves six to eight where the deposit and the appendix's own CONSORT diagram put it near 15,000.
+
+Both were found by the maintained replication, which recomputes every number the article prints from the deposited replication archive ([osf.io/bwv3c](https://osf.io/bwv3c/)) and checks each against the printed value. The count in the first corrected sentence is computed from that archive at the time this document is rendered. The code supporting the maintained analysis is at [github.com/active-maintenance-aec/baxter-king_etal_2025](https://github.com/active-maintenance-aec/baxter-king_etal_2025).
+
+# The article
+
+```{r article-entries, results="asis"}
+# A heading is only a heading when a blank line precedes it, which is why every emitted
+# entry opens with one.
+walk(entries$entry, function(n) {
+  e <- entries |> filter(entry == n)
+  cat("\n\n## ", e$entry, ". ", e$title, "\n\nPublished, ",
+      str_remove(e$location, "^published "), ":\n\n> ", bold(e$published),
+      "\n\nCorrected:\n\n> ", bold(e$corrected), "\n\n", e$note, "\n", sep = "")
+})
+```
+
+```{r emit-spine}
+# The machine-readable spine, written wherever this document is rendered. Anything else
+# that needs these entries reads it rather than keeping its own copy, so the two cannot
+# drift.
+write_csv(entries, here("errata_entries.csv"))
+```
