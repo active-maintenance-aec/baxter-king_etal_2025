@@ -45,8 +45,10 @@ write_csv(
 # The deposit plots the versions in alphabetical order, which is what assigns
 # four_colors and the shapes to them on the page: Friend teal circles, Pooled
 # orange triangles, Solo black squares. The CSV above keeps its own row order.
+# Character and not factor, as in the deposit: geom_blank trains the scale first,
+# and a factor holding only Solo would put Solo first in the colour scale.
 gg_df <- gg_df |>
-  mutate(version = fct_relevel(version, "Friend", "Pooled", "Solo"))
+  mutate(version = as.character(version))
 
 lines_df <- tibble(
   facet_label = factor(facet_levels, levels = facet_levels),
@@ -57,7 +59,7 @@ blank_df <-
   tibble(
     facet_label = rep(facet_levels, each = 2),
     activity = "Trip",
-    version = factor("Solo", levels = c("Friend", "Pooled", "Solo")),
+    version = "Solo",
     estimate = c(0.45, 0.85, -0.20, 0.20, -0.20, 0.20)
   ) |>
   mutate(facet_label = factor(facet_label, levels = facet_levels))
