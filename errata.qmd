@@ -559,8 +559,16 @@ entries <- tribble(
   r"--([[G-1]]: CDC Mask Guidance 1: [[0.015 (0.009)]], [[0.028 (0.013) *]], [[0.013 (0.018)]], [[0.022 *]], [[0.000 *]]. [[G-3]]: CDC Mask Guidance 2: [[0.054 (0.011) *]], [[0.064 (0.012) *]], [[0.010 (0.016)]], [[0.007 *]], [[0.000 *]].)--",
   paste0("G-1: CDC Mask Guidance 1: [[", cell("G-1", "cate_dem", "se_dem"), "]], [[", cell("G-1", "cate_rep", "se_rep"), "]], [[", cell("G-1", "dic", "se_dic"), "]], [[", pstar("G-1", "eq_p_5pp"), "]], [[", pstar("G-1", "eq_p_10pp"), "]]. G-3: CDC Mask Guidance 2: [[", cell("G-3", "cate_dem", "se_dem"), "]], [[", cell("G-3", "cate_rep", "se_rep"), "]], [[", cell("G-3", "dic", "se_dic"), "]], [[", pstar("G-3", "eq_p_5pp"), "]], [[", pstar("G-3", "eq_p_10pp"), "]]."),
   paste0("The deposit's code/tables/equiv_test_guidance.R maps the label \"G-1: CDC Mask Guidance 1\" to the model object w7_fit_cdcmask and \"G-3: CDC Mask Guidance 2\" to w6_fit_cdcmask. G-1 is the June 2021 experiment, whose analysis file is w6, and G-3 is the September 2021 experiment, whose file is w7, so the two rows carry each other's numbers. Two errors are separate here. The row swap is one. The other is the mistyped standard error of entry 22, which affects the printed difference-in-CATEs standard errors and the equivalence p-values in both rows. The corrected row values given above fix both, and they are the maintained replication's. Correcting only the swap would leave the G-1 row at 0.010 (0.016), 0.007 *, 0.000 * and the G-3 row at 0.013 (0.018), 0.022 *, 0.000 *. Both experiments affirm equivalence at 5 and 10 points under any of these values, so the claim on p. 4 is unchanged, and so are the counts in entries 21 and 22."),
-  ""
-,
+  "",
+  NA_character_,
+
+  48, "typography", "reading", "brief",
+  "The y-axis label of 29 appendix figures ends in a stray bracket",
+  "published appendix pp. 19 to 25 and 31 to 38, Figures S2 to S15 and S24 to S38, left panel, y-axis label",
+  r"--(to get the vaccine = 1, 0 [[otherwise]]])--",
+  r"--(to get the vaccine = 1, 0 [[otherwise]])--",
+  r"--(The label opens no bracket. Figure S1 (appendix p. 18) prints the same label without it.)--",
+  "",
   NA_character_) |>
   mutate(across(c(title, published, corrected, note, claim_ids, corrected_values),
                 as.character))
@@ -639,7 +647,7 @@ emit_entry <- function(n) {
 sections <- list(
   article = c(1, 2, 5:12, 15:19, 21:28, 41, 45, 46),
   references = 29:32,
-  appendix = c(3, 4, 13, 14, 20, 33:40, 42, 43, 44, 47)
+  appendix = c(3, 4, 13, 14, 20, 33:40, 42, 43, 44, 47, 48)
 )
 stopifnot(setequal(unlist(sections), entries$entry), !anyDuplicated(unlist(sections)))
 n_corrections <- sum(entries$form != "note")

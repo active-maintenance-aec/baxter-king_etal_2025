@@ -260,7 +260,7 @@ vignettes affirm equivalence at ten points; under the corrected one, 1
 does. The ground truth records this row as a mismatch with
 `defect_locus = archive`.
 
-The errata note, `errata.qmd`, lists 43 corrections to the article and
+The errata note, `errata.qmd`, lists 44 corrections to the article and
 its appendix, which include these two printed defects, and four items it
 flags without correcting. Two corrections concern claims the article
 makes: the equivalence count above, which is entry 22, and the count of
