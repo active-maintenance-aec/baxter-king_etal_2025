@@ -64,7 +64,7 @@ gg_df <-
       "treat:pid_7_c" ~ "Treatment X 7-pt PID"
     ),
     facet_label = factor(facet_label, levels = facet_levels),
-    arm = factor(arm, levels = c("Personal", "Social", "Pooled")),
+    arm = factor(arm, levels = c("Social", "Personal", "Pooled")),
     endorser = factor(endorser, levels = endorser_order),
     wave = if_else(str_detect(endorser, "w3"), "October 2020", "April 2021"),
     wave = factor(wave, levels = c("October 2020", "April 2021"))
@@ -102,7 +102,7 @@ p1 <-
   ) +
   geom_blank(data = blank_df |>
                filter(facet_label != "Control group mean") |>
-               mutate(arm = factor("Pooled", levels = c("Personal", "Social", "Pooled")))) +
+               mutate(arm = factor("Pooled", levels = c("Social", "Personal", "Pooled")))) +
   geom_text(
     data = gg_df |> filter(wave == "October 2020",
                            facet_label == "Average Treatment Effect",
@@ -126,7 +126,11 @@ p1 <-
   facet_grid(cols = vars(facet_label), scales = "free", space = "free") +
   labs(x = "Coefficient estimate and 95% confidence interval", title = "October 2020") +
   scale_y_discrete(labels = function(x) str_remove(x, " \\(w[35]\\)")) +
-  scale_color_manual(values = four_colors)
+  # Named, because the geom_blank layer puts Pooled first in the scale. These are the
+  # marks the published page draws for each series, under the corrected labels of
+  # errata entry 46: Personal orange triangles, Social teal circles, Pooled black squares.
+  scale_color_manual(values = c(Personal = "#FFA500", Social = "#008080", Pooled = "black")) +
+  scale_shape_manual(values = c(Personal = 17, Social = 16, Pooled = 15))
 
 p2 <-
   ggplot(
