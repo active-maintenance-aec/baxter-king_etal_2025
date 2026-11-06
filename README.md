@@ -260,27 +260,28 @@ vignettes affirm equivalence at ten points; under the corrected one, 1
 does. The ground truth records this row as a mismatch with
 `defect_locus = archive`.
 
-The errata note, `errata.qmd`, lists 41 corrections to the article and
-its appendix, and four items it flags without correcting. Two
-corrections concern claims the article makes: the equivalence count
-above, which is entry 22, and the count of cases in which the
-interaction terms and the differences-in-CATEs disagree in significance,
-which is four by the printed estimates where the article says one (entry
-21). Two more are counts of survey respondents: the abstract, the
-Significance Statement, and the Introduction give the headline count as
-85,191 respondents, where the ten deposited analysis files hold 96,567
-distinct respondent identifiers, and the Materials and methods put wave
-five at 30,000 respondents alongside waves six to eight, where the
-deposited wave-five files and the appendix’s CONSORT diagram hold
-14,557. The rest are descriptions, labels, cross-references, wording,
-spelling, and reference-list details, each quoted from the published
-page. The note renders to `baxter-king_etal_2025_errata.pdf` at the root
-of this repository, reading the respondent count and the equivalence
-count from `maintained/output/` when it is rendered.
+The errata note, `errata.qmd`, lists 43 corrections to the article and
+its appendix, which include these two printed defects, and four items it
+flags without correcting. Two corrections concern claims the article
+makes: the equivalence count above, which is entry 22, and the count of
+cases in which the interaction terms and the differences-in-CATEs
+disagree in significance, which is four by the printed estimates where
+the article says one (entry 21). Two more are counts of survey
+respondents: the abstract, the Significance Statement, and the
+Introduction give the headline count as 85,191 respondents, where the
+ten deposited analysis files hold 96,567 distinct respondent
+identifiers, and the Materials and methods put wave five at 30,000
+respondents alongside waves six to eight, where the deposited wave-five
+files and the appendix’s CONSORT diagram hold 14,557. The rest are
+descriptions, labels, cross-references, wording, spelling, and
+reference-list details, each quoted from the published page. The note
+renders to `baxter-king_etal_2025_errata.pdf` at the root of this
+repository, reading the respondent count and the equivalence count from
+`maintained/output/` when it is rendered.
 
-Two further defects in the deposit are reported rather than corrected,
-because correcting them would change the published figures rather than a
-computation.
+Two further defects in the deposit are corrected in the maintained
+rewrite and are entries 46 and 47 of the errata note, since each is
+printed in the article or its appendix.
 
 **The series labels of Figure 2 are swapped.**
 `code/analysis/run_models_w3_endorse_by_arm.R` fits the models named
@@ -289,7 +290,8 @@ models named `*_not_prosocial` on `experiment_arm == "B (Social)"`.
 `code/figures/figure_2.R` then relabels `Prosocial` as `Social` and
 `Not Prosocial` as `Personal`. Each framing’s estimates are therefore
 plotted under the other framing’s label. The rewrite labels each series
-by the `experiment_arm` value the model was fitted on.
+by the `experiment_arm` value the model was fitted on. This is entry 46
+of the errata note.
 
 **The rows of the guidance equivalence table are swapped.**
 `code/tables/equiv_test_guidance.R` maps the label
@@ -297,7 +299,7 @@ by the `experiment_arm` value the model was fitted on.
 `G-3: CDC Mask Guidance 2` to `w6_fit_cdcmask`. G-1 is the June 2021
 experiment, whose analysis file is `w6`, and G-3 is the September 2021
 experiment, whose file is `w7`. The two rows of the published table
-carry each other’s numbers.
+carry each other’s numbers, which is entry 47 of the errata note.
 
 ------------------------------------------------------------------------
 

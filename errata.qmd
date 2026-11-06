@@ -64,6 +64,15 @@ p10 <- function(x) sprintf("%.3f", vignettes$eq_p_10pp[vignettes$experiment == x
 # Entry 8's shares are the maintained replication's weighted means in the E-2 file.
 endorse <- read_csv(here("maintained", "output", "text_endorsement_claims.csv"), show_col_types = FALSE)
 share <- function(label) sprintf("%.1f", 100 * endorse$value[endorse$claim == label])
+# Entry 47's corrected row values, formatted as the appendix prints them.
+cell <- function(id, est, se) {
+  r <- equiv[equiv$experiment == id, ]
+  sprintf("%.3f (%.3f)%s", r[[est]], r[[se]], if (abs(r[[est]] / r[[se]]) > 1.96) " *" else "")
+}
+pstar <- function(id, p) {
+  v <- equiv[[p]][equiv$experiment == id]
+  sprintf("%.3f%s", v, if (v < 0.05) " *" else "")
+}
 fmt <- function(x) format(x, big.mark = ",")
 
 # Numerals above ten are printed as numerals.
@@ -479,6 +488,22 @@ entries <- tribble(
   r"--(conducted 2021 March 25 to April 13, 2021 June 17 to July 6, 2021 September 3 to October 4, and 2022 October 24 to December 20. ... Dates Fielded: 03/24/2021 - 04/14/2021 ... Dates Fielded: 09/03/2021 - 10/05/2021)--",
   NA,
   r"--(Appendix p. 9 gives the E-2 field dates as March 24 to April 14, 2021, a day earlier at the start and a day later at the end than the Materials and methods' March 25 to April 13. Appendix pp. 12 and 13 give the September wave (G-3 and I-2) as September 3 to October 5, a day later at the end than October 4. None of the deposited analysis files has a date, time, or start or end field, so the deposit cannot say which set of dates is right. Entry 2 leaves the dates in the Materials and methods as printed.)--",
+  "",
+
+  46, "label", "pipeline", "full",
+  "Figure 2 plots each framing's estimates under the other framing's label",
+  "published p. 6, Fig. 2, October 2020 panel, legend, and p. 5, Results",
+  r"--(Legend: Pooled, [[Social]] (orange triangles), [[Personal]] (teal circles). ... Estimates from the [[personal arms]] are plotted with [[circles]] while estimates from the [[social arm]] that included additional information that the vaccine would protect other people are plotted with [[triangles]].)--",
+  r"--(Legend: Pooled, [[Personal]] (orange triangles), [[Social]] (teal circles). ... Estimates from the [[social arm]] that included additional information that the vaccine would protect other people are plotted with [[circles]] while estimates from the [[personal arms]] are plotted with [[triangles]].)--",
+  paste0("The deposit's code/analysis/run_models_w3_endorse_by_arm.R fits the models named *_prosocial on experiment_arm == \"A (Personal)\" and the models named *_not_prosocial on experiment_arm == \"B (Social)\". code/figures/figure_2.R then relabels \"Prosocial\" as \"Social\" and \"Not Prosocial\" as \"Personal\", so each framing is drawn under the other's label. The arm variable agrees with the appendix: Arm A (Personal) on appendix p. 8 is the version without the sentence about protecting others, and its Trump and Fauci cells (N: 937/940 and 879/882) are the counts of the deposit's A (Personal) rows, 937 and 879 treated respondents. The maintained replication labels each series by the arm it was fitted on. The article's prose about Fig. 2 describes the series by the printed labels and so carries the same swap, which the corrected sentence reverses. No printed sentence changes direction: the text says only that the Personal versus Social variation does not matter (joint test p = 0.37), and the estimates themselves are unchanged."),
+  "",
+
+  47, "label", "pipeline", "full",
+  "The G-1 and G-3 rows of the appendix's guidance equivalence table carry each other's numbers",
+  "published appendix p. 47, Guidance Experiments CATEs, Difference-in-CATEs, and Equivalence Tests",
+  r"--([[G-1]]: CDC Mask Guidance 1: [[0.015 (0.009)]], [[0.028 (0.013) *]], [[0.013 (0.018)]], [[0.022 *]], [[0.000 *]]. [[G-3]]: CDC Mask Guidance 2: [[0.054 (0.011) *]], [[0.064 (0.012) *]], [[0.010 (0.016)]], [[0.007 *]], [[0.000 *]].)--",
+  paste0("G-1: CDC Mask Guidance 1: [[", cell("G-1", "cate_dem", "se_dem"), "]], [[", cell("G-1", "cate_rep", "se_rep"), "]], [[", cell("G-1", "dic", "se_dic"), "]], [[", pstar("G-1", "eq_p_5pp"), "]], [[", pstar("G-1", "eq_p_10pp"), "]]. G-3: CDC Mask Guidance 2: [[", cell("G-3", "cate_dem", "se_dem"), "]], [[", cell("G-3", "cate_rep", "se_rep"), "]], [[", cell("G-3", "dic", "se_dic"), "]], [[", pstar("G-3", "eq_p_5pp"), "]], [[", pstar("G-3", "eq_p_10pp"), "]]."),
+  paste0("The deposit's code/tables/equiv_test_guidance.R maps the label \"G-1: CDC Mask Guidance 1\" to the model object w7_fit_cdcmask and \"G-3: CDC Mask Guidance 2\" to w6_fit_cdcmask. G-1 is the June 2021 experiment, whose analysis file is w6, and G-3 is the September 2021 experiment, whose file is w7, so the two rows carry each other's numbers. Two errors are separate here. The row swap is one. The other is the mistyped standard error of entry 22, which affects the printed difference-in-CATEs standard errors and the equivalence p-values in both rows. The corrected row values given above fix both, and they are the maintained replication's. Correcting only the swap would leave the G-1 row at 0.010 (0.016), 0.007 *, 0.000 * and the G-3 row at 0.013 (0.018), 0.022 *, 0.000 *. Both experiments affirm equivalence at 5 and 10 points under any of these values, so the claim on p. 4 is unchanged, and so are the counts in entries 21 and 22."),
   ""
 ) |>
   mutate(across(c(title, published, corrected, note, claim_ids), as.character))
@@ -488,7 +513,7 @@ stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry),
           identical(entries$entry[entries$form == "note"], c(11, 32, 44, 45)))
 
 # The spine's markup, resolved for this document. Another renderer resolves it differently.
-bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
+bold <- function(x) str_replace_all(str_replace_all(x, fixed("*"), "\\*"), "\\[\\[(.*?)\\]\\]", "**\\1**")
 
 # A heading is only a heading when a blank line precedes it, which is why every emitted
 # entry opens with one.
@@ -502,16 +527,16 @@ emit_entry <- function(n) {
 }
 
 sections <- list(
-  article = c(1, 2, 5:10, 11, 12, 15:19, 21, 22, 23:28, 41, 45),
+  article = c(1, 2, 5:12, 15:19, 21:28, 41, 45, 46),
   references = 29:32,
-  appendix = c(3, 4, 13, 14, 20, 33:40, 42, 43, 44)
+  appendix = c(3, 4, 13, 14, 20, 33:40, 42, 43, 44, 47)
 )
 stopifnot(setequal(unlist(sections), entries$entry), !anyDuplicated(unlist(sections)))
 n_corrections <- sum(entries$form != "note")
 n_notes <- sum(entries$form == "note")
 ```
 
-This note lists `r n_corrections` corrections, and `r spell(n_notes)` items it flags without correcting, in "Endorsements vs. information: experimental evidence of backlash and parallel persuasion during the COVID-19 public health crisis," published in *PNAS Nexus* 4(6):pgaf185, doi [10.1093/pnasnexus/pgaf185](https://doi.org/10.1093/pnasnexus/pgaf185), and its online appendix. **Two of the corrections concern claims the article makes.** On p. 4 the article says that the sign and significance of the interaction terms match those of the differences-in-CATEs in all cases but one, and that equivalence can be affirmed at 10 points in two of the four mandate vignettes. By the printed estimates the first count is four, not one (entry 21), and under the correct standard error for the difference the second is one, not two (entry 22), because the deposit's code mistypes that standard error. No estimate in the article's main tables or figures changes. The appendix's equivalence tables print standard errors and equivalence p-values from the mistyped formula, and they are not reprinted here.
+This note lists `r n_corrections` corrections, and `r spell(n_notes)` items it flags without correcting, in "Endorsements vs. information: experimental evidence of backlash and parallel persuasion during the COVID-19 public health crisis," published in *PNAS Nexus* 4(6):pgaf185, doi [10.1093/pnasnexus/pgaf185](https://doi.org/10.1093/pnasnexus/pgaf185), and its online appendix. **Two of the corrections concern claims the article makes.** On p. 4 the article says that the sign and significance of the interaction terms match those of the differences-in-CATEs in all cases but one, and that equivalence can be affirmed at 10 points in two of the four mandate vignettes. By the printed estimates the first count is four, not one (entry 21), and under the correct standard error for the difference the second is one, not two (entry 22), because the deposit's code mistypes that standard error. Two more concern what a printed figure and an appendix table show: the series labels of Fig. 2 are swapped (entry 46), and the G-1 and G-3 rows of the appendix's guidance equivalence table carry each other's numbers (entry 47). No estimate in the article's main tables or figures changes value. The appendix's equivalence tables print standard errors and equivalence p-values from the mistyped formula, and they are not reprinted here.
 
 Four corrections are counts of respondents or arms: the headline number of respondents and the size of survey wave five (entries 1 and 2), the number of estimates in the appendix's comparison of weighted and unweighted models (entry 4), and one arm of a CONSORT diagram (entry 20). The rest are descriptions of stimuli, samples, and outcomes that do not match the appendix, labels and captions, cross-references to appendix figures and tables, wording and spelling in the article and the appendix, and details of the reference list. The `r spell(n_notes)` items without a correction are cases where the page or the deposit cannot say what the right value is, or where a repair would rewrite the authors' sentence (entries 11, 32, 44, and 45).
 
