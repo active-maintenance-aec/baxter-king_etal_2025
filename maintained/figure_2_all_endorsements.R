@@ -116,7 +116,7 @@ p1 <-
   geom_linerange(aes(xmin = conf.low, xmax = conf.high), position = pos) +
   geom_vline(data = lines_df |> filter(facet_label != "Control group mean"),
              aes(xintercept = xintercept), linetype = "dashed") +
-  theme_bw() +
+  theme_minimal() +
   theme(
     legend.position = "none",
     panel.grid.minor = element_blank(),
@@ -144,7 +144,7 @@ p2 <-
   geom_linerange(aes(xmin = conf.low, xmax = conf.high)) +
   geom_vline(data = lines_df |> filter(facet_label != "Control group mean"),
              aes(xintercept = xintercept), linetype = "dashed") +
-  theme_bw() +
+  theme_minimal() +
   theme(
     panel.grid.minor = element_blank(),
     axis.title.x = element_text(size = 9),

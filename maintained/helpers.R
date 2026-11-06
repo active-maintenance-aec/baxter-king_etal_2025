@@ -228,7 +228,7 @@ levels_plot <- function(gg_df) {
     scale_color_manual(values = colors) +
     scale_fill_manual(values = colors) +
     scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
-    theme_bw() +
+    theme_minimal() +
     theme(
       legend.position = "none",
       axis.title.y = element_text(size = 7),
@@ -240,9 +240,11 @@ levels_plot <- function(gg_df) {
 # The deposited version dodged with coefplot::position_dodgev(). coefplot is
 # unmaintained and its position class is built on ggplot2 3.x internals, so the
 # dodge here is position_dodge() on the discrete y axis, which ggplot2 handles
-# natively.
+# natively. The two take the same number: the deposit's heights are -0.2 and
+# -0.9. An earlier rewrite doubled them, which set each label about a row from
+# its mark and collided labels on Figures 1, 3, and 5.
 aces_plot <- function(gg_df) {
-  pos <- position_dodge(width = -0.4)
+  pos <- position_dodge(width = -0.2)
 
   ggplot(gg_df, aes(estimate, subgroup,
                     color = subgroup, shape = estimator, group = estimator)) +
@@ -250,10 +252,10 @@ aces_plot <- function(gg_df) {
     geom_point(position = pos) +
     geom_linerange(aes(xmin = conf.low, xmax = conf.high), position = pos) +
     geom_text(aes(label = entry),
-              position = position_dodge(width = -1.8),
+              position = position_dodge(width = -0.9),
               hjust = 0, size = 2.5) +
     coord_cartesian(xlim = c(-35, 35)) +
-    theme_bw() +
+    theme_minimal() +
     scale_color_manual(values = colors) +
     theme(
       legend.position = "none",
