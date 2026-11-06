@@ -252,24 +252,31 @@ p-value in the appendix’s equivalence tables is computed from the wrong
 quantity. This is a typographical error rather than an analytical
 choice, so the rewrite uses `sqrt(std.error_1^2 + std.error_2^2)`.
 
-The correction moves a published claim. The article says that among the
-four vaccine mandate vignettes “we can affirm equivalence at 10 points
-in two cases but cannot in two cases.” Under the deposit’s standard
-error 2 of the four vignettes affirm equivalence at ten points; under
-the corrected one, 1 does. The ground truth records this row as a
-mismatch with `defect_locus = archive`.
+The correction moves a published claim, set out as entry 22 of the
+errata note. The article says that among the four vaccine mandate
+vignettes “we can affirm equivalence at 10 points in two cases but
+cannot in two cases.” Under the deposit’s standard error 2 of the four
+vignettes affirm equivalence at ten points; under the corrected one, 1
+does. The ground truth records this row as a mismatch with
+`defect_locus = archive`.
 
-The article itself needs two corrections, both counts of survey
-respondents and neither touching an estimate. The abstract, the
+The errata note, `errata.qmd`, lists 41 corrections to the article and
+its appendix, and four items it flags without correcting. Two
+corrections concern claims the article makes: the equivalence count
+above, which is entry 22, and the count of cases in which the
+interaction terms and the differences-in-CATEs disagree in significance,
+which is four by the printed estimates where the article says one (entry
+21). Two more are counts of survey respondents: the abstract, the
 Significance Statement, and the Introduction give the headline count as
 85,191 respondents, where the ten deposited analysis files hold 96,567
-distinct respondent identifiers and no sum of the article’s own printed
-N figures produces 85,191. The Materials and methods put wave five at
-30,000 respondents alongside waves six to eight, where the deposited
-wave-five files and the appendix’s CONSORT diagram hold 14,557.
-`errata.qmd` sets them out and renders to
-`baxter-king_etal_2025_errata.pdf` at the root of this repository,
-reading the first count from `maintained/output/` when it is rendered.
+distinct respondent identifiers, and the Materials and methods put wave
+five at 30,000 respondents alongside waves six to eight, where the
+deposited wave-five files and the appendix’s CONSORT diagram hold
+14,557. The rest are descriptions, labels, cross-references, wording,
+spelling, and reference-list details, each quoted from the published
+page. The note renders to `baxter-king_etal_2025_errata.pdf` at the root
+of this repository, reading the respondent count and the equivalence
+count from `maintained/output/` when it is rendered.
 
 Two further defects in the deposit are reported rather than corrected,
 because correcting them would change the published figures rather than a
