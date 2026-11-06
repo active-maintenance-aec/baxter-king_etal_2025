@@ -96,14 +96,23 @@ spell <- function(n) {
 # cited, so a later finding is added at the end and never interleaved.
 #
 # claim_ids names the ground-truth rows an entry corrects, semicolon-separated.
+# corrected_values runs parallel to claim_ids, one value per id in the same order, on the
+# claim's scale, carrying the corrected quantity as a number rather than as a sentence. Each
+# value is computed once, here, and the corrected sentence below is glued from the same
+# object, so the two cannot be written apart; the gate after the spine re-checks that each
+# value sits inside the [[...]] span it belongs to. An entry of a class that changes no
+# quantity, a note-form entry, and an entry with no claim_ids carry NA.
+cv1 <- n_any
+cv22 <- n_aff
+
 entries <- tribble(
-  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids, ~corrected_values,
 
   1, "quantity", "pipeline", "full",
   "The headline count of survey respondents",
   "published p. 1, abstract; repeated in the Significance Statement on p. 1 and the Introduction on p. 2",
   "Using data from 10 experiments with [[85,191]] survey respondents conducted over a 2-year period during the COVID-19 pandemic, we assess the effectiveness of these three types of persuasive messages.",
-  paste0("Using data from 10 experiments with [[", fmt(n_any), "]] survey respondents conducted over a 2-year period during the COVID-19 pandemic, we assess the effectiveness of these three types of persuasive messages."),
+  paste0("Using data from 10 experiments with [[", fmt(cv1), "]] survey respondents conducted over a 2-year period during the COVID-19 pandemic, we assess the effectiveness of these three types of persuasive messages."),
   paste0("The same figure appears three times: here, in the Significance Statement (\"Ten experiments ",
          "conducted between 2020 and 2022 with 85,191 respondents\"), and in the Introduction (\"conducted ",
          "among 85,191 survey respondents interviewed between 2020 and 2022\"). The ten deposited analysis ",
@@ -119,6 +128,7 @@ entries <- tribble(
          "produces 85,191, and the deposit contains no file from which it could have been counted. The ",
          "figure given here is the deposit's."),
   "abstract_and_introduction_survey_respondents_across_the_ten_experiments",
+  as.character(cv1),
 
   2, "quantity", "pipeline", "full",
   "Wave five holds half the respondents the Materials and methods give it",
@@ -137,6 +147,7 @@ entries <- tribble(
          "sentence rounds as the article does, which gives wave three's 14,946 enrolled respondents as 15,000 ",
          "and wave eight's 29,448 as 30,000. The field dates are unchanged."),
   "methods_late_wave_size",
+  NA_character_,
 
   3, "description", "reading", "brief",
   "Appendix F.4 swaps the control and treatment labels on the I-2 stimuli",
@@ -145,6 +156,7 @@ entries <- tribble(
   r"--([[[TREATMENT] Imagine]] you’re having a conversation with your doctor about the way businesses in your neighborhood are reacting to the spread of the highly contagious Delta variant of the virus. ... [[[CONTROL] Imagine]] you’re having a conversation with your doctor about the way businesses in your neighborhood are reacting to the state of the virus.)--",
   r"--(Only the two labels move. The text that mentions the Delta variant is the treatment, and the text that does not is the control. Main p. 8 says so in prose ("Respondents assigned to control were told that their doctor was urging them to get the vaccine. Treatment respondents were told to imagine they were having a conversation with their doctor in which the doctor was urging them to get the vaccine and that their doctor was emphasizing the increased contagiousness of the Delta variant of the virus"), and the I-2 diagram on appendix p. 14 labels the version without the Delta text "Control" and the next box "Treat; Delta". Section F.4 disagrees with both. The deposit records which arm each respondent was in but not the text shown, so it cannot settle the question independently.)--",
   "",
+  NA_character_,
 
   4, "quantity", "reading", "brief",
   "The count of matching weighted and unweighted estimates is 51 of 60, and Figure S46 holds 52 estimates",
@@ -153,6 +165,7 @@ entries <- tribble(
   r"--(That said, the [[significances]] of our estimates match in most ([[45 of 52]]) cases.)--",
   r"--(Figure S46 plots 52 estimates, the average treatment effect and the Treatment x Party ID interaction for each of 26 experiment arms. The next paragraph lists seven that differ in significance, five where only the unweighted estimate is significant and two where only the weighted estimate is, so 52 less 7 gives 45. A further six differ in sign without differing in significance, so signs and significances together match in 39 of 52. Both counts come from refitting the weighted and unweighted models on the deposited data. The corrected sentence keeps the paragraph's own criterion, significance, and the sign count is given here.)--",
   "",
+  NA_character_,
 
   5, "label", "reading", "brief",
   "Table 1 describes the I-3 outcome as a children's outcome",
@@ -161,6 +174,7 @@ entries <- tribble(
   r"--(Likelihood of [[getting]] the [[bivalent]] booster)--",
   r"--(I-3 is the adult experiment (Sample: Unboosted, N 10,700). The children's experiment is I-4, whose row reads "Likelihood of children getting the bivalent booster", with a lowercase b.)--",
   "",
+  NA_character_,
 
   6, "label", "reading", "brief",
   "The Fig. 4 caption calls the mandates endorsements",
@@ -169,6 +183,7 @@ entries <- tribble(
   r"--(... and the coefficient on the treatment × party interaction term describes how much more effective the [[mandate]] is for subjects who are more Republican on the 1–7 party identification scale.)--",
   r"--(Fig. 4 reports the activity-specific mandate vignettes (experiment G-2). The caption of Fig. 2, which reports the endorsement experiments, contains the same sentence.)--",
   "",
+  NA_character_,
 
   7, "typography", "reading", "brief",
   "Tables 2 and 3 print thousands separators as decimal points in the observation counts",
@@ -177,6 +192,7 @@ entries <- tribble(
   r"--(Num.Obs. [[30,751]] | [[32,933]] ... Num.Obs. [[8,659]] | [[8,690]] | [[10,677]] | [[1,626]] | [[1,711]])--",
   r"--(The counts are 30,751 and 32,933 in Table 2, and 8,659, 8,690, 10,677, 1,626, and 1,711 in Table 3. All seven match the regression tables the maintained replication fits on the deposited data (maintained/output/table_2_guidance_experiments.csv and table_3_information_experiments.csv).)--",
   "",
+  NA_character_,
 
   8, "description", "reading", "brief",
   "The party shares among unvaccinated E-2 respondents do not say where leaners are counted",
@@ -190,6 +206,7 @@ entries <- tribble(
          ", ", share("E-2 share likely to vaccinate, independents (leaners with party)"), ", and ", share("E-2 share likely to vaccinate, Republicans (leaners with party)"),
          " percent, and independents are no longer in the middle. The correction names the grouping the printed figures use."),
   "",
+  NA_character_,
 
   9, "description", "reading", "brief",
   "The I-5 outcome categories differ from those described above them",
@@ -198,6 +215,7 @@ entries <- tribble(
   r"--(Outcome categories [[in I-4 were]] identical to those detailed above.)--",
   r"--(I-3 and I-4 use a five-point scale running from "I will definitely get it" to "I will not get it" (appendix pp. 15, 16, and 69). I-5 asks "How likely are you to vaccinate the eligible, unvaccinated children in your household for COVID-19?" with the options Extremely likely, Very likely, Somewhat likely, Not at all likely, and Not sure, the first three coded 1 and the last two coded 0 (appendix pp. 17 and 69).)--",
   "",
+  NA_character_,
 
   10, "description", "reading", "brief",
   "The unboosted sample is defined by a bivalent booster, and the text says booster",
@@ -206,6 +224,7 @@ entries <- tribble(
   r"--(Unboosted means the respondent indicated they have completed a full course of a primary vaccine but have not yet received a [[bivalent booster]]. ... The (I-3) Bivalent booster experiment was fielded on people who had received a full vaccine course but had not yet received a [[bivalent booster shot]].)--",
   r"--(The screener on appendix p. 15 asks "Have you received a dose of a "bivalent" COVID-19 booster since August 31st, 2022?" and includes the respondents who answer No (N: 10,700). A respondent who had received an earlier booster is therefore in the sample.)--",
   "",
+  NA_character_,
 
   11, "description", "reading", "note",
   "I-1 and I-2 are described as doctor's office vignettes that give information about vaccine effectiveness",
@@ -214,6 +233,7 @@ entries <- tribble(
   NA,
   r"--(I-1 places the respondent in a conversation with a friend, a doctor, or the CDC (appendix p. 13), and I-2 in a conversation with the doctor (appendix p. 14). Neither gives information about the vaccine's effectiveness: I-1 gives information about contagiousness, and I-2 about the Delta variant, with the doctor adding that the risks are minimal. The sentence is not corrected here, because a repair would rewrite it rather than change a word.)--",
   "",
+  NA_character_,
 
   12, "label", "reading", "brief",
   "The Fig. 5 caption names an information treatment that I-3 does not give",
@@ -222,6 +242,7 @@ entries <- tribble(
   r"--(Fig. 5. Effects of information about [[a winter surge and the effectiveness of boosters]] on intentions to get booster shot (October 2022, experiment I-3))--",
   r"--(The I-3 treatment, reproduced on appendix p. 15, warns that another COVID-19 surge is likely this winter and reports that the CDC says vaccines and boosters are the best protection.)--",
   "",
+  NA_character_,
 
   13, "description", "reading", "brief",
   "The appendix says only half of the unvaccinated respondents were assigned to the mandate experiment",
@@ -230,6 +251,7 @@ entries <- tribble(
   r"--([[All]] of the unvaccinated survey respondents were assigned to these experimental conditions.)--",
   r"--(The G-2 diagram on appendix p. 11 includes all 10,298 unvaccinated respondents, 5,153 in the friend vignettes and 5,145 in the solo vignettes, and Table 1 gives N = 10,298 for G-2.)--",
   "",
+  NA_character_,
 
   14, "description", "reading", "brief",
   "The appendix's activity-mandate response options say buy something else where the experiment says stay home",
@@ -238,6 +260,7 @@ entries <- tribble(
   r"--(I would probably not get vaccinated and [[stay home]]. ... I would definitely not get vaccinated and [[stay home]].)--",
   r"--(Main p. 7 and the response options on appendix p. 11 both read "stay home" for these two options.)--",
   "",
+  NA_character_,
 
   15, "description", "reading", "brief",
   "The vignette quoted on p. 7 omits the sentence about the friend's vaccination status",
@@ -246,6 +269,7 @@ entries <- tribble(
   r"--(... proof of a COVID-19 vaccination [‘is’ or ‘is NOT’] required to enter the venue. [[You believe your friend has been vaccinated. Which]] of the following best describes what you would do in this situation?”)--",
   r"--(Appendix pp. 11, 63, and 64 give the friend vignettes with the sentence "You believe your friend has been vaccinated." before the question.)--",
   "",
+  NA_character_,
 
   16, "description", "reading", "brief",
   "Table 1 note a does not describe the three-option outcomes or the coding of G-1",
@@ -254,6 +278,7 @@ entries <- tribble(
   r"--(We convert [[three-option scales and 4- or 5-point Likert scales]] into binary measures, with the [[prosocial option (in the guidance experiments, the option the CDC recommended)]] coded as the higher value.)--",
   r"--(The guidance experiments G-1 and G-3 have three response options (p. 6), and appendix p. 46 says each is collapsed to a binary outcome "based on which recommendation is CDC-backed at the time". In June (G-1) that is the option under which vaccinated people need not wear masks, so the coded option is the CDC-backed one rather than the prosocial one.)--",
   "",
+  NA_character_,
 
   17, "cross_reference", "reading", "brief",
   "The pointer to the endorsement regression tables includes Table S3",
@@ -262,6 +287,7 @@ entries <- tribble(
   r"--(Corresponding regression tables are presented in Appendix Tables S1–[[S2]].)--",
   r"--(Tables S1 and S2 report the endorsement experiments E-1 and E-2, which the paragraph describes. Table S3 reports the mandate experiment G-2.)--",
   "",
+  NA_character_,
 
   18, "cross_reference", "reading", "brief",
   "The appendix figures for respondents predicted to be unvaccinated are described as being for those predicted to be vaccinated, and cited from S23",
@@ -270,6 +296,7 @@ entries <- tribble(
   r"--(... estimates among the “predicted to be [[unvaccinated]]” (Appendix Figs. [[S24]]–S45), we also present estimates of conditional average treatment effects)--",
   r"--(Figs. S24 to S45 are titled "among never vaxxers", and the same page's later sentence correctly speaks of the "predicted to be un-vaccinated at the final wave" group. Fig. S23 is the variable-importance plot for the random forest that makes the prediction. The comparison of weighted and unweighted estimates is Fig. S46.)--",
   "",
+  NA_character_,
 
   19, "cross_reference", "reading", "brief",
   "The differences-in-CATEs for all experiments are cited to figures that show other estimates",
@@ -278,6 +305,7 @@ entries <- tribble(
   r"--(... and the corresponding differences-in-CATEs for all experiments (Appendix [[pp. 45, 47, and 62]]).)--",
   r"--(Figs. S48 to S61 plot the G-2 vignette effects and the I-1 source comparisons. The CATEs and differences-in-CATEs for every experiment are in the unnumbered tables on appendix p. 45 (E-1 and E-2), p. 47 (G-1, G-2, and G-3), and p. 62 (I-1 to I-5).)--",
   "",
+  NA_character_,
 
   20, "quantity", "reading", "brief",
   "A control-arm count in the I-1 diagram repeats the Friend arm's total",
@@ -286,6 +314,7 @@ entries <- tribble(
   r"--(N: 1,426/[[1,436]])--",
   r"--(The Doctor group has N: 2,958, and its treatment box prints 1,518/1,522, so the control box must be 1,436 at the larger count. The other groups balance the same way (Friend 1,488 + 1,439 = 2,927 and CDC 1,416 + 1,409 = 2,825), and the three groups sum to the 8,710 unvaccinated respondents. The Friend control box, directly beside it, prints 1,479/1,488.)--",
   "",
+  NA_character_,
 
   21, "quantity", "reading", "full",
   "The interaction terms and the differences-in-CATEs agree in significance in all but four cases, not one",
@@ -294,17 +323,19 @@ entries <- tribble(
   r"--(the [[significance]] of the interaction terms in the main text [[matches]] the [[significance]] of the difference-in-CATEs in all cases but [[four]].)--",
   r"--(Counted on the stars the appendix prints at the 5 percent level, the interaction term and the difference-in-CATEs disagree in significance in four of 34 comparisons: E-1 Trump + Fauci and E-1 Spiritual leader (Table S1 against appendix p. 45), where the difference-in-CATEs is significant and the interaction term is not, G-2 Trip (Friend), where the same holds (Table S3 against p. 47), and G-2 Restaurant (Self), where the interaction term is significant and the difference-in-CATEs is not. The 34 comparisons are the 7 E-1 endorsers, the 8 E-2 endorsers, G-1, G-3, the 5 information experiments, and the G-2 vignettes pooled, in the friend arm, and in the solo arm (4 each). The sign also differs, by the printed estimates, in eight further cells in which neither estimate is significant: E-1 Pharmacy, E-2 Fauci, E-2 Obama, E-2 James, G-1, G-2 Concert (Friend), G-2 Trip (Self), and G-2 Restaurant (pooled). The corrected sentence applies one rule, significance at the 5 percent level, and the sign differences are reported here. For the 26 arms the maintained replication refits, the corrected standard error described in entry 22 changes none of the printed stars.)--",
   "",
+  NA_character_,
 
   22, "quantity", "pipeline", "full",
   "Only one of the four G-2 vignettes affirms equivalence at 10 points",
   "published p. 4, Materials and methods",
   r"--(G-2 is more nuanced; we can affirm equivalence at 10 points in [[two cases]] but cannot in [[two cases]].)--",
-  paste0("G-2 is more nuanced; we can affirm equivalence at 10 points in [[", spell(n_aff), " case", if (n_aff != 1) "s", "]] but cannot in [[", spell(n_vig - n_aff), " case", if (n_vig - n_aff != 1) "s", "]]."),
+  paste0("G-2 is more nuanced; we can affirm equivalence at 10 points in [[", spell(cv22), " case", if (n_aff != 1) "s", "]] but cannot in [[", spell(n_vig - n_aff), " case", if (n_vig - n_aff != 1) "s", "]]."),
   paste0("The deposit's dic_estimator() in code/helpers.R computes the standard error of the difference-in-CATEs as sqrt(std.error_2^2 + std.error_2^2), squaring the Republican standard error twice and never using the Democratic one. The correct formula is sqrt(std.error_1^2 + std.error_2^2). Under the corrected standard error the pooled Restaurant vignette affirms equivalence at 10 points (p = ", p10("G-2 restaurant"),
          ") and the Concert vignette does not (p = ", p10("G-2 concert"), "; the appendix prints 0.038), nor do Team (", p10("G-2 team"), ") and Trip (", p10("G-2 trip"),
          "). The same error affects the standard errors and the equivalence p-values in all of the appendix's equivalence tables (pp. 45, 47, and 62), so the values printed there differ from the corrected ones, for example the I-1 p-value at 10 points, printed as 0.006 and ",
          sprintf("%.3f", equiv$eq_p_10pp[equiv$experiment == "I-1"]), " when corrected. No other count in the article changes: both guidance experiments affirm equivalence at 5 points, and three of the five information experiments affirm it at 10 points, under either standard error."),
   "materials_and_methods_mandate_vignettes_affirming_equivalence_at_10_points",
+  as.character(cv22),
 
   23, "wording", "reading", "brief",
   "A transposed pair of words and a stray word in the introduction",
@@ -313,6 +344,7 @@ entries <- tribble(
   r"--(To be clear, [[while we]] find that some information treatments have effects that are positive for all subgroups ... endorsements by others [[often]] had null or even negative effects on vaccine intentions)--",
   r"--(In the first sentence the clause that follows ("we also find that other information treatments have effects that are close to zero") completes the "while" construction. In the second, "either" has no clause to pair with.)--",
   "",
+  NA_character_,
 
   24, "wording", "reading", "brief",
   "The first experiments' endorsers are described as political figures and political figures",
@@ -321,6 +353,7 @@ entries <- tribble(
   r"--(As we will show, our first experiments on endorsements by [[public health officials]] and political figures underlined the dangers associated with that approach)--",
   r"--(The same noun phrase is printed twice. The endorsers in the first experiments, listed on p. 4, include President Trump, Dr. Fauci, a personal physician, a pharmacy, and a health insurance company.)--",
   "",
+  NA_character_,
 
   25, "wording", "reading", "brief",
   "A missing article and a misspelling on p. 4",
@@ -329,6 +362,7 @@ entries <- tribble(
   r"--([[In E-1, the set]] of endorsers included (i) their health insurance company, ... we have not masked important [[nonlinearities]] (14).)--",
   "",
   "",
+  NA_character_,
 
   26, "wording", "reading", "brief",
   "A verb that does not agree with its subject on p. 6",
@@ -337,6 +371,7 @@ entries <- tribble(
   r"--(The panels [[look]] different, of course, as everyone moves in the same direction and by roughly the same amounts)--",
   "",
   "",
+  NA_character_,
 
   27, "wording", "reading", "brief",
   "A verb that does not agree with its subject and an unmatched parenthesis on p. 7",
@@ -345,6 +380,7 @@ entries <- tribble(
   r"--(baseline levels of willingness to get vaccinated in order to participate in these activities [[were]] low, around 20% ... did not consistently vary depending on whether the activity was for the respondent or their friend[[.]])--",
   r"--(The subject of the first sentence is "levels". In the second, no parenthesis is open when the closing one is printed.)--",
   "",
+  NA_character_,
 
   28, "wording", "reading", "brief",
   "A missing preposition in the Discussion",
@@ -353,6 +389,7 @@ entries <- tribble(
   r"--(Even so, we find just one instance [[of cues]] working as intended across all audiences (the E-1 Fauci endorsement).)--",
   "",
   "",
+  NA_character_,
 
   29, "bibliographic", "reading", "brief",
   "Two references run words together",
@@ -361,6 +398,7 @@ entries <- tribble(
   r"--(7 Coppock A. [[2022. Persuasion]] in parallel: how information changes minds about politics. ... 8 Tappin BM, Berinsky AJ, Rand DG. 2023. [[Partisans’ receptivity]] to persuasive messaging is undiminished by countervailing party leader cues.)--",
   r"--(Crossref, doi 10.1038/s41562-023-01551-7, gives the Tappin, Berinsky, and Rand year as 2023, volume 7, issue 4, pages 568 to 582, as printed. Crossref's record of Persuasion in Parallel (doi 10.7208/chicago/9780226821832.001.0001) gives 2022 as the print year, which agrees with the printed year, so the year in reference 7 is not corrected.)--",
   "",
+  NA_character_,
 
   30, "bibliographic", "reading", "brief",
   "The Nationscape reference lowercases the project name and misplaces a space",
@@ -369,6 +407,7 @@ entries <- tribble(
   r"--(11 Holliday D, et al. 2021. Democracy [[Fund + UCLA Nationscape]] methodology and representativeness assessment.)--",
   r"--(The project is Democracy Fund + UCLA Nationscape. The printed title lowercases "Fund" and "Nationscape" and omits the space before the plus sign.)--",
   "",
+  NA_character_,
 
   31, "bibliographic", "reading", "brief",
   "The Lin reference lowercases Freedman's name",
@@ -377,6 +416,7 @@ entries <- tribble(
   r"--(15 Lin W. 2013. Agnostic notes on regression adjustments to experimental data: reexamining [[Freedman’s]] critique. Ann Appl Stat. 7(1):295–318.)--",
   r"--(Crossref, doi 10.1214/12-AOAS583, gives volume 7, issue 1, pages 295 to 318, issued March 2013, as printed. The lowercase "reexamining" after the colon follows the journal's sentence-case style, so only the surname is corrected.)--",
   "",
+  NA_character_,
 
   32, "bibliographic", "reading", "note",
   "Reference 1 names no outlet",
@@ -385,6 +425,7 @@ entries <- tribble(
   NA,
   r"--(The other references in the list name a journal, a publisher, or a URL. This one names none, so a reader cannot locate it. A Crossref search for the title finds no matching record, and we have not been able to verify the outlet independently, so the entry is not corrected here.)--",
   "",
+  NA_character_,
 
   33, "spelling", "reading", "brief",
   "Dr. Fauci's title is misspelled in the E-2 diagram, and his institute is misnamed",
@@ -393,6 +434,7 @@ entries <- tribble(
   r"--(Dr. Anthony Fauci ([[Director]] of the U.S. National [[Institute]] of Allergy and Infectious [[Diseases]]), and other scientific sources)--",
   r"--(Page 9 prints the string with "Dirctor" and "Isnstitute" in three boxes. Page 8 spells those two words correctly and prints the same "Infectious Disease". The agency is the National Institute of Allergy and Infectious Diseases.)--",
   "",
+  NA_character_,
 
   34, "spelling", "reading", "brief",
   "A misspelled label in the G-2 diagram",
@@ -401,6 +443,7 @@ entries <- tribble(
   r"--(Solo [[Concert]] Control:)--",
   "",
   "",
+  NA_character_,
 
   35, "wording", "reading", "brief",
   "A comparison in the I-1 CDC treatment box reads as contagious than",
@@ -409,6 +452,7 @@ entries <- tribble(
   r"--(that it is as contagious [[as]] the Chicken Pox.)--",
   r"--(The Friend and Doctor treatment boxes on the same page read "as contagious as Chicken Pox".)--",
   "",
+  NA_character_,
 
   36, "spelling", "reading", "brief",
   "Vaccine is misspelled in two I-5 figure titles",
@@ -417,6 +461,7 @@ entries <- tribble(
   r"--(Figure S22: Information experiment I-5: [[Vaccine]] - Child ... Figure S45: Information experiment I-5: [[Vaccine]] - Child among “never vaxxers”)--",
   "",
   "",
+  NA_character_,
 
   37, "spelling", "reading", "brief",
   "Children's is misspelled in a heading",
@@ -425,6 +470,7 @@ entries <- tribble(
   r"--(F.5.3 Step 3: Measure Intentions Towards [[Children’s]] Vaccinations)--",
   "",
   "",
+  NA_character_,
 
   38, "wording", "reading", "brief",
   "The Concert prompt in the appendix drops a word",
@@ -433,6 +479,7 @@ entries <- tribble(
   r"--(... [‘Because’ or ‘Even though’] [[there will be]] lots of people together, proof of a COVID-19 vaccination [‘is’ or ‘is NOT’] required to enter the venue.)--",
   r"--(The Team and Restaurant prompts below it, and main p. 7, read "there will be lots of people together".)--",
   "",
+  NA_character_,
 
   39, "wording", "reading", "brief",
   "A sentence in the appendix's weighting discussion is garbled",
@@ -441,6 +488,7 @@ entries <- tribble(
   r"--(Indeed[[, that is]] what we find: the weighted standard errors are on average 1.6 times their unweighted counterparts.)--",
   "",
   "",
+  NA_character_,
 
   40, "description", "reading", "brief",
   "The I-4 diagram dates the booster from August 31, where its question says October 12",
@@ -449,6 +497,7 @@ entries <- tribble(
   r"--(Not sure (They got a booster shot since [[October 12]], but don’t know if it was the new one or the original);)--",
   r"--(The question above the boxes asks about a bivalent booster "since October 12, 2022", and the survey instrument on appendix p. 68 uses October 12 in the children's question. The adult question (I-3, appendix p. 15) correctly uses August 31.)--",
   "",
+  NA_character_,
 
   41, "spelling", "reading", "brief",
   "SARS-CoV-2 and the 1980s are misprinted on the first page",
@@ -457,6 +506,7 @@ entries <- tribble(
   r"--(In 2020, during the [[SARS-CoV-2]] COVID-19 pandemic ... antidrug messaging from the [[1980s]] and concluded there was “no good evidence” any of it changed behavior)--",
   "",
   "",
+  NA_character_,
 
   42, "spelling", "reading", "brief",
   "The appendix spells LeBron James as Lebron",
@@ -465,6 +515,7 @@ entries <- tribble(
   r"--([[LeBron]] James)--",
   r"--(Main p. 4 spells the name correctly ("NBA star LeBron James"). The appendix misspells it in the Table S2 header (p. 5), the E-2 diagram (p. 9), and the E-2 figures (pp. 25, 37, and 72).)--",
   "",
+  NA_character_,
 
   43, "typography", "reading", "brief",
   "Fig. S47 prints a p-value of exactly zero",
@@ -473,6 +524,7 @@ entries <- tribble(
   r"--(χ2 = 111.78, [[p < .001]])--",
   r"--(A p-value is not exactly zero. A chi-square of 111.78 on two degrees of freedom has a p-value far below .001. The panel below it prints "p = .016" in the same format.)--",
   "",
+  NA_character_,
 
   44, "quantity", "reading", "note",
   "Two exclusion counts in the I-3 diagram print the same value",
@@ -481,6 +533,7 @@ entries <- tribble(
   NA,
   r"--(The diagram starts from N: 29,448, excludes 12,951 respondents who are not fully vaccinated, and includes 10,700 who answered No, which leaves 5,797 for the Yes and Not sure boxes together. Two boxes of 4,380 sum to 8,760, so at least one is wrong, and the page cannot say which. If Yes is right, Not sure is 1,417, and if Not sure is right, Yes is 1,417. The deposit does not settle it. The I-3 analysis file holds the 10,700 respondents who have an assignment, and the other 18,748 rows are 12,951 plus 5,797, but the file does not record the screener answer, so it cannot split the 5,797.)--",
   "",
+  NA_character_,
 
   45, "description", "reading", "note",
   "The field dates in the Materials and methods and the appendix differ by a day",
@@ -489,6 +542,7 @@ entries <- tribble(
   NA,
   r"--(Appendix p. 9 gives the E-2 field dates as March 24 to April 14, 2021, a day earlier at the start and a day later at the end than the Materials and methods' March 25 to April 13. Appendix pp. 12 and 13 give the September wave (G-3 and I-2) as September 3 to October 5, a day later at the end than October 4. None of the deposited analysis files has a date, time, or start or end field, so the deposit cannot say which set of dates is right. Entry 2 leaves the dates in the Materials and methods as printed.)--",
   "",
+  NA_character_,
 
   46, "label", "pipeline", "full",
   "Figure 2 plots each framing's estimates under the other framing's label",
@@ -497,6 +551,7 @@ entries <- tribble(
   r"--(Legend: Pooled, [[Personal]] (orange triangles), [[Social]] (teal circles). ... Estimates from the [[social arm]] that included additional information that the vaccine would protect other people are plotted with [[circles]] while estimates from the [[personal arms]] are plotted with [[triangles]].)--",
   paste0("The deposit's code/analysis/run_models_w3_endorse_by_arm.R fits the models named *_prosocial on experiment_arm == \"A (Personal)\" and the models named *_not_prosocial on experiment_arm == \"B (Social)\". code/figures/figure_2.R then relabels \"Prosocial\" as \"Social\" and \"Not Prosocial\" as \"Personal\", so each framing is drawn under the other's label. The arm variable agrees with the appendix: Arm A (Personal) on appendix p. 8 is the version without the sentence about protecting others, and its Trump and Fauci cells (N: 937/940 and 879/882) are the counts of the deposit's A (Personal) rows, 937 and 879 treated respondents. The maintained replication labels each series by the arm it was fitted on. The article's prose about Fig. 2 describes the series by the printed labels and so carries the same swap, which the corrected sentence reverses. No printed sentence changes direction: the text says only that the Personal versus Social variation does not matter (joint test p = 0.37), and the estimates themselves are unchanged."),
   "",
+  NA_character_,
 
   47, "label", "pipeline", "full",
   "The G-1 and G-3 rows of the appendix's guidance equivalence table carry each other's numbers",
@@ -505,12 +560,67 @@ entries <- tribble(
   paste0("G-1: CDC Mask Guidance 1: [[", cell("G-1", "cate_dem", "se_dem"), "]], [[", cell("G-1", "cate_rep", "se_rep"), "]], [[", cell("G-1", "dic", "se_dic"), "]], [[", pstar("G-1", "eq_p_5pp"), "]], [[", pstar("G-1", "eq_p_10pp"), "]]. G-3: CDC Mask Guidance 2: [[", cell("G-3", "cate_dem", "se_dem"), "]], [[", cell("G-3", "cate_rep", "se_rep"), "]], [[", cell("G-3", "dic", "se_dic"), "]], [[", pstar("G-3", "eq_p_5pp"), "]], [[", pstar("G-3", "eq_p_10pp"), "]]."),
   paste0("The deposit's code/tables/equiv_test_guidance.R maps the label \"G-1: CDC Mask Guidance 1\" to the model object w7_fit_cdcmask and \"G-3: CDC Mask Guidance 2\" to w6_fit_cdcmask. G-1 is the June 2021 experiment, whose analysis file is w6, and G-3 is the September 2021 experiment, whose file is w7, so the two rows carry each other's numbers. Two errors are separate here. The row swap is one. The other is the mistyped standard error of entry 22, which affects the printed difference-in-CATEs standard errors and the equivalence p-values in both rows. The corrected row values given above fix both, and they are the maintained replication's. Correcting only the swap would leave the G-1 row at 0.010 (0.016), 0.007 *, 0.000 * and the G-3 row at 0.013 (0.018), 0.022 *, 0.000 *. Both experiments affirm equivalence at 5 and 10 points under any of these values, so the claim on p. 4 is unchanged, and so are the counts in entries 21 and 22."),
   ""
-) |>
-  mutate(across(c(title, published, corrected, note, claim_ids), as.character))
+,
+  NA_character_) |>
+  mutate(across(c(title, published, corrected, note, claim_ids, corrected_values),
+                as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry),
           all(is.na(entries$corrected) == (entries$form == "note")),
           identical(entries$entry[entries$form == "note"], c(11, 32, 44, 45)))
+
+# Gate: corrected_values agrees with the sentence it was glued into ----
+# The column and the sentence are written from one object, so they begin in agreement and
+# this gate exists for the edit that separates them: a value moved from one marked span to
+# another, a span reworded to carry a second number, a claim id appended without its value.
+# Each value has to be inside the span it belongs to, matched by position where the counts
+# line up, and inside SOME span where an entry marks a label as well as a number and its
+# spans outnumber its values. A count the sentence spells out is accepted in its spelled form.
+marked_spans <- function(x) str_match_all(x, "\\[\\[(.*?)\\]\\]")[[1]][, 2]
+
+in_span <- function(v, s) {
+  s <- str_remove_all(s, ",")
+  str_detect(s, fixed(v)) ||
+    (str_detect(v, "^[0-9]+$") && as.integer(v) %in% seq_len(25) &&
+       str_detect(s, fixed(spell(as.integer(v)))))
+}
+
+quantified <- entries |>
+  filter(!is.na(corrected_values)) |>
+  mutate(ids = str_split(claim_ids, ";"), values = str_split(corrected_values, ";"),
+         spans = map(corrected, marked_spans))
+
+stopifnot(all(lengths(quantified$ids) == lengths(quantified$values)))
+
+value_placed <- pmap_lgl(quantified, function(...) {
+  e <- list(...)
+  if (length(e$values) == length(e$spans)) {
+    all(map2_lgl(e$values, e$spans, in_span))
+  } else {
+    all(map_lgl(e$values, \(v) any(map_lgl(e$spans, \(s) in_span(v, s)))))
+  }
+})
+
+if (!all(value_placed)) {
+  print(quantified |> filter(!value_placed) |> select(entry, title, corrected_values, corrected))
+  stop("An entry's corrected_values are not in the spans of its corrected sentence.")
+}
+
+# An entry that changes a quantity has to say which one, and an entry that changes none may
+# not carry a value. The class is the declaration and this is where it binds. A note-form
+# entry corrects nothing and carries NA even where its class is quantity, and an entry with
+# no claim_ids has no claim to carry a value for.
+has_ids <- !is.na(entries$claim_ids) & entries$claim_ids != ""
+# Entries whose claim id names something no corrected token states as a number carry NA by
+# name, and the list is the only exemption.
+no_numeric_claim <- 2
+stopifnot(
+  all(!is.na(entries$corrected_values[entries$class == "quantity" & entries$form != "note" &
+                                        has_ids & !entries$entry %in% no_numeric_claim])),
+  all(is.na(entries$corrected_values[entries$class != "quantity"])),
+  all(is.na(entries$corrected_values[entries$form == "note"])),
+  all(is.na(entries$corrected_values) | has_ids)
+)
 
 # The spine's markup, resolved for this document. Another renderer resolves it differently.
 bold <- function(x) str_replace_all(str_replace_all(x, fixed("*"), "\\*"), "\\[\\[(.*?)\\]\\]", "**\\1**")
