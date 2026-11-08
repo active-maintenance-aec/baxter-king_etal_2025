@@ -128,7 +128,7 @@ p1 <-
   scale_y_discrete(labels = function(x) str_remove(x, " \\(w[35]\\)")) +
   # Named, because the geom_blank layer puts Pooled first in the scale. These are the
   # marks the published page draws for each series, under the corrected labels of
-  # errata entry 46: Personal orange triangles, Social teal circles, Pooled black squares.
+  # errata entry 25: Personal orange triangles, Social teal circles, Pooled black squares.
   scale_color_manual(values = c(Personal = "#FFA500", Social = "#008080", Pooled = "black")) +
   scale_shape_manual(values = c(Personal = 17, Social = 16, Pooled = 15))
 
