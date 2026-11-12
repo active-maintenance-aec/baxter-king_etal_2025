@@ -17,6 +17,12 @@
   ],
   "related_identifiers": [
     {
+      "identifier": "https://github.com/active-maintenance-aec/baxter-king_etal_2025",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
       "identifier": "10.1093/pnasnexus/pgaf185",
       "relation": "isSupplementTo",
       "scheme": "doi"
